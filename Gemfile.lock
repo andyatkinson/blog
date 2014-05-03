@@ -28,12 +28,16 @@ GEM
     liquid (2.5.5)
     maruku (0.7.1)
     posix-spawn (0.3.8)
+    puma (2.7.1)
+      rack (>= 1.1, < 2.0)
     pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.1.0)
     rack (1.5.2)
     rack-contrib (1.1.0)
       rack (>= 0.9.1)
+    rack-rewrite (1.4.01)
+    rake (10.1.1)
     safe_yaml (0.7.1)
     yajl-ruby (1.1.0)
 
@@ -42,5 +46,8 @@ PLATFORMS
 
 DEPENDENCIES
   jekyll
+  puma (= 2.7.1)
   rack-contrib (= 1.1.0)
+  rack-rewrite (= 1.4.1)
+  rake (= 10.1.1)
   redcarpet!
