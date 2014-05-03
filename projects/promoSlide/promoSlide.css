@@ -1,0 +1,35 @@
+.promo-slide-container {
+  padding:0;
+  margin:0;
+  position:fixed;
+  bottom:0;
+  right:0;
+  width:400px; /* TODO: config option, with default */
+  z-index:999999; /* we want this to be on top of all other elements */
+  margin:0 2px 0 0; /* bump it out from the edge a bit */
+}
+.promo-slide-container .panel .panel-heading,
+.promo-slide-container .panel .panel-body {
+  /* this is for the animation */
+  white-space:nowrap;
+}
+.promo-slide-container .panel .panel-heading {
+  height:2.5em;
+}
+.promo-slide-container .panel .panel-body {
+  height:4em;
+}
+.promo-slide-container .panel .panel-heading a.dismiss {
+  float:right;
+  font-size:1.5em;
+  margin-top:-.5em;
+  color: #ccc;
+  text-decoration:none;
+}
+.promo-slide-container .panel .panel-heading a.dismiss:hover {
+  color:#fff;
+}
+
+.promo-slide-container .panel .panel-heading .panel-title{}
+.promo-slide-container .panel .panel-body {}
+

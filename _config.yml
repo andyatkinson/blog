@@ -1,0 +1,16 @@
+name: Andy Atkinson
+description: Ruby, software development, startups
+meta_description: "Andy Atkinson, ruby programmer and software engineer in Boston, MA"
+
+markdown: redcarpet
+redcarpet:
+  extensions: [footnotes]
+pygments: true
+logo: false
+paginate: 15
+
+# Details for the RSS feed generator
+url:            'andyatkinson.com'
+author:         'Andy Atkinson'
+
+permalink: /blog/:year/:month/:day/:title
