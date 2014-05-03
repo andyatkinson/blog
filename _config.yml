@@ -12,7 +12,7 @@ logo: false
 paginate: 15
 
 # Details for the RSS feed generator
-url:            'andyatkinson.com'
+url:            'http://andyatkinson.com'
 author:         'Andy Atkinson'
 
 permalink: /blog/:year/:month/:day/:title
