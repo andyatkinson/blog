@@ -7,13 +7,26 @@ GIT
 GEM
   remote: https://rubygems.org/
   specs:
+    addressable (2.3.6)
     classifier (1.3.4)
       fast-stemmer (>= 1.0.0)
     colorator (0.1)
     commander (4.1.6)
       highline (~> 1.6.11)
     directory_watcher (1.4.1)
+    excon (0.33.0)
     fast-stemmer (1.0.2)
+    heroku (3.7.2)
+      heroku-api (~> 0.3.17)
+      launchy (>= 0.3.2)
+      netrc (~> 0.7.7)
+      rest-client (~> 1.6.1)
+      rqrcode (~> 0.4.2)
+      rubyzip
+      term-ansicolor (~> 1.3.0)
+    heroku-api (0.3.18)
+      excon (~> 0.27)
+      multi_json (~> 1.8)
     highline (1.6.21)
     jekyll (1.2.0)
       classifier (~> 1.3)
@@ -25,8 +38,13 @@ GEM
       pygments.rb (~> 0.5.0)
       redcarpet (~> 2.2.2)
       safe_yaml (~> 0.7.0)
+    launchy (2.4.2)
+      addressable (~> 2.3)
     liquid (2.5.5)
     maruku (0.7.1)
+    mime-types (2.2)
+    multi_json (1.9.3)
+    netrc (0.7.7)
     posix-spawn (0.3.8)
     pygments.rb (0.5.4)
       posix-spawn (~> 0.3.6)
@@ -35,14 +53,21 @@ GEM
     rack-jekyll (0.4.1)
       jekyll (>= 0.12.0, < 2.0)
       rack (~> 1.5.0)
+    rest-client (1.6.7)
+      mime-types (>= 1.16)
+    rqrcode (0.4.2)
+    rubyzip (1.1.3)
     safe_yaml (0.7.1)
+    term-ansicolor (1.3.0)
+      tins (~> 1.0)
+    tins (1.1.0)
     yajl-ruby (1.1.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  heroku
   jekyll
-  rack
   rack-jekyll
   redcarpet!
