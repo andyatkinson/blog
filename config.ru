@@ -1,5 +1,8 @@
 require 'rack/contrib/try_static'
 require 'rack/contrib/not_found'
+require 'rack/rewrite'
+
+use Rack::Deflater
 
 use Rack::TryStatic,
   :root => "_site",
