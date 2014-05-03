@@ -1,0 +1,20 @@
+---
+layout: page
+title: Not Found
+comments: false
+---
+
+Sorry, the page you were looking for was not found.
+
+Perhaps you were looking for a blog post? Recent blog posts are listed below.
+
+<section>
+  <h2>Recent Posts</h2>
+  <ul id="recent_posts">
+    {% for post in site.posts limit:5 %}
+      <li class="">
+        <a href="{{ root_url }}{{ post.url }}">{{ post.title }}</a>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
