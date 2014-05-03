@@ -2,6 +2,8 @@ name: Andy Atkinson
 description: Ruby, software development, startups
 meta_description: "Andy Atkinson, ruby programmer and software engineer in Boston, MA"
 
+exclude: [config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, LICENSE.txt]
+
 markdown: redcarpet
 redcarpet:
   extensions: [footnotes]

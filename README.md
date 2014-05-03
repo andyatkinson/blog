@@ -1,5 +1,14 @@
 # blog
 
+## build
+
+    bundle exec jekyll build
+
+## local server
+
+    jekyll -w serve
+
+
 ### Theme
 
 Using the [kasper](https://github.com/rosario/kasper) theme for Jekyll, which was inspired by Ghost.
