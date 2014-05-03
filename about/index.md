@@ -8,7 +8,6 @@ Andy is a software developer building web applications with Ruby and Rails. He h
 
 Andy lives in Boston, Mass., USA and has lived in Baltimore, MD and Minneapolis, MN. He has also studied and worked in Toledo and Barcelona Spain. He earned bachelor’s degrees from the University of Minnesota.
 
-### Projects
-
 {% if page.projects %} <a href='{{ site.baseurl }}{{ page.projects }}'> Projects </a> {% endif %}
 
+Connect with me on [github](https://github.com/andyatkinson) or [linkedin](http://www.linkedin.com/in/andyatkinson/).

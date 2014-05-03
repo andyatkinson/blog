@@ -1,18 +1,18 @@
-# blog
+This is the source for my blog.
 
-## build
+### Build
 
     bundle exec jekyll build
 
-## local server
+### Run jekyll server locally
 
     jekyll -w serve
 
 
 ### Theme
 
-Using the [kasper](https://github.com/rosario/kasper) theme for Jekyll, which was inspired by Ghost.
+This blog uses the [kasper](https://github.com/rosario/kasper) theme for Jekyll.
 
-## Deployment
+### Deployment
 
-Deployed on Heroku with [these instructions](http://jbhannah.net/blog/2013/01/16/jekyll-on-heroku-without-rack-jekyll-or-custom-buildpacks.html)
+Deployed on Heroku with [these instructions](http://jbhannah.net/blog/2013/01/16/jekyll-on-heroku-without-rack-jekyll-or-custom-buildpacks.html).
