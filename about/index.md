@@ -6,7 +6,7 @@ projects: 'projects'
 
 Andy is a software developer that has been building web applications with Ruby and Rails since 2008. He has worked as an individual and on various teams, building products that serve different industries.
 
-He lives in Boston, Mass., USA, and has lived in Baltimore, MD and Minneapolis, MN. He has studied and worked in Toledo and Barcelona Spain, and speaks Spanish. He earned bachelor’s degrees from the University of Minnesota.
+He lives in Boston, Mass., USA, and has lived in Baltimore, MD and Minneapolis, MN. He has studied and worked in Toledo and Barcelona Spain, and speaks Spanish. He earned bachelor's degrees in [IT Infrastructure (BAS)](http://www.cce.umn.edu/BAS-IT-Infrastructure/) and [Spanish Studies (BA)](http://spanport.umn.edu/ugrad/majors.html) from the [University of Minnesota](http://www.umn.edu).
 
 He has volunteered at events like [Overnight Website Challenge](http://overnightwebsitechallenge.com/) and [Rails Girls](http://railsgirls.com/) where he could use his web development skills to help others. He has competed in programming competitions like [Node Knockout](http://nodeknockout.com/).
 

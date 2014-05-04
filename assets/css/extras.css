@@ -1,0 +1,9 @@
+figure {
+  padding-bottom:80px;
+}
+figure img {
+  padding-bottom:10px;
+}
+img, figcaption {
+  text-align:center;
+}

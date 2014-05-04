@@ -17,3 +17,36 @@ From 2009 until 2013 I worked on two iPhone applications for Minneapolis and St.
 ### For fun
 
 [experiments](https://github.com/andyatkinson/experiments) is a repository of HTML, CSS, and JS experiments. [Interactive demo page](http://andyatkinson.github.io/experiments/).
+
+### Screenshots
+
+Screenshots from web applications and sites I've worked on.
+
+<section>
+  <figure>
+    <img src="/assets/images/portfolio-1.png" alt="PetConnect" />
+    <figcaption>PetConnect homepage (side project)</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/portfolio-2.png" />
+    <img src="/assets/images/portfolio-3.png" />
+    <figcaption>Train Brain and Bus Brain iOS apps (side projects)</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/portfolio-4.jpg" />
+    <img src="/assets/images/portfolio-5.jpg" />
+    <figcaption>LivingSocial (employee)</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/portfolio-8.jpg" />
+    <figcaption>Node Knockout (competition, team member)</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/portfolio-9.jpg" />
+    <figcaption>Freelance web development</figcaption>
+  </figure>
+  <figure>
+    <img src="/assets/images/portfolio-10.jpg" />
+    <figcaption>Socialcast (employee)</figcaption>
+  </figure>
+</section>
