@@ -34,6 +34,6 @@ Another nice tip [^tip] to copy the path to the clipboard without opening the br
 
 [^plugin]: [fugitive.vim plugin](https://github.com/tpope/vim-fugitive)
 
-[^vim_config]: [My Vim config](https://github.com/andyatkinson/vimfiles)
+[^vim_config]: [My Vim config](https://github.com/andyatkinson/dotfiles)
 
 [^tip]: [Your GitHub URLs should be timeless](https://coderwall.com/p/j-dlsq)
