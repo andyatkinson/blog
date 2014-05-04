@@ -25,4 +25,4 @@ He gave a conference talk in Argentina about Lean Startup at LivingSocial in 201
 <iframe src="//player.vimeo.com/video/57940280" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/57940280">Ship it: Staying Lean at LivingSocial by Andy Atkinson</a> from <a href="http://vimeo.com/rubyargentina">Ruby Argentina</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
 
 ### Connect
-Connect with Andy on [github](https://github.com/andyatkinson) or [linkedin](http://www.linkedin.com/in/andyatkinson/).
+Connect with Andy on [github](https://github.com/andyatkinson) or [linkedin](http://www.linkedin.com/in/andyatkinson/), or <a href="mailto:andyatkinson@gmail.com">send an email</a>.
