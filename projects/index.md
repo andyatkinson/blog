@@ -28,25 +28,25 @@ Screenshots from web applications and sites I've worked on.
     <figcaption>PetConnect homepage (side project)</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/portfolio-2.png" />
-    <img src="/assets/images/portfolio-3.png" />
+    <img src="/assets/images/portfolio-2.png" alt="Train Brain screenshot"/>
+    <img src="/assets/images/portfolio-3.png" alt="bus brain screenshot"/>
     <figcaption>Train Brain and Bus Brain iOS apps (side projects)</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/portfolio-4.jpg" />
-    <img src="/assets/images/portfolio-5.jpg" />
+    <img src="/assets/images/portfolio-4.jpg" alt="LivingSocial screenshot"/>
+    <img src="/assets/images/portfolio-5.jpg" alt="LivingSocial screenshot"/>
     <figcaption>LivingSocial (employee)</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/portfolio-8.jpg" />
+    <img src="/assets/images/portfolio-8.jpg" alt="Node Knockout Jackalope screenshot"/>
     <figcaption>Node Knockout (competition, team member)</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/portfolio-9.jpg" />
+    <img src="/assets/images/portfolio-9.jpg" alt="product screenshot" />
     <figcaption>Freelance web development</figcaption>
   </figure>
   <figure>
-    <img src="/assets/images/portfolio-10.jpg" />
+    <img src="/assets/images/portfolio-10.jpg" alt="product screenshot"/>
     <figcaption>Socialcast (employee)</figcaption>
   </figure>
 </section>
