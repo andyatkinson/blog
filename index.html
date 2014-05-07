@@ -1,8 +1,6 @@
 ---
 layout: default
 title: Home
-cover: false
-about: 'about'
 ---
 
 <header class="site-head" {% if page.cover %} style="background-image: url({{ page.cover }})"{% endif %}>
@@ -14,10 +12,13 @@ about: 'about'
                 </a>
             {% endif %}
             <h1 class="blog-title">{{ site.name }}</h1>
-            <h2 class="blog-description"> 
-                {{ site.description }}. 
-                {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'>About Andy</a> {% endif %}
+            <h2 class="blog-description">
+                {{ site.description }}
             </h2>
+            <ul class="nav-links">
+              <li><a href='/about'>About</a></li>
+              <li><a href='/projects'>Projects</a></li>
+            </ul>
         </div>
     </div>
 </header>
@@ -33,14 +34,12 @@ about: 'about'
 
         </header>
         <section class="post-excerpt">
-            {{ post.excerpt }}
         </section>
     </article>
 
     {% endfor %}
 
     <nav class="pagination" role="pagination">
-
         {% if paginator.previous_page %}
           {% if paginator.previous_page == 1 %}
           <a class="newer-posts" href="/" title="Previous Page">&laquo; Newer Posts</a>
@@ -50,11 +49,9 @@ about: 'about'
         {% endif %}
 
         <span class="page-number"> Page {{paginator.page}} of {{paginator.total_pages}} </span>
-        
         {% if paginator.next_page %} 
         <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
         {% endif %} 
     </nav>
-    
 
 </main>

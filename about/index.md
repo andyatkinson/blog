@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Andy
+title: About
 projects: 'projects'
 ---
 
@@ -16,7 +16,9 @@ View 8 recommendations on [his LinkedIn profile](www.linkedin.com/in/andyatkinso
  - *Paul Barry, CTO [OrderUp](https://orderup.com/) (worked with Andy at LivingSocial)*
 
 #### Projects
-He has a {% if page.projects %} <a href='{{ site.baseurl }}{{ page.projects }}'>projects page</a> {% endif %} here with code on github for projects like [Promo Slide](/projects/promoSlide) and [Notify Me](https://github.com/andyatkinson/notify-me). He has [contributed tests](https://github.com/bmuller/sexmachine/commits?author=andyatkinson) and [helped with project management](https://github.com/ejschmitt/delayed_job_web/commits?author=andyatkinson) on other small open source projects.
+Andy has code on github for projects like [Promo Slide](/projects/promoSlide) and [Notify Me](https://github.com/andyatkinson/notify-me). He has [contributed tests](https://github.com/bmuller/sexmachine/commits?author=andyatkinson) and [helped with project management](https://github.com/ejschmitt/delayed_job_web/commits?author=andyatkinson) on other small open source projects.
+
+[View Projects](/projects)
 
 #### Conference talks
 He gave a conference talk in Argentina about Lean Startup at LivingSocial in 2012. [Blog post](/blog/2013/11/27/rubyconf-argentina-2012/).
