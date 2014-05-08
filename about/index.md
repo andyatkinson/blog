@@ -26,7 +26,7 @@ He gave a conference talk in Argentina about Lean Startup at LivingSocial in 201
 
 #### Organizations
 
-Andy has volunteered at events like [Overnight Website Challenge](http://overnightwebsitechallenge.com/) and [Rails Girls](http://railsgirls.com/) to help others using his web development skills. He competed in Node Knockout in 2010 on a team of 4, building a real-time heatmap analytics prototype. He has participated as a mentor in RailsMentors, and can be found at [Boston Ruby](http://bostonrb.org/).
+Andy has volunteered at events like [Overnight Website Challenge](http://overnightwebsitechallenge.com/) and [Rails Girls](http://railsgirls.com/) to help others using his web development skills. He competed in Node Knockout in 2010 on a team of 4, has participated as a mentor in RailsMentors, and enjoys meeting new people at meetup groups like [Boston Ruby](http://bostonrb.org/).
 
 #### Connect
 Connect with Andy on [github](https://github.com/andyatkinson) or [linkedin](http://www.linkedin.com/in/andyatkinson/), or <a href="mailto:andyatkinson@gmail.com">send an email</a>.
