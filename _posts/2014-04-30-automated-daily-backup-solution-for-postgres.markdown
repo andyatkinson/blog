@@ -10,9 +10,9 @@ This tip describes a method to automate daily backups of a PostgreSQL database. 
 
 Primarily the script uses `pg_dump` to create a backup file, encrypt it, then push it to Amazon S3. We added a command to run the script daily.
 
-A Ruby gem called [safe](https://github.com/astrails/safe) provides a DSL for generating the commands to perform the backup. We used [this fork](https://github.com/mattberther/safe') which fixed some AWS issues.
+A Ruby gem called [safe](https://github.com/astrails/safe) provides a DSL for generating the commands to perform the backup. We used [this fork](https://github.com/mattberther/safe) which fixed some AWS issues.
 
-We also use the [whenever](https://github.com/javan/whenever) gem to generate our crontab file. The backup configuration for the safe gem is below. The configuration provides more options. Encryption via gpg can use public and private keys, or a simple passphrase.
+We also use the [whenever](https://github.com/javan/whenever) gem to generate our crontab file. Our configuration is below, see github for the complete set of options. Encryption via gpg can use public and private keys, or a simple passphrase.
 
 ``` ruby
 safe do
