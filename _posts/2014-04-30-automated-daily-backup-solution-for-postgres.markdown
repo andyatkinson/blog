@@ -6,9 +6,9 @@ comments: true
 categories: [Productivity, Postgresql, Databases]
 ---
 
-This tip describes one method to automate a daily backup of a PostgreSQL database. I have set this up on our work project and wanted to share our configuration.
+This tip describes a method to automate daily backups of a PostgreSQL database. I set this up on our work project and wanted to share our configuration.
 
-Primarily we use `pg_dump` to make a backup file, encrypt it, and push it to Amazon S3. We want to automate the process so it runs daily.
+Primarily the steps are to use `pg_dump` to create a backup file, encrypt it, them push it to Amazon S3. We automated the process and configured it to run daily.
 
 A Ruby gem called [safe](https://github.com/astrails/safe) provides a DSL for generating the commands to perform the backup. We used [this fork](https://github.com/mattberther/safe') which fixed some AWS issues.
 
@@ -53,7 +53,7 @@ db = YAML.load_file(File.join(Dir.getwd, 'config', 'database.yml'))[environment]
 
 Once the safe configuration file is specified, the `astrails-safe` executable can be run. We use cron to run this once a day. The whenever gem supplies a `config/schedule.rb` for crontab entries. The `whenever` command can be run to see what will be generated. Whenever also provides capistrano tasks to update the crontab file on every deploy.
 
-We used the `job_template` option to so that the command was run from the app directory and used `bundle exec`.
+We used the `job_template` option to so that the command was run from the app directory and is run with `bundle exec`.
 
 ``` ruby
 every 1.day, :at => '4:30 am' do
@@ -62,4 +62,4 @@ every 1.day, :at => '4:30 am' do
 end
 ```
 
-We have been running this a few days and it is working out well so far.
+This script has been running for a few days so far and is meeting our needs.
