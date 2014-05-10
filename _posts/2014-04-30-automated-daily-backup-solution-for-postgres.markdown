@@ -8,7 +8,7 @@ categories: [Productivity, Postgresql, Databases]
 
 This tip describes a method to automate daily backups of a PostgreSQL database. I set this up on our work project and wanted to share our configuration.
 
-Primarily the steps are to use `pg_dump` to create a backup file, encrypt it, them push it to Amazon S3. We automated the process and configured it to run daily.
+Primarily the script uses `pg_dump` to create a backup file, encrypt it, then push it to Amazon S3. We added a command to run the script daily.
 
 A Ruby gem called [safe](https://github.com/astrails/safe) provides a DSL for generating the commands to perform the backup. We used [this fork](https://github.com/mattberther/safe') which fixed some AWS issues.
 
