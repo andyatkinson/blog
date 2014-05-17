@@ -6,16 +6,20 @@ comments: true
 categories: [Go, Programming]
 ---
 
-I spent some time recently getting familiar with the Go language and building a small app. The first resource I recommend is the online book [An Introduction To Programming in Go](http://www.golang-book.com/). The book has 14 chapters, covers a variety of topics, and is really well done!
+I spent some time getting familiar with the Go programming language by working through some tutorials and building a small app. The first resource I recommend is [An Introduction To Programming in Go](http://www.golang-book.com/). The book has 14 chapters and covers data structures, HTTP, command line apps, concurrency, and more.
 
-I typed out most of the go example code from the book for practice, and have [pushed my code here](https://github.com/andyatkinson/golang-book). One note &mdash; normally I keep source code in `~/Projects`, though it worked out easier to keep go source code in `~/go/src`.
+I typed out most of the go example code for practice and have [pushed my code here](https://github.com/andyatkinson/golang-book). Go has specific project layout requirements. The `GOPATH` environment variable for me points at `~/go` and project source code is in `src`. For more information refer to `go help gopath`.
 
-The most useful way to learn a new programming language for me is to build a small program. I decided to make a URL shrinker like bitly, to learn how to make forms, post data, and interact with the MD5 package.
+To learn Go better, I slogged through making a small web app and deploying it to Heroku. This forced me to figure out how to handle form posts, make redirects, work with the MD5 library, and work with a database. Fortunately the Heroku part was easy [thanks to this guide](http://mmcgrana.github.io/2012/09/getting-started-with-go-on-heroku.html).
 
 ### Gournay
 
-Gournay is a URL shrinker, the [source is on github](https://github.com/andyatkinson/gournay), and the app is deployed at [gournay.herokuapp.com](http://gournay.herokuapp.com/).
+Gournay is a URL shrinker. The [source is on github](https://github.com/andyatkinson/gournay) and the app is deployed at [gournay.herokuapp.com](http://gournay.herokuapp.com/). Gournay depends on the `pq` package to connect to a postgres database, and `godep` to manage dependencies.
 
-Deploying the app to Heroku was surprisingly simple, using the Go buildpack.
+Gournay takes a long url like `http://www.npr.org/2014/05/17/313142425/a-worldwide-voyage-to-prove-stars-wind-and-waves-are-enough` and makes a short hash from it. The URL and hash are stored in a database table. If the hash is posted back at gournay, a HTTP redirect to the URL is issued. Pretty exciting stuff!
 
-Go is a general purpose language, and the Introduction book has examples of building command line applications, and covers the concurrency features Go offers, which I'm planning to look at in more detail.
+I am enjoying learning Go so far. If you have any other tips, or found this useful, please let me know.
+
+### More resources
+
+ * [Simple go webapp on Heroku](http://blog.joshsoftware.com/2014/02/28/a-simple-go-web-app-on-heroku-with-mongodb-on-mongohq/)
