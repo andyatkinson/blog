@@ -10,7 +10,7 @@ I spent some time getting familiar with the Go programming language by working t
 
 I typed out most of the go example code for practice and have [pushed my code here](https://github.com/andyatkinson/golang-book). Go has specific project layout requirements. The `GOPATH` environment variable for me points at `~/go` and project source code is in `src`. For more information refer to `go help gopath`.
 
-To learn Go better, I slogged through making a small web app and deploying it to Heroku. This forced me to figure out how to handle form posts, make redirects, work with the MD5 library, and work with a database. Fortunately the Heroku part was easy [thanks to this guide](http://mmcgrana.github.io/2012/09/getting-started-with-go-on-heroku.html).
+To learn Go better, I slogged through making a small web app and deploying it to Heroku. This forced me to figure out how to handle form posts, make redirects, work with the MD5 library, and work with a database. The Heroku part started off easy [thanks to this guide](http://mmcgrana.github.io/2012/09/getting-started-with-go-on-heroku.html). However Heroku deploys failed for me with third-party dependencies like `pq` using [godep](https://github.com/tools/godep). I wasn't able to get godep working, but I did find the [gopack](https://github.com/d2fn/gopack) project, which serves a similar purpose, and have successfully deployed gournay to Heroku using gopack.
 
 ### Gournay
 
@@ -23,3 +23,5 @@ I am enjoying learning Go so far. If you have any other tips, or found this usef
 ### More resources
 
  * [Simple go webapp on Heroku](http://blog.joshsoftware.com/2014/02/28/a-simple-go-web-app-on-heroku-with-mongodb-on-mongohq/)
+ * [gopack](https://github.com/d2fn/gopack) for dependencies
+ * My [stack overflow godep issue](http://stackoverflow.com/questions/23745092/go-project-with-third-party-packages-on-heroku)
