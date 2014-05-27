@@ -4,12 +4,14 @@ title: About
 projects: 'projects'
 ---
 
-Andy is a software developer that has been building web applications with Ruby and Rails since 2008. He has worked as an individual and on various teams, building products that serve different industries.
+Andy is a web application developer specializing in Ruby on Rails. Formerly of LivingSocial, he has worked as a lead developer and spoken at an international technical conference. His hobbies include travel, photography, and exploring the Boston restaurant scene.
 
-He lives in Boston, Mass., USA, and has lived in Baltimore, MD and Minneapolis, MN. He has studied and worked in Toledo and Barcelona Spain, and speaks Spanish. He earned bachelor's degrees in [IT Infrastructure (BAS)](http://www.cce.umn.edu/BAS-IT-Infrastructure/) and [Spanish Studies (BA)](http://spanport.umn.edu/ugrad/majors.html) from the [University of Minnesota](http://www.umn.edu).
+As an employee, he has held the title of software engineer for public companies, startups, and small businesses. He has also been employed as a freelance developer. He has launched two side project businesses that were not successful.
+
+He lives in Boston, Mass., USA, and has lived in Baltimore, MD and Minneapolis, MN. He has studied and worked in Toledo and Barcelona, Spain, and speaks Spanish. He earned two bachelor's degrees in [IT Infrastructure (BAS)](http://www.cce.umn.edu/BAS-IT-Infrastructure/) and [Spanish Studies (BA)](http://spanport.umn.edu/ugrad/majors.html) from the [University of Minnesota](http://www.umn.edu).
 
 #### Recommendations
-View 8 recommendations on [his LinkedIn profile](www.linkedin.com/in/andyatkinson/). Featured recommendation:
+Andy has 10 recommendations on [LinkedIn](www.linkedin.com/in/andyatkinson/) and AngelList, from former bosses and co-workers. One of the recommendations is copied below:
 
 > Andy is a full-stack web and mobile developer, with a strong understanding of front-end technologies like HTML, CSS and JavaScript, back-end technologies like Ruby on Rails, and mobile technologies like Objective-C/iOS. He can build things quickly while still writing code that is clear and easy for both novice and experienced developers to understand. He is a great person to have on a team because of his communication skills and patience to mentor and train other developers. I would not hesitate at the opportunity to work with Andy again.
 
