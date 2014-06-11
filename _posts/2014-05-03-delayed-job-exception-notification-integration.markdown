@@ -11,8 +11,9 @@ With some code from [here](http://stackoverflow.com/a/6170366/126688) and [here]
 
 We have this running in production now. Each of our delayed_jobs are set up as classes, and utilize the [failure](https://github.com/collectiveidea/delayed_job#hooks) hook. We are now receiving email notifications of job failures and it helps us resolve them quickly!
 
+##### Chain delayed job's handle_failed_job method to do exception notification
+
 ``` ruby
-# Chain delayed job's handle_failed_job method to do exception notification
 Delayed::Worker.class_eval do
   def handle_failed_job_with_notification(job, error)
     handle_failed_job_without_notification(job, error)
