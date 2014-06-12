@@ -6,7 +6,7 @@ comments: true
 categories: [Cocoa, Objective-C]
 ---
 
-Bill Heyman from [Code Morphic](http://codemorphic.com/) led a discussion on varied topics from WWDC 2009 and iPhone 3.0 SDK features.
+Bill Heyman from [Code Morphic](http://codemorphic.com/) led a discussion on some topics from WWDC 2009 and iPhone 3.0 SDK features.
 
  - CoreLocation adds compass data.
  - OpenGL ES 2.0. Takes advantage of new GPU in iPhone 3G S hardware.

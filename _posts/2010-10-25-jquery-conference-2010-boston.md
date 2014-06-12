@@ -8,8 +8,8 @@ categories: [JavaScript, Conference]
 
 jQuery Conference took place in Boston over two days in October. John Resig kicked it off with a keynote and the sessions generally covered testing and large-scale JavaScript applications, JQuery UI, (the just-released) jQuery Mobile, and widgets and effects. Below are my raw notes from the sessions I attended. Towards the end of the first day I started having a lot more hallway discussions and skipped some sessions.
 
-John Resig keynote
----
+##### Keynote, John Resig
+
  - grow the framework contributor base, legal accomplishment: join software freedom conservancy, CLA (contributor license agreement)
  - 1.4.3: Passes jslint with some modifications (differences outlined and put on website), helps to enforce style guideline, modularizing the source, core, ajax, selectors etc. (can be loaded dynamically and individually, `require.js` or `lab.js` to load chunks of jquery)
  - massive rewrite of CSS module, plugins using it already: jquery rotate, new CSS stuff, `querySelectorAll`, working on traversal performance (closest, find, etc.) (browser provides query engine), major browser vendors (even Internet Explorer) added native filter capability with is responsible for a big performance improvement
@@ -21,9 +21,8 @@ John Resig keynote
 show/hide title bar
  - shooting for 1.0 jQuery Mobile release for January 2011
 
+##### jQuery Mobile, Todd Parker
 
-jQuery Mobile - Todd Parker
----
 Todd Parker seemed to have a strong usability background. jQuery Mobile in general has great design, and a lot of attention was paid to usability, accessibility, and support across a huge number of devices.
 
  - (smartphones and tablets)
@@ -40,8 +39,8 @@ multiple heading styles to build widgets
  - touch events (swipe, swipe left and right), orientation change, they do detect orientation change and reflow the page
 
 
-funcunit javascript testing, Brian Moschel 
----
+##### funcunit javascript testing, Brian Moschel 
+
  - funcunit testing tool
  - env.js, rhino
  - problems: low fidelity event simulation, QA license may be more expensive
@@ -49,8 +48,8 @@ funcunit javascript testing, Brian Moschel
  - syn.js functional testing tool
 
 
-Rapid testing and development session, Menno Van Slooten
----
+##### Rapid testing and development session, Menno Van Slooten
+
 Menno described some approaches he uses to stay productive, specifically during development of heavy JavaScript applications with lots of user interface state that may be time-consuming to recreate.
 
  - use your feedback loop
@@ -65,8 +64,8 @@ Menno described some approaches he uses to stay productive, specifically during 
  - asked why these tools aren't better known: "I tweeted about it and no one retweeted me" (laughs)
 
 
-Rebecca Murphy session on code organization
----
+##### Code organization, Rebecca Murphy
+
  - official title: functionality focused code organization
  - object literals
  - module pattern
@@ -80,8 +79,8 @@ Rebecca Murphy session on code organization
  - app mediator, page mediator, services (searches, results)
 
 
-Alex Sexton talk
----
+##### Various topics, Alex Sexton
+
 Alex's talk covered a number of tools that might be useful for large JavaScript projects.
 
  - html5 r0cks
@@ -100,13 +99,13 @@ Alex's talk covered a number of tools that might be useful for large JavaScript 
  - json2 and closure compiler
 
 
-Widgets talk
----
+##### Widgets talk
+
  - cleanslate.css: like reset but targets a specific widget
  - blocking scripts - don't do it
 
-jQuery Effects: beyond the basics, Karl Swedberg
----
+##### jQuery Effects: beyond the basics, Karl Swedberg
+
  - cannot animate certain properties: z-index, backgroundImage
  - animate properties with a relative unit or a fixed unit
  - check the position property
@@ -118,8 +117,8 @@ jQuery Effects: beyond the basics, Karl Swedberg
  - use stop() method to control animations
 
 
-SproutCore talk Yehuda Katz
----
+##### SproutCore talk Yehuda Katz
+
 Yehuda Katz recently joined the Sproutcore team. He shared that Sproutcore uses jQuery as a core. His talk positioned jQuery as the standard library of the web, and he talked about how Sproutcore optimizes for performance to create desktop experiences in a web browser.
  
  - SC ideas, performance is a big idea
@@ -132,8 +131,8 @@ Yehuda Katz recently joined the Sproutcore team. He shared that Sproutcore uses 
  - binds an object to a field
 
 
-JavascriptMVC session
----
+##### JavascriptMVC session
+
 JavaScriptMVC is a heavier framework that "has it all" for large JavaScript projects, more like Rails than Sinatra. For example, it has conventions for breaking up functionality, organizing files, and testing tools built-in.
 
  - not strong conventions in JavaScript projects when you start to break things up into several files. JavascriptMVC does dependency management
@@ -143,9 +142,11 @@ JavaScriptMVC is a heavier framework that "has it all" for large JavaScript proj
  - "dev.js" script for debugging that is available in the development environment
 
 
-Super awesome jquery interactions, Matt Kelly 
----
+##### Super awesome jquery interactions, Matt Kelly 
+
 Matt works at ZURB in San Francisco. I love some of their projects, particularly their design and attention to user details. Unfortunately I had to leave early to catch my flight home. One thing I did catch was that ZURB has a jquery plugin that adds event support for "cut" and "paste" in the browser I wanted to investigate further.
 
 
-jQuery Conference was a great conference, a bit different from some of the Ruby and Rails conferences I'd been attending, a different crowd, and it was fun to visit Boston for the first time.
+##### Conclusion
+
+jQuery Conference was a great conference and it was fun to visit Boston for the first time.

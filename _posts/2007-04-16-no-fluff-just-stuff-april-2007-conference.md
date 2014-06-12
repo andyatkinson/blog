@@ -6,7 +6,7 @@ comments: true
 categories: [Conference] 
 ---
 
-I attended the April 2007 Minneapolis stop of the [No Fluff Just Stuff](http://www.nofluffjuststuff.com) Java symposium with some coworkers. The keynote was how to choose a web framework (several were presented).
+I attended the [No Fluff Just Stuff](http://www.nofluffjuststuff.com) Java symposium with some co-workers.
 
 [Google Web Toolkit](http://code.google.com/webtoolkit/) was a big topic area along with the [Groovy](http://groovy.codehaus.org/) programming language and [Grails framework](http://www.grails.org/). I also enjoyed a presentation from [Ted Neward](http://tedneward.com/) on the internals of JVM garbage collection.
 

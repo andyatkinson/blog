@@ -6,7 +6,7 @@ comments: true
 categories: [Conference]
 ---
 
-Today I'm attending the inaugural [Twin Cities Code Camp](http://www.twincitiescodecamp.com/TCCC/Default.aspx), a free conference with sessions on .NET, testing, Ajax, and web services. Here are summaries of the morning sessions I attended.
+Today I'm attending the [Twin Cities Code Camp](http://www.twincitiescodecamp.com/TCCC/Default.aspx), a free conference with sessions on .NET, testing, Ajax, and web services. Here are summaries of the morning sessions I attended.
 
 ##### Object/Relational Mapping with Hibernate
 

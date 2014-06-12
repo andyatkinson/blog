@@ -6,13 +6,11 @@ comments: true
 categories: Ruby
 ---
 
-I purchased a zoom lens for my SLR before a recent vacation, after weighing the pros and cons of two models. One was sharper and faster, but had a smaller focal range (17-50mm), the other was an "ultrazoom" (18-200mm) with a larger focal range, but slower and "softer." The lenses were comparably priced, and I decided I could only afford one. I went with the Sigma ultrazoom for the trip.
+I developed the script `photo_stats.rb` to move through date-based folders of photos, and grab EXIF data (thanks to the [exifr gem](http://exifr.rubyforge.org/)) for each photo. The script calculates the mean focal distance of all the photos, sums photos at the widest focal distance (18mm), maximum distance (200mm), and those in the bottom (18.0-46.0mm) and top (154.0-200.0mm) quarter of the focal range.
 
-My hunch was that the additional range would be better for vacation photos (outside, distant subjects, etc.). Thanks to some Ruby hacking, I have some evidence that I did not take advantage of the additional range. I started with 400 photos from the vacation, and ended with 240 in post-processing.
+If you have a similar directory structure (or don't mind tweaking the script), this script should work for your photos too. Remember to install the exifr gem first `gem install exifr`. 
 
-I developed the script `photo_stats.rb` to move through date-based folders of photos, and grab EXIF data (thanks to the [exifr gem](http://exifr.rubyforge.org/)) for each photo to use in stats calculation. The script calculates the mean focal distance of all the photos, sums photos at the widest focal distance (18mm), maximum distance (200mm), and those in the bottom (18.0-46.0mm) and top (154.0-200.0mm) quarter of the focal range.
-
-If you have a similar directory structure (or don't mind tweaking the script), this script should work for your photos too! Remember to `gem install exifr` first. From my own favorite photos from the trip, I concluded that less range with superior photographic results wins. I'm replacing the ultrazoom with the sharper lens mentioned above.
+From my own favorite photos from the trip, I concluded that I don't shoot at a lot of focal lengths, so I'd rather have a lens with less range that was optically superior.
 
 ``` ruby
     #!/usr/bin/env ruby
@@ -46,11 +44,7 @@ If you have a similar directory structure (or don't mind tweaking the script), t
     top_quarter = photos.select{|p| tq_range.include?(p)}.length
 ```
 
-RESULTS
----
-
-Focal length results for 240 photos
------------------------------------
+##### Focal length results for 240 photos
 
  * 72 photos at minimum focal length of 18.0mm
  * 3 photos at maximum focal length of 200.0mm
@@ -59,4 +53,4 @@ Focal length results for 240 photos
  * 27 photos +/-5mm of overall mean focal length of 45mm
 
 
-Most of the photos were in the 18-46 range! Ruby is a great language for scripting and conducting these kinds of experiments with. I hope you enjoyed this.
+Most of the photos were in the 18-46 range! Ruby is a great language for scripting and conducting these kinds of experiments.

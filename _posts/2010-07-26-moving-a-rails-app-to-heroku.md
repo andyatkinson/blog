@@ -6,22 +6,18 @@ comments: true
 categories: [Ruby, Rails]
 ---
 
-This website runs on an open source blogging application I developed called Rehash. The application has always been deployed on a virtual private server using Capistrano as the deployment automation tool. The server ran Passenger with Apache to make managing Ruby processes easier. Since that time the Heroku platform has stabilized and offers a lot of great features for free. With a little bit of work I was able to convert Rehash to run on the Heroku platform. 
+This website runs on an open source blogging application I developed called Rehash. The application has always been deployed on a virtual private server but I wanted to try moving it to Heroku. 
 
-Heroku
-------
-Heroku serves the site faster, it makes it easier for me to keep backups, but the real reason to move Rehash to Heroku was to make it easier for others to try Rehash as their blogging app! If a Rubyist wants to try Rehash out for their own site, they can now get it up and running on Heroku quite easily. I will be adding documentation to the Rehash project on how to do this soon.
+##### Initial experience
 
-Out of the box experience
----
-Creating the Heroku app `heroku create` and pushing it up `git push heroku master` worked great, Heroku installed Rails 2.3.3 gems since that is what the app is using now. I have created a handful of Heroku apps over the last year or so but the initial experience of creating, pushing, and booting an app works so well it is still exciting.
+Creating the Heroku app `heroku create` and pushing it up `git push heroku master` worked great. Heroku installed Rails 2.3.3 gems since that is what the app is using now. I have created a handful of Heroku apps over the last year or so but the initial experience of creating, pushing, and booting an app works so smoothly it is still a thrill.
 
-Git submodules
----
-Git submodules are not supported by Heroku and Rehash was using submodules to manage plugin code. Heroku has instructions on how to bring submodules in a project into the main repository, no real loss there, and the Heroku scripts made it easy. ([Heroku docs on submodules](http://docs.heroku.com/constraints#git-submodules))
+##### Git submodules
 
-Gems
----
+Git submodules are not supported by Heroku and Rehash was using submodules to manage plugin code. Heroku has instructions on how to bring submodules in a project into the main repository, and the Heroku scripts made it easy. ([Heroku docs on submodules](http://docs.heroku.com/constraints#git-submodules))
+
+##### Gems
+
 The following gems were not installed so the app did not immediately boot. [Heroku documentation on managing gems](http://docs.heroku.com/gems)
 
     haml, acts_as_markup, friendly_id, thoughtbot-paperclip, mislav-will_paginate, gravtastic  
@@ -82,46 +78,49 @@ First successful boot console output:
      * [new branch]      master -> master
 ```
 
-Sass
----
+##### Sass
+
 Rehash uses Haml and SASS for the view layer. Support for SASS was added in August of 2009 to Heroku. Heroku added a plugin that writes the generated files into the tmp directory. I added this plugin to Rehash. ([Heroku blog post on SASS support](http://blog.heroku.com/archives/2009/8/18/heroku_sass/))
 
-Data
----
-The next error to work on was fixing the database. No schema is present (or any data). At this point I thought I needed to supply a `database.yml` file since none is checked in to version control, however Heroku works differently. Using the `taps` gem, Heroku pushes or pulls the schema and data from one server to another. I created some dummy data in a local Rehash installation and pushed this up `heroku db:push`. At the time of this writing I needed to install an older version of taps than the latest available `sudo gem install taps -v 0.2.26`
-http://docs.heroku.com/taps
+##### Data
 
-At this point the app was installed and running! However Projects use Paperclip to store uploaded screenshots, and Rehash was configured to use the local filesystem to write the uploads to disk. Heroku writes the following error into the log file.
+The next error to work on was fixing the database. No schema is present (or any data). At this point I thought I needed to supply a `database.yml` file since none is checked in to version control.
+
+Using the `taps` gem, Heroku pushes or pulls the schema and data from one server to another. I created some dummy data in a local Rehash installation and pushed this up `heroku db:push`. At the time of this writing I needed to install an older version of taps than the latest available `sudo gem install taps -v 0.2.26`.
+
+At this point the app was installed and running! However the Projects feature uses Paperclip to store uploaded screenshots, and Rehash was configured to use the local filesystem to write the uploads to disk. Heroku writes the following error into the log file.
 
 ``` bash
     Read-only file system - /disk1/home/slugs/245277_5ddf65b_804f/mnt/public/system - Heroku has a read-only filesystem.  See http://docs.heroku.com/constraints#read-only-filesystem
 ```
 
-Read-only filesystem
----
-I had set up an Amazon S3 account for myself for this exact purpose earlier, so I logged in to my Amazon AWS account to get my S3 credentials. Various guides exist to configure Paperclip to use S3 for storage, I’ll skip that here, you can always refer to the Rehash source code. In the end I decided to use the local filesystem storage with Paperclip in development, and S3 in production. 
+##### Read-only filesystem
+
+Various guides exist to configure Paperclip to use S3 for storage, I’ll skip that here, you can always refer to the Rehash source code. In the end I decided to use the local filesystem storage with Paperclip in development, and S3 in production. 
 [Heroku has the following guide on using S3](http://docs.heroku.com/s3). 
 
 I started by using a S3 configuration file to track Amazon S3 credentials, both a public version checked in to git, and a private version. Heroku uses "config vars" which need to be set up with the Amazon S3 credentials instead of configuration files. ([Documentation on config vars](http://docs.heroku.com/config-vars))
 
-Initially adding the config vars failed on my development machine. I updated my Heroku gem installed locally and it fixed the issue. I'm running version 1.9.12 of the Heroku gem as of this writing. Managing the config vars from a local terminal window is easy. If you want to replace a variable, you can delete the variable and re-add it, the Heroku app is immediately restarted to reflect the change. In the end I decided to remove the S3 configuration files altogether [following this blog post](http://blog.heroku.com/archives/2009/4/7/config-vars/).
+Initially adding the config vars failed on my development machine. I updated my Heroku gem installed locally and it fixed the issue. I'm running version 1.9.12 of the Heroku gem. 
 
-Rails page caching
----
-Rehash was also using the `caches_page` page caching feature of rails to cache particular controller actions, like `index` or `show` actions for particular resources. Rails page caching doesn't work with Heroku. I decided to remove usages of `caches_page` as a quick fix since it would sometimes serve stale caches anyway. Heroku will use their own plugin which is detected and installed at deploy time for `caches_page`, however the performance is fine for me with the built in HTTP caching Heroku offers. [Heroku docs on HTTP caching](http://docs.heroku.com/http-caching)
+Managing the config vars from a local terminal window is easy. If you want to replace a variable, you can delete the variable and re-add it, the Heroku app is immediately restarted to reflect the change. In the end I decided to remove the S3 configuration files altogether [following this blog post](http://blog.heroku.com/archives/2009/4/7/config-vars/).
 
-Email
----
-Now that file uploads are taken care of in production with S3, another piece of infrastructure to address from the virtual private server is the mail server. Heroku offers a Sendgrid add-on with a free account level. The free account level allows up to 200 emails per day to be sent, which is more than enough for Rehash. [Heroku Sendgrid documentation](http://docs.heroku.com/sendgrid) 
+##### Rails page caching
 
-Almost like magic, after adding the sendgrid add-on, email just works! Rehash uses the "owner email address" used when the site is initially configured as the recipient address. Email is generated by users either leaving a message through the contact form, or when a user leaves a comment. In my first test, it took less than one minute for the email to arrive from the application.
+Rehash was also using the `caches_page` page caching feature of rails to cache particular controller actions like `index` and `show`. Rails page caching doesn't work with Heroku. I decided to remove usages of `caches_page` as a quick fix since it would sometimes serve stale caches anyway. Heroku will use their own plugin which is detected and installed at deploy time for `caches_page`, however the performance is fine for me with the built in HTTP caching Heroku offers. [Heroku docs on HTTP caching](http://docs.heroku.com/http-caching)
 
-Domain name and DNS
----
+##### Email
+
+Now that file uploads are taken care of in production with S3, another piece of infrastructure to address is the mail server. Heroku offers a Sendgrid add-on with a free account level. The free account level allows up to 200 emails per day to be sent, which is more than enough for Rehash. [Heroku Sendgrid documentation](http://docs.heroku.com/sendgrid) 
+
+Almost like magic, after adding the sendgrid add-on, email just works! Rehash uses the "owner email address" used when the site is initially configured as the sender address. Email is generated by users either leaving a message through the contact form, or when a user leaves a comment. In my first test, it took less than one minute for the email to arrive from the application.
+
+##### Domain name and DNS
+
 In order to make the move from Slicehost really complete, I need to move my domain name from my slice to point at my Heroku app. The domain name add-on from Heroku is free as well. I chose to leave DNS with my domain registrar and point it at Heroku. [Heroku custom domains add-on](http://docs.heroku.com/custom-domains)
 
-Production data
----
+##### Production data
+
 Pulling the data from the production system into the Heroku app database will complete the transition. In this way I can get the system up and running before updating the domain name, allowing me to do a zero downtime switch. For my blog I wouldn’t care if it was down for a while, but for a company website, it is neat to be able to pull data via the taps gem from the current production database and test everything out first. [Blog post on the taps gem](http://adam.heroku.com/past/2009/2/11/taps_for_easy_database_transfers/)
 
 I needed to update RubyGems on my slice and I opened a port on my firewall with iptables following the Slicehost instructions: 
@@ -139,7 +138,6 @@ In the end I skipped the taps gem for pulling from my production MySQL database 
     mysql -u user local_db_name < dumpfilename
 ```
     
+##### Conclusion
 
-Conclusion
----
-Heroku is a great platform. Moving the Rehash application from a VPS server to Heroku means I have to maintain a lot less, it is easier for others to try it out, and it is much less expensive as well. I hope this guide is helpful for others.
+Heroku is a great platform. Moving the Rehash application from a VPS server to Heroku means I have to maintain a lot less, it is easier for others to try it out, and it is much less expensive as well.

@@ -6,11 +6,11 @@ comments: true
 categories: [Productivity, Conference]
 ---
 
-Edward Tufte is a statistician, outspoken critic of PowerPoint presentations, and considered an expert on presenting data visually. Tufte was highly recommended by some local influential programmers, so I decided to attend his 1-day course in Minneapolis on their recommendations. Part of the event cost included four of Tufte's books as hardcovers. 
+Edward Tufte is a statistician and considered an expert on presenting data visually. Tufte was highly recommended, so I decided to attend his 1-day course in Minneapolis. Part of the event cost included four of Tufte's books as hardcovers. 
 
-Tufte presented to a room of hundreds the the day I attended, and there was another day scheduled with hundreds more the next day! His popularity was evident and his lecture was polished and dense with information. I enjoyed the course and met him briefly at the end to get a book autographed.
+Tufte presented to a room of hundreds the the day I attended, and there was another day scheduled with hundreds more! I enjoyed the course and met him briefly at the end to get a book autographed.
 
-I will present my recap as bullet points mainly because that is how I took notes, but also because it represents his pithy and quotable style. Most of the points are his advice on how to give effective presentations, with short notes from me where needed. If these points intrigue you, the next step would probably be to pick up one of his books.
+My notes:
 
  - presentations should be problem-driven, use "whatever it takes" to show data
  - annotate nouns (in handouts)
