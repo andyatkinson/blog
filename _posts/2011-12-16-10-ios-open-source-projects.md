@@ -26,9 +26,11 @@ I don't have direct experience with all of the libraries below, but I wanted to 
   - **regexkitlite** [source code][9] - Adds additional regular expression functionality beyond what objective-c provides, to NSArray and many more objects, through categories.
 
   - **KIF** [source code][10] - User interface-level (integration/"outside-in") testing from Square. I have not built a KIF test script yet, but testing a happy path flow through the application would be a valuable regression test.
-  
+
   - **Google Analytics SDK for iOS** [documentation][11] - Track activity in google analytics, "pageviews", events, and more.
-  
+
+##### Conclusion
+
 So there you have it, 10 open source iOS libraries to check out for your project. I hope this introduction was somewhat useful. Please leave a comment if you have some favorite libraries of your own.
 
 

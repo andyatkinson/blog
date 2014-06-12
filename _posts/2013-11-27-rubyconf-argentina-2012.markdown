@@ -6,8 +6,6 @@ comments: true
 categories: [Ruby, Conference, Lean Startup]
 ---
 
-##### Travel
-
 Rubyconf Argentina 2012 was held in Buenos Aires, Argentina, at a theater in the Paseo La Plaza area. This area is in the center of Buenos Aires near the obelisk landmark. Attendees came from Buenos Aires, Brazil, Chile, Uruguay, Peru, the United States and Europe. All the [conference talks were posted on Vimeo](http://vimeo.com/album/2344729).
 
 This was my first experience in South America and I felt very fortunate to have the opportunity to travel and give a talk.

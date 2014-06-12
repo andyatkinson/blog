@@ -6,8 +6,6 @@ comments: true
 categories: [Productivity, Postgresql, Databases]
 ---
 
-##### safe
-
 A Ruby gem called [safe](https://github.com/astrails/safe) provides a DSL for generating the commands to perform the backup. We used [this fork](https://github.com/mattberther/safe) which fixed some AWS issues.
 
 The gist of what safe does is run `pg_dump` to create a backup file, encrypt it, then push it to Amazon S3. We added a command to run the script daily.

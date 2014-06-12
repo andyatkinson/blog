@@ -6,8 +6,6 @@ comments: true
 categories: [Hardware]
 ---
 
-##### Hardware
-
 I ordered a Raspberry Pi to understand what it does, try a hobby project, and learn about GPIO pins. I thought the easiest way to set it up at home would be to order the pre-installed NOOBS SD card, so I did that. In the end I didn't use the NOOBS card because I wanted to be able to SSH in to the Raspberry Pi without connecting a mouse and keyboard. What did end up working was to flash the SD card with the Raspbian OS.
 
 Raspberry Pi expects a keyboard and mouse on first boot. From the NOOBS screen, with a keyboard and mouse, the user can choose one of several operating systems to install. `sshd` is not running at this point so I could not ssh in on my home LAN.

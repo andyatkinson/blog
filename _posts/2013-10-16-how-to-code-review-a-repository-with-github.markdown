@@ -6,8 +6,6 @@ comments: true
 categories: [Tools, Git]
 ---
 
-##### Code reviews
-
 Recently I was asked to do a code review on an entire repository. Normally I review a pull request where I can leave a comment on a specific line.
 
 There are probably other ways to accomplish this, but I came up with the following steps to review the repository in a non-destructive way.

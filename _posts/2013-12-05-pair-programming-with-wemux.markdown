@@ -6,8 +6,6 @@ comments: true
 categories: [Tools, Productivity]
 ---
 
-##### Pairing with tmux
-
 [Wemux](https://github.com/zolrath/wemux) is a way to do remote pairing (collaborative code development) with less bandwidth, compared with a full graphical interface. 
 
 With tmux I can have windows and panes dedicated to code, log files, and consoles, and share all of that with a collaborator. 

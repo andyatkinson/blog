@@ -6,8 +6,6 @@ comments: true
 categories: [Tools, Productivity]
 ---
 
-##### tmux
-
 I started learning tmux and highly recommend the book **_tmux: Productive Mouse-Free Development_** [^book] as a guide. My `tmux.conf` [^conf] configuration file is available as well.
 
 ##### Keyboard tips 
