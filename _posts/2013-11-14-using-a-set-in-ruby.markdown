@@ -6,7 +6,7 @@ comments: true
 categories: [Ruby]
 ---
 
-Set [^rubydoc] is a collection that I often forget about in Ruby, using an Array where a Set would be a better fit. A Set does not allow duplicates. Converting between a Set and an Array is easy. In the article *A Guide to Ruby Collections, II: Hashes, Sets, and Ranges* [^sitepoint] the author has listed some nice examples where Sets are useful.
+A Set [^rubydoc] is a useful collection and something I under-utilize in Ruby. A Set does not allow duplicates. Converting between a Set and an Array is easy. In the article *A Guide to Ruby Collections, II: Hashes, Sets, and Ranges* [^sitepoint] the author has listed some nice examples where Sets are useful.
 
 ``` ruby
 (Set.new([1,2]) + [2]).to_a
@@ -20,7 +20,11 @@ Set.new([1,2]).eql?(Set.new[2,1]) # => true
 Set[1,2].hash == Set[2,1].hash # => true
 ```
 
-Sets can be used to store different types of objects like Array. Set operations can be performed which might make cleaner code when finding a subset of values. More Set operations can be found in the article *When Is a Set Better Than an Array in Ruby?* [^setbetter]. Set operations can also be performed on Arrays which Avdi Grimm describes in his article *Array Set Operations in Ruby* [^setarray].
+Sets can be used to store different types of objects like Array. Set operations can be performed which might make cleaner code when finding a subset of values. More Set operations can be found in the article *When Is a Set Better Than an Array in Ruby?* [^setbetter]. 
+
+##### Set operations
+
+Set operations can also be performed on Arrays which Avdi Grimm describes in his article *Array Set Operations in Ruby* [^setarray].
 
 ``` ruby
 s1 = Set.new([1,2])
@@ -30,6 +34,10 @@ s1 & s2 # => #<Set: {2}>
 s1 | s2 # => #<Set: {1, 2, 3}> 
 s1 ^ s2 # => #<Set: {3, 1}>
 ```
+
+##### Conclusion
+
+Next time try a Set!
 
 [^rubydoc]: [ruby-doc Set](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/set/rdoc/Set.html)
 

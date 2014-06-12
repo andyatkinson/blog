@@ -5,9 +5,10 @@ date: 2014-01-05 12:48
 comments: true
 categories: [Lean Startup, Books]
 ---
-Some notes from Chapters 4 and 5 of **_The Startup Owner's Manual_** [^book]. This is a great book, I recommend it.
 
-### Questions to ask
+The book **_The Startup Owner's Manual_** [^book] has a lot of practical tips to increase the chances of success at your startup. Here are some notes from Chapters 4 and 5 from the book.
+
+##### Questions to ask
 
  * Have we identified a problem a customer wants to see solved?
  * Does our product solve this problem?
@@ -15,7 +16,7 @@ Some notes from Chapters 4 and 5 of **_The Startup Owner's Manual_** [^book]. Th
  * Have we learned enough to go out and sell?
  * What do I want to learn? What is the simplest pass/fail test I can design to test this?
 
-### Concepts
+##### Concepts
 
  * Develop the product for the few, not the many.
  * Find the *earlyvangelists*. Earlyvangelists are willing to pay for the product. The buying process can be tested with the earlyvangelists.
@@ -30,7 +31,8 @@ Some notes from Chapters 4 and 5 of **_The Startup Owner's Manual_** [^book]. Th
  * Provisional patents are good for 1 year and cheap relative to the 20-50k patent price.
  * On "get out of the building" (and talk to customers): Don't confuse motion with action. It takes a lot of meetings to generate a few meaningful conversations.
 
-### 30/10/10
+##### 30/10/10
+
 General guidelines on user engagement
 
  * **30%** of registered users will use the service each month

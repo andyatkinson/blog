@@ -6,12 +6,10 @@ comments: true
 categories: [OS X, Productivity, Tools, Vim]
 ---
 
-Software development, primarily:
+I do software development on my Mac, mostly web application development with Ruby on Rails. Code is stored on either github or bitbucket.
 
- * Web development with Ruby on Rails
- * Code managed with git, stored on github and bitbucket
+##### Dependencies
 
-## Dependencies
 Everything below depends on having these installed.
 
  * Homebrew
@@ -19,7 +17,8 @@ Everything below depends on having these installed.
  * Git (I installed with homebrew `brew install git`)
  * Run `sudo xcodebuild -license` and agree to the terms
 
-## Ruby
+##### Ruby
+
 I use rbenv and ruby-build to manage multiple versions of ruby. 
 
  * Install rbenv (git clone)
@@ -27,15 +26,17 @@ I use rbenv and ruby-build to manage multiple versions of ruby.
  * Install rbenv-bundler (git clone)
  * rbenv install 2.0.0-p353
 
-## dotfiles
+##### dotfiles
+
 My configuration files and installation scripts are stored publicly on github in my [dotfiles](https://github.com/andyatkinson/dotfiles) project. I keep my work and personal source code in a directory called `~/Projects`. 
 
  * `mkdir ~/Projects`
  * brew install macvim
  * Clone dotfiles repository, and run various installation rake tasks. (`rake dotfiles`), install homebrew formulas manually or with the rake task, install npm packages, install OS X defaults (`rake os_x_defaults`)
 
-## OS X apps
-Download these `.dmg` files. Right-click and install, since outside of the OS X App Store they are considered as being from an untrusted developer. Some may be available through the OS X App Store.
+##### OS X apps
+
+Download these `.dmg` files. Some may be available through the OS X App Store.
 
  * Google Chrome
  * Vimium in Chrome web store
@@ -50,29 +51,33 @@ Download these `.dmg` files. Right-click and install, since outside of the OS X 
  * Install LibreOffice (or MS Office)
  * Skype
 
-## OS X App Store
+##### OS X App Store
+
  * Install Cloud App (for linking to screenshots)
 
-## OS X system preferences
+##### OS X system preferences
+
  * in keyboard, change caps lock to control (for vim)
  * enable tap to click on trackpad
  * Under Accessibility, check "use scroll gesture with modifier keys to zoom". (hold control and zoom with mouse scroll)
 
-## Databases and caching
+##### Databases and caching
 
  * `brew install mysql`
  * `brew install postgres`
  * `brew install redis`
  * `brew install memcached`
 
-## Vim
+##### Vim
 
  * install vundle (git clone)
  * Open vim and run `:BundleInstall` (vundle)
 
-## Misc
+##### Misc
 
  * Generate SSH keys and add public key to github, bitbucket
  * `brew install tmux`
  * `brew install python`
  * Install Java JRE or JDK
+
+What else is part of your workflow? Please leave a comment.
