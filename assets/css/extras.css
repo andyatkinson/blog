@@ -14,10 +14,15 @@ figure figcaption {
 ul.nav-links {
   text-align:center;
   margin:0;
-  padding-bottom:10%;
+  padding-bottom:5%;
 }
 .nav-links li {
   list-style-type: none;
+}
+
+.nav-links li.smaller {
+  font-size:.8em;
+  line-height:1.5em;
 }
 .nav-links li a {
   text-decoration: none;
@@ -63,6 +68,10 @@ ul.nav-links {
   font-size:.9em;
   line-height:1.5em;
   padding:5% 0;
+}
+
+.site-head .custom-header .content .links {
+  padding:5%;
 }
 
 /* ==========================================================================
