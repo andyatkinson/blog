@@ -32,4 +32,4 @@ Andy has volunteered as a programmer at [Overnight Website Challenge](http://ove
 
 #### Connect
 
-[github](https://github.com/andyatkinson) &mdash; [linkedin](http://www.linkedin.com/in/andyatkinson/) &mdash; <a href='http://stackoverflow.com/users/126688/andy-atkinson'>stack overflow</a> &mdash; <a href="mailto:andyatkinson@gmail.com">email</a>
+[github](https://github.com/andyatkinson) &mdash; [linkedin](http://www.linkedin.com/in/andyatkinson/) &mdash; <a href='https://angel.co/andy-atkinson'>angellist</a> &mdash; <a href='http://stackoverflow.com/users/126688/andy-atkinson'>stack overflow</a> &mdash; <a href="mailto:andyatkinson@gmail.com">email</a>
