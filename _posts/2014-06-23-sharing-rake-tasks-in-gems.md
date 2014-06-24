@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Using rake tasks in multiple Ruby apps"
+title: "Sharing rake tasks defined in a gem"
 date: 2014-06-23 23:00
 comments: true
 categories: [Ruby, Tips]
