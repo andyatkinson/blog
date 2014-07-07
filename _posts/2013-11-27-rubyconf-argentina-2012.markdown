@@ -31,3 +31,9 @@ Sunday I did some sightseeing, checking out the San Telmo flea market, and the R
 Giving a conference talk was a challenging experience. However being able to travel internationally, meet some new people, and share some of my experience made it worth doing. 
 
 <iframe src="//player.vimeo.com/video/57940280" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/57940280">Ship it: Staying Lean at LivingSocial by Andy Atkinson</a> from <a href="http://vimeo.com/rubyargentina">Ruby Argentina</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+
+##### External links to conference and talk
+
+ * [RubyConf Argentina 2012](http://thewritermoustache.com/2012/10/24/rubyconf-argentina-2012/)
+ * [NilClass Rubyconf 2012](http://nilclass.blogspot.com/2012/10/rubyconf-2012.html)
+ * [RubyConfAR 2012 - Day#1](http://code54.com/blog/2012/11/09/rubyconfar-2012-day1.html)
