@@ -1,12 +1,12 @@
 ---
 layout: post
 title: "Stack Dive with RunKeeper"
-date: 2014-06-23 23:00
+date: 2014-12-09 23:00
 comments: true
 categories: [Programming, Productivity]
 ---
 
-Doug Williams and Joe Bondi from [RunKeeper](http://runkeeper.com/) gave a technical talk at the WeWork Boston South Station office in December 2014. The talk explored the technical stack that supports the app and web site, as well as tools and processes that have worked well for their team. RunKeeper has huge growth, currently at 38.5 million users, using their native mobile apps in the US and around the world.
+Doug Williams and Joe Bondi from [RunKeeper](http://runkeeper.com/) gave a technical talk at the [WeWork Boston South Station](https://www.wework.com/locations/boston/south-station/) location in December 2014, as part of the [Stack Dive](http://www.stackdive.com/) series. The talk explored the technical stack that supports the app and web site, as well as tools and processes that have worked well for their team. RunKeeper has huge growth, currently at 38.5 million users, using their native mobile apps in the US and around the world.
 
 One of the technical challenges they have faced with apps around the world is translating the app into many languages, and various levels of quality and accuracy for cellular service and position information.
 
@@ -28,3 +28,5 @@ The talk was filled with recommendations for various services that have worked w
    * [Applause](http://www.applause.com/) -- QA, app testing, distributed external manual testing services. Very highly recommended.
    * [Smartling](http://www.smartling.com/) -- Translation services, highly recommended.
    * [GM Voices](http://www.gmvoices.com/) -- voice prompts, IVR.
+
+Thanks to the organizer of Stack Drive and the event hosts, it was very interesting. HubSpot will be presenting at January Stack Dive event, check it out!
