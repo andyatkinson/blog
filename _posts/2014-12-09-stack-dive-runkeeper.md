@@ -10,17 +10,17 @@ Doug Williams and Joe Bondi from [RunKeeper](http://runkeeper.com/) gave a techn
 
 One of the technical challenges they have faced with apps around the world is translating the app into many languages, and various levels of quality and accuracy for cellular service and position information.
 
-Users in China has been a big part of their growth, since the app has been translated into Mandarin.
+Users in China have been a big part of their growth, after the app was translated to Mandarin.
 
 #### Techniques on the devices
 
-One thing they discussed was that they needed to show users geo coordinates in the app. In order to keep the app performing well, they have implemented queues and workers on the device itself, in addition to the queues and workers on the back-end. Another interesting thing I thought was that moved away from storing geo coordinates in postgres, and replaced that solution with one that stores coordinates posted to the server, as rows in a log file (encoded as JSON). The log file is pushed to S3. This way consumers of that file can read log files from there, access can be controlled, and the files can even be served on the web. S3 has been reliable and very high-performance for them.
+One thing they discussed was their use case for geo coordinates was to show users the coordinates in the app on a map, but they didn't need to index that information. So they could push updates to their API and store that information in a less costly way than writes into a database.
 
-They also recommended using native push notifications on devices over SMS, and said there are a lot of inexpensive services now that provide that. In general their move has been from a traditional data center to more cloud services.
+The solution they came up with was to queue up and then write coordinates into rows of a file (rows encoded as JSON) and push the files in to S3. JSON encoded rows on S3 gives consumers of the file structured data to work with that is very high performance. They can also control access to the files on S3 using AWS security controls.
 
-The talk was filled with recommendations for various services that have worked well.
+In order to keep the app performing well locally, they have implemented queues and workers on the device itself (in addition to queues and workers on their back-end). On the back-end they are making more use of Amazon SQS. They also recommended using native push notifications on devices over SMS.
 
-Here are some of the services that have worked well for RunKeeper:
+The talk was filled with recommendations for various services that have worked well for them. Here are some of those services:
 
    * [SmokePing](http://oss.oetiker.ch/smokeping/)
    * [Vessel.io](https://www.vessel.io/) -- a/b testing
