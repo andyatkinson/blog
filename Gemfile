@@ -1,5 +1,5 @@
 source "https://rubygems.org"
-ruby '2.0.0'
+ruby '2.1.4'
 
 gem "jekyll"
 gem "redcarpet", github: "triplecanopy/redcarpet"
