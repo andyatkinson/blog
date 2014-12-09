@@ -4,9 +4,9 @@ title: About
 projects: 'projects'
 ---
 
-Andy is an experienced software engineer specializing in Ruby on Rails web development. Formerly of LivingSocial, he has worked as a lead developer building features used by millions of people. He is currently building a brand new English language learning platform with a small team.
+Andy is an experienced software engineer specializing in Ruby on Rails web development. He is currently an engineer at [OrderUp.com](https://orderup.com/) and formerly of LivingSocial and various startups.
 
-He lives in Cambridge, Mass., USA, and has lived in Baltimore, MD and Minneapolis, MN. He has studied and worked in Toledo and Barcelona, Spain, and speaks Spanish. He earned two bachelor's degrees in [IT Infrastructure (BAS)](http://www.cce.umn.edu/BAS-IT-Infrastructure/) and [Spanish Studies (BA)](http://spanport.umn.edu/ugrad/majors.html) from the [University of Minnesota](http://www.umn.edu).
+He currently lives in Boston, MA.
 
 #### Recommendations
 Andy has 10 recommendations on [LinkedIn](www.linkedin.com/in/andyatkinson/) and AngelList. One of the recommendations is copied below:
@@ -28,7 +28,7 @@ En marzo del 2013 empecé a trabajar con el equipo de LetsBonus en Barcelona, Es
 
 #### Volunteering
 
-Andy has volunteered as a programmer at [Overnight Website Challenge](http://overnightwebsitechallenge.com/) and as a coach for [Rails Girls](http://railsgirls.com/). He has mentored through RailsMentors and has attended [Boston Ruby](http://bostonrb.org/), Baltimore on Rails, and Ruby Users of Minnesota.
+Andy has volunteered as a programmer at [Overnight Website Challenge](http://overnightwebsitechallenge.com/) and as a coach for [Rails Girls](http://railsgirls.com/).
 
 #### Connect
 

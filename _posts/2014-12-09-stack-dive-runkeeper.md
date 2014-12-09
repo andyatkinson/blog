@@ -29,4 +29,4 @@ The talk was filled with recommendations for various services that have worked w
    * [Smartling](http://www.smartling.com/) -- Translation services, highly recommended.
    * [GM Voices](http://www.gmvoices.com/) -- voice prompts, IVR.
 
-Thanks to the organizer of Stack Drive and the event hosts, it was very interesting. HubSpot will be presenting at January Stack Dive event, check it out!
+HubSpot will be presenting at the January Stack Dive, check it out!
