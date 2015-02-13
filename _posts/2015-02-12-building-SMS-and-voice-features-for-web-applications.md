@@ -8,7 +8,7 @@ categories: [Programming, Ruby]
 
 At [OrderUp](http://orderup.com) we rely on voice calls and SMS messages to get information to our customers and our team of delivery drivers. SMS messaging has some downsides but has a big upside over native push notifications in that we don't need to know the specific platform or capabilities (iOS or Android) of the recipient device. It Just Works &#0153; (most of the time).
 
-[Twilio](https://www.twilio.com/) (and the [twilio-ruby gem](https://github.com/twilio/twilio-ruby)) are great tools. Twilio has a rich API and tons of documentation to build SMS and voice services for a variety of use cases. [Tropo](http://tropo.com/) and [Nexmo](http://tropo.com/) offer similar services to Twilio.
+[Twilio](https://www.twilio.com/) (and the [twilio-ruby gem](https://github.com/twilio/twilio-ruby)) are great tools. Twilio has a rich API and tons of documentation to build SMS and voice services for a variety of use cases. [Tropo](http://tropo.com/) and [Nexmo](http://nexmo.com/) offer similar services to Twilio.
 
 ##### SMS messages for new customers
 
