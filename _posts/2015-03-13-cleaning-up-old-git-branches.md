@@ -6,7 +6,7 @@ comments: true
 categories: [Programming, Productivity]
 ---
 
-With some git commands and bash scripting we can clean up old branches quickly.
+With git commands and bash scripting we can clean up old branches quickly.
 
 The final solution looks like this:
 
@@ -16,10 +16,10 @@ g old | head -n5 | xargs bash -c 'git branch -D $@; git push origin --delete $@;
 
 ##### Breaking it down
 
-1. Using a git alias we can list branches by the date they were committed to, with the oldest at the top.
-1. The output is limited with `head` and `-n`, for example 5 items is `head -n5`.
-1. `xargs` provides each branch as `$@` which is substituted in each of the next commands.
-1. We execute the normal command to delete the branch locally and from a remote named `origin`.
+1. We can list branches by the date they were committed to, with the oldest at the top. This is added as a git alias.
+1. Branch names output is limited with `head` and `-n`, for example for 5 items: `head -n5`
+1. `xargs` provides each branch name as `$@` substituted in to each of the following git commands.
+1. git commands to delete the branch locally and from a remote named `origin` are executed for each branch name.
 
 ##### Listing old git branches
 
@@ -32,7 +32,7 @@ Add the following alias to your `~/.gitconfig`.
 
 ##### Deleting a single branch
 
-When I know I don't want a branch locally or on the remote server anymore, I use this function to delete it in both places:
+When I no longer want a branch locally or on the remote server, I use this function to delete both at once:
 
 ```
 function gdel { git branch -D $1; git push origin --delete $1; }
