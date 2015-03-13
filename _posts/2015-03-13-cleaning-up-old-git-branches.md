@@ -11,7 +11,7 @@ With some git commands and bash scripting we can clean up old branches quickly.
 The final solution looks like this:
 
 ``` bash
-g old | head -n5 | xargs bash -c 'git branch -D $@; git push origin :$@;' bash
+g old | head -n5 | xargs bash -c 'git branch -D $@; git push origin --delete $@;' bash
 ```
 
 ##### Breaking it down
@@ -35,5 +35,5 @@ Add the following alias to your `~/.gitconfig`.
 When I know I don't want a branch locally or on the remote server anymore, I use this function to delete it in both places:
 
 ```
-function gdel { git branch -D $1; git push origin :$1; }
+function gdel { git branch -D $1; git push origin --delete $1; }
 ```
