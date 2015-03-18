@@ -75,7 +75,7 @@ Twilio phone numbers can be queried and reserved using the API. This is the pref
 
 We're also able to register local numbers for each of our markets due to the large number of phone numbers available through Twilio. Since we operate in many markets, we felt having phone numbers that were local to the market would increase the chances that a customer would reply (compared with a generic 800 number).
 
-###### Releasing a Twilio number
+###### Adding and releasing Twilio numbers via the API
 
 To release a number, look up the `SID` and send an HTTP DELETE request via the API. We have taken advantage of easily adding and releasing numbers to dynamically increase the Twilio numbers we are using based on demand. Pretty cool!
 
@@ -133,8 +133,8 @@ end
 
 API providers like Twilio and Nexmo make it relatively easy to build SMS and voice features for your web app. SMS and voice may be a much faster way to push out information for real-time operations-oriented businesses.
 
-* SMS and API voice calls help the web application and operations side of the business communicate quickly and effectively.
-* SMS can be used for verification to help reduce fraud.
-* Phone masking helps secure your customer and team information by limiting exposure. 
+* SMS and API voice calls help the operations side of the business communicate quickly with customers. Consider whether voice calls and SMS may deliver a better customer experience.
+* SMS can be used as an additional way to verify a person. Two-factor authentication is a common example. Replying to SMS can also be defeated by people willing to put in some effort, so consider the pros and cons.
+* Phone masking helps secure your customer and team information by limiting exposure. A reservation system helps you share a limited set of resources.
 
-Thanks for reading! Leave a comment with questions or suggestions.
+Leave a comment or hit me up on twitter with questions or suggestions. Thanks!
