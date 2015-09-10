@@ -4,12 +4,12 @@ title: About
 projects: 'projects'
 ---
 
-Andy is an experienced software engineer specializing in Ruby on Rails web development. He is currently an engineer at [OrderUp.com](https://orderup.com/) and formerly of LivingSocial and various startups.
+Andy is an senior engineer specializing in Ruby on Rails web development. He is currently at [OrderUp.com](https://orderup.com/) (a Groupon company).
 
-He currently lives in Boston, MA.
+He currently lives in Minneapolis, MN.
 
 #### Recommendations
-Andy has 10 recommendations on [LinkedIn](www.linkedin.com/in/andyatkinson/) and AngelList. One of the recommendations is copied below:
+Andy has 10 recommendations on [LinkedIn](www.linkedin.com/in/andyatkinson/) and [AngelList](https://angel.co/andy-atkinson).
 
 > Andy is a full-stack web and mobile developer, with a strong understanding of front-end technologies like HTML, CSS and JavaScript, back-end technologies like Ruby on Rails, and mobile technologies like Objective-C/iOS. He can build things quickly while still writing code that is clear and easy for both novice and experienced developers to understand. He is a great person to have on a team because of his communication skills and patience to mentor and train other developers. I would not hesitate at the opportunity to work with Andy again.
 
