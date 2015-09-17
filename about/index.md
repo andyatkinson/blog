@@ -4,7 +4,7 @@ title: About
 projects: 'projects'
 ---
 
-Andy is an senior engineer specializing in Ruby on Rails web development. He is currently at [OrderUp.com](https://orderup.com/) (a Groupon company).
+Andy is a senior engineer specializing in Ruby on Rails web development.
 
 He lives in Minneapolis, MN.
 
