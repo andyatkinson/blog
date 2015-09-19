@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Filling out PDF forms with pdftk"
+title: "Filling out PDF forms with PDFtk"
 date: 2015-09-04 13:00
 comments: true
 categories: [Programming, Productivity, Ruby]
