@@ -28,7 +28,7 @@ A stylish Markdown editor that works well. Open source! Mou is what I used previ
 
 #### Cyberduck
 
-Cyberduck has been around for a long time. Open source, GPL license! In the past I used it as an FTP client, but these days though I've found it works well as an Amazon S3 client.
+Cyberduck has been around for a long time. Open source, GPL license! In the past I used it as an FTP client, but these days I use it as an Amazon S3 client.
 
 #### LICEcap
 
