@@ -3,10 +3,10 @@ layout: post
 title: "5 Superb Free Apps for OS X"
 date: 2015-09-18 13:00
 comments: true
-categories: [Productivity, OS X]
+categories: [Productivity, OS X, Tools]
 ---
 
-OS X has some excellent free apps that help me get work done each day. Give these a shot. If you find them useful, let the app developers know and consider donating to their development costs.
+OS X has some excellent free apps that help me get work done each day. Give these a shot. If you find them useful, let the app developers know and consider donating to help with their development costs.
 
  * Spectacle [^spec] &mdash; move windows around with keyboard shortcuts
  * Itsycal [^itsycal] &mdash; menu bar calendar
@@ -16,7 +16,7 @@ OS X has some excellent free apps that help me get work done each day. Give thes
 
 #### Spectacle
 
-Spectable has a straightforward design and easy-to-learn shortcuts. I use shortcuts to maximize and move windows to the left or right 50% throughout the day. Being able to resize and move windows around quickly is particularly useful when working on a smaller screen.
+Spectacle has a straightforward design and easy-to-learn shortcuts. I use shortcuts to resize and move windows to 50% of the screen every day. Resizing and moving windows around is particulary useful moving from working on an external monitor to a laptop screen.
 
 #### Itsycal
 
@@ -38,7 +38,7 @@ Really simple animated GIFs. They loop by default, though the size and number of
 The authors of these fine pieces of software deserve recognition. Great work, useful tools. Thanks!
 
 
-[^itsycal]: [itsycal](http://www.mowglii.com/itsycal/)
+[^itsycal]: [Itsycal](http://www.mowglii.com/itsycal/)
 
 [^spec]: [Spectacle](https://www.spectacleapp.com/)
 
