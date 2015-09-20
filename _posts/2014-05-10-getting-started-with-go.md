@@ -20,7 +20,7 @@ The Heroku part started off easy [thanks to this guide](http://mmcgrana.github.i
 
 ##### Gournay
 
-Gournay is the web app I made, a URL shrinker. The [source is on github](https://github.com/andyatkinson/gournay) and the app is deployed at [gournay.herokuapp.com](http://gournay.herokuapp.com/). Gournay depends on the `pq` package to connect to a postgres database, and uses `godep` to manage its dependencies.
+Gournay is a simple web app that shrinks URLs, written in Go. The [source is on github](https://github.com/andyatkinson/gournay) and the app is deployed at [gournay.herokuapp.com](http://gournay.herokuapp.com/). Gournay depends on the `pq` package to connect to a postgres database, and uses `godep` to manage its dependencies.
 
 Gournay takes a long url like `http://www.npr.org/2014/05/17/313142425/a-worldwide-voyage-to-prove-stars-wind-and-waves-are-enough` and makes a short hash from it. The URL and hash are stored in a database table. If the hash is posted back at gournay, the user is redirected to the original URL.
 
@@ -28,8 +28,10 @@ Gournay takes a long url like `http://www.npr.org/2014/05/17/313142425/a-worldwi
 
 I am enjoying learning Go so far, and have plans to spend more time learning the concurrency features. If you have any other tips on Go, or found this useful, please leave a comment.
 
-##### More resources
+##### Links
 
  * [Simple go webapp on Heroku](http://blog.joshsoftware.com/2014/02/28/a-simple-go-web-app-on-heroku-with-mongodb-on-mongohq/)
  * [gopack](https://github.com/d2fn/gopack) for dependencies
  * My [stack overflow godep issue](http://stackoverflow.com/questions/23745092/go-project-with-third-party-packages-on-heroku)
+ * [Gournay source code](https://github.com/andyatkinson/gournay)
+ * [Gournay Heroku app](http://gournay.herokuapp.com/)
