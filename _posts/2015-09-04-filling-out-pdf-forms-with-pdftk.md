@@ -10,7 +10,7 @@ At work we collect IRS W9 forms from our independent contractor partners each ye
 
 #### Problem
 
-We needed to have our driver partners complete a IRS W9 form inside the driver app that they are already using. The driver app is used on a variety of iOS and Android devices, and has limited screen real estate. It is a hybrid app with a native wrapper but mostly composed of HTML/CSS/JS, so we wanted a web-friendly solution.
+We needed to have our contractor partners complete a IRS W9 form inside the app that they are already using. The app is used on a variety of iOS and Android devices, and has limited screen real estate. It is a hybrid app with a native wrapper but mostly composed of HTML/CSS/JS, so we wanted a web-friendly solution.
 
 We evaluated some third-party solutions like HelloSign for this process. These typically involve including an `iframe` on the page, so it is more difficult to style and control that UI experience. These solutions do allow you to put together templated documents and collect input though, just with a bit less control over the presentation.
 
