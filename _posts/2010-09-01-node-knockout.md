@@ -1,5 +1,5 @@
 ---
-layout: none
+layout: post
 title: Node Knockout
 date: 2010-09-01
 comments: true

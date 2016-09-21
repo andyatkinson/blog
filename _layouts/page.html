@@ -5,7 +5,7 @@ layout: default
 <main class="content" role="main">
     <article class="post">
         <header class="post-header">
-          <a id="blog-logo" href="{{site.baseurl}}">
+          <a id="blog-logo" href="{{ site.url }}">
             {% if site.logo %}
                 <img src="{{site.logo}}" alt="{{ site.name }}" />
             {% else %}
@@ -24,7 +24,7 @@ layout: default
         <footer class="post-footer">
           {% if site.author %}
             <section class="author">
-             <header> <a href="{{ site.baseurl }}"> <img class="profile" src="/assets/images/profile-pic.jpg" alt="Author's profile picture"></a></header>
+             <header> <a href="{{ site.url }}"> <img class="profile" src="/assets/images/profile-pic.jpg" alt="Author's profile picture"></a></header>
              <article>
                  <h4> {{ site.author }} </h4>
                  <div>

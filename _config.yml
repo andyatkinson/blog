@@ -7,7 +7,7 @@ exclude: [config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendo
 markdown: redcarpet
 redcarpet:
   extensions: [footnotes]
-pygments: true
+highlighter: true
 logo: false
 paginate: 15
 
