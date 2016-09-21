@@ -6,11 +6,7 @@ layout: default
     <article class="post">
         <header class="post-header">
           <a id="blog-logo" href="{{ site.url }}">
-            {% if site.logo %}
-                <img src="{{site.logo}}" alt="{{ site.name }}" />
-            {% else %}
-                <span class="blog-title">{{ site.name }}</span>
-            {% endif %}
+            <span class="blog-title">{{ site.name }}</span>
           </a>
         </header>
 
@@ -28,7 +24,7 @@ layout: default
              <article>
                  <h4> {{ site.author }} </h4>
                  <div>
-                   <p>Andy is a senior engineer building web applications with Ruby and Rails. <a href="/about">Learn More</a></p>
+                   <p>Andy is a senior engineer building web applications with Ruby and Rails. <a href="{{ site.url }}/about">Learn More</a></p>
                  </div>
                </article>
              </section>

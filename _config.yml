@@ -1,6 +1,6 @@
 name: Andy Atkinson
-description: Ruby, software development, startups
-meta_description: "Andy Atkinson, Ruby on Rails programmer and software engineer"
+description: Software development tips and tricks
+meta_description: "Software development tips and tricks"
 
 exclude: [config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, LICENSE.txt]
 

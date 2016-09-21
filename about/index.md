@@ -6,8 +6,6 @@ projects: 'projects'
 
 Andy is a senior engineer specializing in Ruby on Rails web development.
 
-He lives in Minneapolis, MN.
-
 #### Recommendations
 
 Recommendations are available on [LinkedIn](http://linkedin.com/in/andyatkinson/) and [AngelList](https://angel.co/andy-atkinson).
