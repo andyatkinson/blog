@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Help needed: Maintainer for Delayed Job Web"
-date: 2017-03-22 13:00
+date: 2017-03-31 13:00
 comments: true
 categories: [Ruby]
 ---
