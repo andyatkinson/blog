@@ -34,7 +34,7 @@ The real nuts and bolts of the issues though involve reading through most of the
 
 ### Personal motivation
 
-Initially I hoped to get more involved as a Rails contributor, but that hasn't happened. I have about some changes in more depth though, having to research them more, and I've enjoyed meeting the other editors (online and in person).
+Initially I hoped to get more involved as a Rails contributor, but that hasn't happened. I have dug into some Rails commits in more depth though, having researched them more, and I've enjoyed meeting the other editors (online and in person).
 
 ### Tools of the trade
 
