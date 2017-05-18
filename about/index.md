@@ -19,12 +19,12 @@ Andy gave a talk in Buenos Aires, Argentina about how his team applied Lean Star
 
 En marzo del 2013 empecé a trabajar con el equipo de LetsBonus en Barcelona, España. LetsBonus es una filial de LivingSocial.
 
-<iframe src="//player.vimeo.com/video/57940280" width="500" height="282" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> <p><a href="http://vimeo.com/57940280">Ship it: Staying Lean at LivingSocial by Andy Atkinson</a> from <a href="http://vimeo.com/rubyargentina">Ruby Argentina</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+<script async class="speakerdeck-embed" data-id="b951eb0086a70130f51612313d145db7" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
-#### Volunteering
+#### Volunteering as a programmer
 
-Andy has volunteered as a programmer at [Overnight Website Challenge](http://overnightwebsitechallenge.com/) and as a coach for [Rails Girls](http://railsgirls.com/).
+Andy has participated in the [Overnight Website Challenge](http://overnightwebsitechallenge.com/) and acted as a photographer and mentor for [Rails Girls](http://railsgirls.com/) events.
 
 #### Connect
 
-[github](https://github.com/andyatkinson) &mdash; [linkedin](http://www.linkedin.com/in/andyatkinson/) &mdash; <a href='https://angel.co/andy-atkinson'>angellist</a> &mdash; <a href='http://stackoverflow.com/users/126688/andy-atkinson'>stack overflow</a> &mdash; <a href="mailto:andyatkinson@gmail.com">email</a>
+[github](https://github.com/andyatkinson) &mdash; [linkedin](http://www.linkedin.com/in/andyatkinson/) &mdash; <a href="mailto:andyatkinson@gmail.com">email</a>
