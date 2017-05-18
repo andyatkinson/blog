@@ -4,11 +4,13 @@ title: About
 projects: 'projects'
 ---
 
-Andy is a senior engineer specializing in Ruby on Rails web development.
+Andy is a senior full-stack engineer specializing in Ruby on Rails web development.
+
+He identifies with the label of "product-focused engineer", and has received positive feedback over the years for his communication skills and attention to detail.
 
 #### Recommendations
 
-Recommendations are available on [LinkedIn](http://linkedin.com/in/andyatkinson/) and [AngelList](https://angel.co/andy-atkinson).
+Recommendations are available on [LinkedIn](http://linkedin.com/in/andyatkinson/).
 
 #### Projects
 
@@ -21,9 +23,13 @@ En marzo del 2013 empecé a trabajar con el equipo de LetsBonus en Barcelona, Es
 
 <script async class="speakerdeck-embed" data-id="b951eb0086a70130f51612313d145db7" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"></script>
 
+<hr/>
+
 #### Volunteering as a programmer
 
-Andy has participated in the [Overnight Website Challenge](http://overnightwebsitechallenge.com/) and acted as a photographer and mentor for [Rails Girls](http://railsgirls.com/) events.
+Andy was part of a team for the [Overnight Website Challenge](http://overnightwebsitechallenge.com/) event, and has acted as a photographer and mentor for [Rails Girls](http://railsgirls.com/) events.
+
+He became a contributing editor for the [This Week in Rails newsletter](https://rails-weekly.ongoodbits.com/) in 2015 ([Blog post](http://andyatkinson.com/blog/2017/04/21/this-week-in-rails)).
 
 #### Connect
 
