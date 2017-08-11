@@ -4,7 +4,7 @@ title: About
 projects: 'projects'
 ---
 
-Andy is a full-stack software engineer with over 10 years of experience.
+Andy is a full-stack web software engineer, with over 10 years of experience.
 
 He identifies with the label of "product-focused engineer", and has received positive feedback for his communication skills, attention to detail, and business savvy.
 
@@ -35,7 +35,8 @@ He became a contributing editor for the [This Week in Rails newsletter](https://
 
  * [Core NLP gem](https://github.com/lengio/corenlp) - Gem author. Developed at Lengio. Light Ruby interface to Stanford's Java-based CoreNLP tool.
  * [Delayed Job Web gem](https://github.com/ejschmitt/delayed_job_web) - Gem maintainer. Web interface to delayed job (Ruby-based background processing).
- * [Ruby on Rails](http://contributors.rubyonrails.org/contributors/andy-atkinson/commits) - Committer. Small fixes.
+ * [Promo Slide](https://github.com/andyatkinson/promoSlide) - jQuery plugin author. Web page marketing component. Written in Coffeescript.
+ * [Ruby on Rails](http://contributors.rubyonrails.org/contributors/andy-atkinson/commits) - Committer to Ruby web framework. Small fixes.
 
 ##### Connect
 
