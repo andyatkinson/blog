@@ -4,19 +4,19 @@ title: About
 projects: 'projects'
 ---
 
-Andy is a senior full-stack engineer specializing in Ruby on Rails web development.
+Andy is a full-stack software engineer with over 10 years of experience.
 
-He identifies with the label of "product-focused engineer", and has received positive feedback over the years for his communication skills and attention to detail.
+He identifies with the label of "product-focused engineer", and has received positive feedback for his communication skills, attention to detail, and business savvy.
 
-#### Recommendations
+##### Recommendations
 
 Recommendations are available on [LinkedIn](http://linkedin.com/in/andyatkinson/).
 
-#### Projects
+##### Projects
 
 [View Projects](/projects)
 
-#### Speaking opportunities
+##### Speaking opportunities
 Andy gave a talk in Buenos Aires, Argentina about how his team applied Lean Startup principles to their work at LivingSocial. [Blog post](/blog/2013/11/27/rubyconf-argentina-2012/).
 
 En marzo del 2013 empecé a trabajar con el equipo de LetsBonus en Barcelona, España. LetsBonus es una filial de LivingSocial.
@@ -25,12 +25,18 @@ En marzo del 2013 empecé a trabajar con el equipo de LetsBonus en Barcelona, Es
 
 <hr/>
 
-#### Volunteering as a programmer
+##### Volunteering as a programmer
 
 Andy was part of a team for the [Overnight Website Challenge](http://overnightwebsitechallenge.com/) event, and has acted as a photographer and mentor for [Rails Girls](http://railsgirls.com/) events.
 
 He became a contributing editor for the [This Week in Rails newsletter](https://rails-weekly.ongoodbits.com/) in 2015 ([Blog post](http://andyatkinson.com/blog/2017/04/21/this-week-in-rails)).
 
-#### Connect
+##### Open Source
+
+ * [Core NLP gem](https://github.com/lengio/corenlp) - Gem author. Developed at Lengio. Light Ruby interface to Stanford's Java-based CoreNLP tool.
+ * [Delayed Job Web gem](https://github.com/ejschmitt/delayed_job_web) - Gem maintainer. Web interface to delayed job (Ruby-based background processing).
+ * [Ruby on Rails](http://contributors.rubyonrails.org/contributors/andy-atkinson/commits) - Committer. Small fixes.
+
+##### Connect
 
 [github](https://github.com/andyatkinson) &mdash; [linkedin](http://www.linkedin.com/in/andyatkinson/) &mdash; <a href="mailto:andyatkinson@gmail.com">email</a>

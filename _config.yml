@@ -1,6 +1,6 @@
 name: Andy Atkinson
-description: Software development tips and tricks
-meta_description: "Software development tips and tricks"
+description: Tips, tutorials, and interesting tech
+meta_description: "Tips, tutorials, and interesting tech"
 
 exclude: [config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, LICENSE.txt]
 
