@@ -4,9 +4,11 @@ title: About
 projects: 'projects'
 ---
 
-Andy is a full-stack web software engineer, with over 10 years of experience.
+Andy is a senior software engineer with Groupon.
 
-He identifies with the label of "product-focused engineer", and has received positive feedback for his communication skills, attention to detail, and business savvy.
+He tends to be more of a "product-focused engineer" and enjoys collaborating with software development team members focused on various disciplines including product management, design, growth, marketing, and revenue.
+
+
 
 ##### Recommendations
 
