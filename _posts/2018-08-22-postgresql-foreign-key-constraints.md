@@ -6,34 +6,31 @@ comments: true
 categories: [Database, SQL]
 ---
 
-Foreign key constraints enforce that a referenced thing exists on a table it is referencing.
+Foreign key constraints enforce that a referenced "thing" exists.
 
-These can be browsed under `Foreign-key constraints` with a `REFERENCES` indicating the local and referenced table, or it can also show up on the column-level when the referenced table has a primary key.
+Constraints can be browsed for a table (e.g. with `\dt table`) under `Foreign-key constraints` with a `REFERENCES`, indicating the table and referenced table. They can also show up at the column-level when the referenced table has a primary key.
 
-Constraints are not deferrable by default. From my investigation, deferring constraint enforcement seems mainly useful within transactions. Constraints can be set as deferrable per transaction as long as the deferrable attribute was originally specified, i.e. `deferrable initially immediate`.
+Constraints are not deferrable by default. From my investigation, the main use case for deferring constraint enforcement seems to be when using transactions. Constraints can be set as deferrable per transaction as long as the deferrable attribute was originally specified, i.e. `deferrable initially immediate`, or they can always be deferred with `INITIALLY DEFERRABLE`.
 
 A foreign key constraint may be altered later with [ALTER CONSTRAINT](https://www.postgresql.org/docs/9.4/static/sql-altertable.html) although to change this behavior with other constraints, I believe the constraint would need to be removed and then added again with the deferrable attribute set.
 
-#### SET CONSTRAINTS
+##### SET CONSTRAINTS
 
 > SET CONSTRAINTS sets the behavior of constraint checking within the current transaction.
 
-[SET CONSTRAINTS docs](https://www.postgresql.org/docs/9.1/static/sql-set-constraints.html)
+According to the [SET CONSTRAINTS docs](https://www.postgresql.org/docs/9.1/static/sql-set-constraints.html), IMMEDIATE constraints are checked after each statement while deferred constraints are not checked until the transaction commits.
 
-Immediate constraints are checked after each statement while deferred constraints are not checked until the transaction commits.
-
-For example, within one transaction, there may be be multiple `INSERT` statements. The author has the choice to have constraints like uniqueness, enforced after every statement, or deferred until the end of the statements, when the transaction will be committed.
-
+For example, within one transaction, there may be be multiple `INSERT` statements. Constraints like uniqueness may be enforced after every statement or deferred until the end of the statements when the transaction will be committed.
 
 *Why would the difference be significant?*
 
 This excellent [Hashrocket blog post on deferring constraints](https://hashrocket.com/blog/posts/deferring-database-constraints) goes in depth into an example with a list where each list item has a unique position.
 
-To briefly summarize the article, when re-ordering a list of items where each re-order generates a an update statement per list item within a transaction, two list items would have the same position value at a certain point in execution. This would break because it would violate the uniqueness constraint. The solution was to defer enforcement of the unique constraint until the end of the transaction where each list item has a new position value.
+To briefly summarize the article, when re-ordering a list of items where each re-order generates an update statement per list item within a transaction, two list items would have the same position value. This would break because it would violate the uniqueness constraint. The solution was to defer enforcement of the unique constraint until the end of the transaction where each list item has a new position value.
 
-If a transaction is deferrable, it can have 3 classes. The class of deferred constraint the project I'm working on used `DEFERRABLE INITIALLY DEFERRED`, which is not the default, which is that enforcement is not deferred.
+If a constraint is deferrable, it can have 3 classes (attributes of the constraint). The class of deferred constraint the project I'm working on used `DEFERRABLE INITIALLY DEFERRED` which prompted this investigation. I found this is not the default behavior.
 
-Specifying deferrable this way would be more surprising than `INITIALLY IMMEDIATE` which would be the default. For that reason it makes sense as a default either to not specify deferrable, or to specify deferrable initially immediate, to preserve the default behavior, but allow an individual transaction to opt in to the deferred behavior (this was the recommendation from the Hashrocket article that I agree with and am echoing here).
+Specifying deferrable this way would be more surprising than `INITIALLY IMMEDIATE` which is the default constraint behavior. For that reason, INITIALLY IMMEDIATE makes more sense as a default. This allows opting in to the deferrable constraint enforcement on a per transaction basis, but otherwise preserves the default behavior. This was the recommendation from the Hashrocket article as well.
 
 #### ON DELETE and ON UPDATE
 
