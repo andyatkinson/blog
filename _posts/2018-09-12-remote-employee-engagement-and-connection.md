@@ -6,9 +6,11 @@ comments: true
 categories: [Remote]
 ---
 
-Remote work can be dehumanizing, which is probably too strong of a word here. Said another way, without connecting face to face team members may not think of each others as humans that are unique and have personalities, quirks, interests and aspirations.
+Remote work can make it more difficult to remember that we're all working with other humans that are unique and have their own personality, quirks, interests and aspirations.
 
-Remote work relies on technologies to help connect with others, through writing, audio and video calls, chat etc. This is a list of ways remote employees can help stay connected.
+Remote workers rely on technologies to help stay connected with their teammates, with the underlying goal of high quality communication, to work on the right things and stay motivated.
+
+Here are a few simple ways to help this process along:
 
 - Set an avatar on all company services. This could be Google, Atlassian, Slack and other services, but having a picture helps people find and identify you.
 - Use a microphone on calls. I have several Apple earbuds so I can leave one in my bag, at my home office, travel luggage etc. Try for the best audio and speakers you can use reliably and comfortably.
