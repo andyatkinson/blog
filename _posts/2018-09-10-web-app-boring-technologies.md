@@ -34,4 +34,4 @@ We have some extensions and functions that are specific to Postgres, but the fea
 
 #### Logging
 
-We send our logs to [logentries](logentries.com/). This allows us to live tail logs, and search through hours or days of logs quickly. Logging can be used to collect positive and negative evidence about the execution of some bit of code, when there isn't data to query to answer that sort of question.
+We send our logs to [logentries](http://logentries.com/). This allows us to live tail logs, and search through hours or days of logs quickly. Logging can be used to collect positive and negative evidence about the execution of some bit of code, when there isn't data to query to answer that sort of question.
