@@ -4,6 +4,7 @@ ruby '2.5.1'
 gem 'jekyll'
 
 # for Heroku deployment
+gem 'rake'
 gem 'rack-contrib'
 gem 'rack-rewrite'
 gem 'puma'

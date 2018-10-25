@@ -65,6 +65,7 @@ GEM
     rack-contrib (2.1.0)
       rack (~> 2.0)
     rack-rewrite (1.5.1)
+    rake (12.3.1)
     rb-fsevent (0.10.3)
     rb-inotify (0.9.10)
       ffi (>= 0.5.0, < 2)
@@ -92,6 +93,7 @@ DEPENDENCIES
   puma
   rack-contrib
   rack-rewrite
+  rake
 
 RUBY VERSION
    ruby 2.5.1p57
