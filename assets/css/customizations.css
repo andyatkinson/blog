@@ -1,6 +1,6 @@
 .homepage .post-title {
-  font-size: .8em;
-  line-height: 2em;
+  font-size: 1em;
+  line-height: 1.8em;
 }
 
 .homepage .post-meta {
@@ -9,7 +9,7 @@
 }
 
 .homepage .post {
-  margin: .5rem auto;
+  margin: .8rem auto;
   padding-bottom:.5rem;
 }
 
