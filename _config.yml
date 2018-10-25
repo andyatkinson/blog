@@ -1,6 +1,6 @@
 name: Andy Atkinson
-description: Tips, tutorials, and interesting tech
-meta_description: "Tips, tutorials, and interesting tech"
+description: Software development tech blog
+meta_description: "Tips, tutorials, and interesting software engineering tidbits from Andy Atkinson"
 
 exclude: [config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, LICENSE.txt]
 
@@ -9,7 +9,7 @@ redcarpet:
   extensions: [footnotes]
 highlighter: true
 logo: false
-paginate: 15
+paginate: 25
 
 # Details for the RSS feed generator
 url:            'http://andyatkinson.com'

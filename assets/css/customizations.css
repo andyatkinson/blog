@@ -1,0 +1,18 @@
+.homepage .post-title {
+  font-size: .8em;
+  line-height: 2em;
+}
+
+.homepage .post-meta {
+  float:left;
+  width:100px;
+}
+
+.homepage .post {
+  margin: .5rem auto;
+  padding-bottom:.5rem;
+}
+
+.nav-links {
+  margin:2%;
+}
