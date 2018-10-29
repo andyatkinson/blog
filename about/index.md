@@ -4,10 +4,9 @@ title: About
 projects: 'projects'
 ---
 
-Andy is a senior software engineer with Groupon.
+Andy is a Senior Software Engineer with Groupon, working remotely, living in Minneapolis, MN. Previously he worked at OrderUp (acquired by Groupon), LivingSocial (before they were acquired by Groupon), and various startups. In his career he has been a full-stack engineer but mostly back-end.
 
-He tends to be more of a "product-focused engineer" and enjoys collaborating with software development team members focused on various disciplines including product management, design, growth, marketing, and revenue.
-
+Some engineering acronyms he likes are KISS, YAGNI, SOLID, and TDD. Outside of technology and spending time with his wife and 2 year old daughter, he follows the Timberwolves NBA team and enjoys running.
 
 
 ##### Recommendations
