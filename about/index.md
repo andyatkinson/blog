@@ -34,10 +34,12 @@ He became a contributing editor for the [This Week in Rails newsletter](https://
 
 ##### Open Source
 
- * [Core NLP gem](https://github.com/lengio/corenlp) - Gem author. Developed at Lengio. Light Ruby interface to Stanford's Java-based CoreNLP tool.
  * [Delayed Job Web gem](https://github.com/ejschmitt/delayed_job_web) - Gem maintainer. Web interface to delayed job (Ruby-based background processing).
+ * [Core NLP gem](https://github.com/lengio/corenlp) - Gem author. Extracted at Lengio. Light Ruby interface to Stanford's Java-based CoreNLP tool.
  * [Promo Slide](https://github.com/andyatkinson/promoSlide) - jQuery plugin author. Web page marketing component. Written in Coffeescript.
- * [Ruby on Rails](http://contributors.rubyonrails.org/contributors/andy-atkinson/commits) [global ID](https://github.com/rails/activemodel-globalid/commits?author=andyatkinson) - Committer to Ruby web framework. Small fixes.
+ * [Ruby on Rails](http://contributors.rubyonrails.org/contributors/andy-atkinson/commits) - Committed a couple of small improvements
+ * [rails/globalid](https://github.com/rails/globalid) - Added unit tests
+ * [Dev Dump](https://github.com/andyatkinson/DevDump) - Dump and load DB table data with encryption, extracted Ruby gem
 
 ##### Connect
 
