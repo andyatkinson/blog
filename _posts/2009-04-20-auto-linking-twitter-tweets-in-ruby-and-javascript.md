@@ -1,16 +1,16 @@
 ---
 layout: post
-title: Auto-linking Twitter tweets in Ruby and Javascript
+title: Auto-linking Twitter Tweets in Ruby and JavaScript
 date: 2009-04-20
 comments: true
-categories: [Ruby, JavaScript]
+tags: [Programming, Ruby, JavaScript, Tips, Scripts]
 ---
 
 Ruby on Rails introduced me to a the concept of an `auto_link` helper method, which finds and hyperlinks URLs within text.
 
 How do we write our own auto-link in Ruby and JavaScript?
 
-##### Ruby
+#### Ruby
 
 `ActionView::Helpers::TextHelper#auto_link` auto-links URLs in Rails, but what if we want twitter usernames to be linked? Duplicating the twitter style involves putting the "@" symbol immediately before the anchor tag, and linking the username. A Rails helper to do this, might look like:
 
@@ -39,7 +39,7 @@ If you aren't using Rails, the following regular expression will hyperlink URLs.
   tweet.gsub /((https?:\/\/|www\.)([-\w\.]+)+(:\d+)?(\/([\w\/_\.]*(\?\S+)?)?)?)/, %Q{<a href="\\1">\\1</a>}
 ```
 
-##### JavaScript
+#### JavaScript
 
 The regular expression methods are different in JavaScript than Ruby. I used the search and replace methods to check for the presence of a pattern, then update the tweet if the pattern was found. The "/g" option handles multiple matches.
 

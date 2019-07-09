@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "A quick look at GraphQL"
-date: 2017-07-20 13:00
+title: "A Quick Look at GraphQL"
+date: 2017-07-20
 comments: true
-categories: [JavaScript, API]
+tags: [JavaScript, API, Programming]
 ---
 
 [GraphQL](http://graphql.org/) is a technology from Facebook, in use since 2012, that is an alternative to REST APIs, providing the ability to both query data and transport it from a server to a client.

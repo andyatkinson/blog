@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Building SMS and voice features for web applications"
-date: 2015-02-12 20:00
+title: "Building SMS and Voice Features for Web Applications"
+date: 2015-02-12
 comments: true
-categories: [Programming, Ruby]
+tags: [Programming, Ruby]
 ---
 
 At [OrderUp](http://orderup.com) we rely on voice calls and SMS messages to communicate quickly with customers and team members. SMS messaging means that we don't need to know the specific platform or capabilities (iOS or Android) of the recipient device. It Just Works &#0153; (most of the time).
@@ -18,7 +18,7 @@ Currently we're using a verified phone number as a unique identifier for a custo
 
 To build SMS verification into the app we used Twilio. Here are some of the basics:
 
-###### Capture the customer phone number and send a SMS
+#### Capture the customer phone number and send a SMS
 
 Make a form for the user to post their phone number. Either store it (or log it) or use it directly in the Twilio API call to create a SMS message. We use Heroku and use ENV variables to store our Twilio credentials. Sending a SMS message is as easy as making an API post to Twilio. Check the latest [ruby gem](https://github.com/twilio/twilio-ruby) documentation.
 
@@ -33,7 +33,7 @@ message = twilio.account.messages.create(
 
 You may want to enqueue the API post so that it can be executed from a background job. This makes it easier to re-run the code later following a bug fix.
 
-###### Create a callback to receive replies
+#### Create a callback to receive replies
 
 Create a callback in the web app. For our Ruby on Rails application we put this stuff in a controller. You might want another action you can post at to re-send the confirmation SMS.
 
@@ -53,7 +53,7 @@ class FrontEnd::SmsVerificationsController < FrontEnd::BaseController
 end
 ```
 
-###### Process SMS message replies
+#### Process SMS message replies
  
  * Create a Twilio phone number and configure it with the callback URL (get the fully-qualified URL via Rails routes). Adding a phone number on Twilio can be done manually or via the API. Separate callbacks can be configured for voice and SMS.
  * In development, use [ngrok](https://ngrok.com/) or a similar tool to expose your local server to the Internet. It may be easier to use separate phone numbers (they are priced as low as $1/month) for different environments. Otherwise you need to remember to change the callback URLs when the code goes in to production.
@@ -75,7 +75,7 @@ Twilio phone numbers can be queried and reserved using the API. This is the pref
 
 We're also able to register local numbers for each of our markets due to the large number of phone numbers available through Twilio. Since we operate in many markets, we felt having phone numbers that were local to the market would increase the chances that a customer would reply (compared with a generic 800 number).
 
-###### Adding and releasing Twilio numbers via the API
+#### Adding and releasing Twilio numbers via the API
 
 To release a number, look up the `SID` and send an HTTP DELETE request via the API. We have taken advantage of easily adding and releasing numbers to dynamically increase the Twilio numbers we are using based on demand. Pretty cool!
 
@@ -129,7 +129,7 @@ end
 ```
 
 
-##### Closing Thoughts
+#### Closing Thoughts
 
 API providers like Twilio and Nexmo make it relatively easy to build SMS and voice features for your web app. SMS and voice may be a much faster way to push out information for real-time operations-oriented businesses.
 

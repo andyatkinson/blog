@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "5 Great Apps for OS X"
-date: 2015-09-18 13:00
+date: 2015-09-18
 comments: true
-categories: [Productivity, OS X, Tools, Tips]
+tags: [Productivity, OS X, Tools, Tips]
 ---
 
 These are 5 great OS X apps I use almost every day. Give them a shot. If you find they are useful for you, send the app developers a "thank you" and consider giving them a donation!

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: No Fluff Just Stuff April 2007 conference
+title: No Fluff Just Stuff April 2007 Conference
 date: 2007-04-16
 comments: true
-categories: [Conference] 
+tags: [Conferences, Events, Java] 
 ---
 
 I attended the [No Fluff Just Stuff](http://www.nofluffjuststuff.com) Java symposium with some co-workers.

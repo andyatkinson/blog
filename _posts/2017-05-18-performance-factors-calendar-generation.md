@@ -1,9 +1,13 @@
 ---
 layout: post
-title: "Calendar generation with sparse data"
-date: 2017-05-18 13:00
+title: "Calendar Generation with Sparse Data"
+date: 2017-05-18
 comments: true
-categories: [Ruby, Rails, Active Record, API, Performance]
+tags: [Ruby, Rails, API, Performance]
+featured_image_thumbnail:
+featured_image: /assets/images/pages/andy-atkinson-devils-tower-2006.jpg
+featured_image_caption: Devils Tower National Monument. &copy; 2006 <a href="/">Andy Atkinson</a>
+featured: true
 ---
 
 At work, our drivers interact with a calendar interface via the mobile app, that represents days of the week in 30 minute blocks. We generate 2 weeks of calendar days at once and personalize the data to the driver. The data is sparse, meaning not every block has data, but we need a block for every 30 minute increment.
@@ -12,11 +16,11 @@ A driver can interact with blocks to indicate they are available to work, they c
 
 We don't want to loop over the blocks more than once, or be conducting queries while rendering the schedule. Also, in order to have a snappy app experience, we want to keep our API response time <=100ms, including building and serving the JSON. Sounds interesting!
 
-### Overfiew of the solution
+### Overview of the solution
 
 We can generate 30 minute increment blocks in plain Ruby, but how do we fill the blocks in with data efficiently?
 
-The route we went was to take inspiration from the "constant time lookup" benefit of a hash table, and put together an intermediate data structure as a plain Ruby hash, that was responsible for collecting all the data needed for the calendar before rendering began, so that rendering was very straightforward, pulling from this hash, and incurring no performance penalty. Seems reasonable. Let's look at this in more detail.
+The route we went was to take inspiration from the "<mark>constant time lookup</mark>" benefit of a hash table, and put together an intermediate data structure as a plain Ruby hash, that was responsible for collecting all the data needed for the calendar before rendering began, so that rendering was very straightforward, pulling from this hash, and incurring no performance penalty. Seems reasonable. Let's look at this in more detail.
 
 By the way, if you need a primer or refresher on hash tables and hash functions, I recommend "Taking Hash Tables Off The Shelf" [^ht1] and "Hashing Out Hash Functions" [^ht2] by Vaidehi Joshi.
 
@@ -74,11 +78,11 @@ Assignment.send(:sanitize_sql, ["sql", {block_ids: block_ids}])
 
 ### Summary
 
-Generating 2 weeks of calendar data per driver, for our thousands of drivers using the app and expecting a fast user experience, was tricky! Using the approaches here allowed us to stay in the 50-100ms range for rendering this data, providing a fast experience with rich data to interact with.
+Generating 2 weeks of calendar data per driver, for our thousands of drivers using the app and expecting a fast user experience, was tricky! Using the approaches here <mark>allowed us to stay in the 50-100ms range</mark> for rendering this data, providing a fast experience with rich data to interact with.
 
 The applicability of this approach will really depend on your specific application. However it seems like a handy tool to keep in mind for highly structured data, where the end result requires the data is denormalized and re-structed as JSON.
 
 
-[^ht1]: [Taking Hash Tables Off The Shelf](https://dev.to/vaidehijoshi/taking-hash-tables-off-the-shelf)
+[^ht1]: [Taking Hash Tables Off The Shelf](https://dev.to/vaidehijoshi/taking-hash-tables-off-the-shelf) by Vaidehi Joshi
 
-[^ht2]: [Hashing Out Hash Functions](https://dev.to/vaidehijoshi/hashing-out-hash-functions)
+[^ht2]: [Hashing Out Hash Functions](https://dev.to/vaidehijoshi/hashing-out-hash-functions) by Vaidehi Joshi

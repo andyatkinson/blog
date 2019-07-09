@@ -1,10 +1,11 @@
 ---
 layout: post
-title: "Building a web app with boring technologies (2017 Edition)"
-date: 2018-09-10 13:00
+title: "Building a Web App with Boring Technologies (2017 Edition)"
+date: 2018-09-10
 comments: true
-categories: [Ruby, Database, Web]
+tags: [Ruby, Databases, Programming, Databases]
 ---
+
 This post was written in Feburary 2017 and I'm just getting around to posting it now in September of 2018. These technologies are not new or flashy but they are proven and have a lot of documentation and tooling support.
 
 #### Ruby on Rails
@@ -26,11 +27,9 @@ Some of the things we do as scheduled jobs:
 * Send notifications (SMS and Push Notifications) to independent contractors when they have scheduled upcoming work
 * Check on an interval for bad user behavior (fraud) and take action
 
-
 #### Postgres
 
 We have some extensions and functions that are specific to Postgres, but the features I work on are mostly database agnostic. We use ActiveRecord migrations to manage schema changes like adding tables, changing column defaults, adding indexes, constraints etc. We have read-only replicas that are used for ad hoc querying and generating data dumps. Some features written originally with ActiveRecord tend to get re-written as big blobs of SQL.
-
 
 #### Logging
 

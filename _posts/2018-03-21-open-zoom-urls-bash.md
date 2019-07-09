@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Open Zoom meetings from the command line"
-date: 2018-03-21 13:00
+title: "Open Zoom Meetings from the Command Line"
+date: 2018-03-21
 comments: true
-categories: [CLI, Tips]
+tags: [CLI, Tips, "Remote Work"]
 ---
 
 This is a hacked together bash function, taking advantage of [icalBuddy](http://hasseg.org/icalBuddy/) and Zoom URLs in calendar invitations, making it a bit easier to join meetings.
@@ -14,13 +14,13 @@ We use Google Calendar and have Zoom meeting URLs in the calendar descriptions.
 
 This was put together quickly and is limited, but it solved my specific problem, and may be useful to you!
 
-##### Install icalBuddy
+#### Install icalBuddy
 
 On OS X with Homebrew, run `brew install ical-buddy`.
 
 Run `icalBuddy eventsToday` and provide permission to your calendars.
 
-##### Bash variable and function
+#### Bash variable and function
 
 Set a shell variable for the value of the Zoom URL for your company, e.g. `export ZOOM_BASE_URL=my-company`, which would generate a URL like `my-company.zoom.us`. If your function is not shared publicly or you don't wish to parameterize the URL, this step can be skipped.
 

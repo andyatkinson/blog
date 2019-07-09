@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Add some personality to remote work"
-date: 2018-09-12 13:00
+title: "Add Some Personality to Remote Work"
+date: 2018-09-12
 comments: true
-categories: [Remote]
+tags: ["Remote Work"]
 ---
 
 Remote work can make it more difficult to remember that we're all working with other humans that are unique and have their own personality, quirks, interests and aspirations.

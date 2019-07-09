@@ -3,12 +3,12 @@ layout: post
 title: Email Service Providers for Rails
 date: 2010-09-02
 comments: true
-categories: [Ruby, Rails]
+tags: [Ruby, Rails]
 ---
 
 Sending email (transactional and marketing) is part of most every web application. At work our project is nearing its first public release and we are talking about emails the application may be sending. The emails we know the application will be sending now are transactional emails like the "welcome" email for new users and password resets, however we are also expect our marketing team to send release announcements. We want to format the emails with HTML and CSS. 
 
-##### Email service providers
+#### Email service providers
 
 Using a service provider that integrates well with Rails and still allows the company to manage emails outside of the application would be very useful. Delivering high volumes of email can be technically challenging, and outsourcing that to a service would work well for our small development team. 
 
@@ -24,7 +24,7 @@ I will also provide a 1 year cost estimate using the following data:
   - Monthly: 150
   - Yearly: 1800
 
-##### [Postmark](http://postmarkapp.com/)
+#### [Postmark](http://postmarkapp.com/)
 
   - No monthly fees or setup costs
   - Advertised as replacing SMTP, a server you can send HTTP requests at with email details, messages are encoded as JSON data. Attachments need to be encoded as a base-64 string.
@@ -41,7 +41,7 @@ $.0015/email
 
 Conclusion for our project: very low cost, does not offer email template design services.
 
-##### [PostageApp](http://postageapp.com/)
+#### [PostageApp](http://postageapp.com/)
 
   - Rails gem available
   - Emails are encoded as JSON and sent as HTTP Post requests to PostageApp. 
@@ -53,7 +53,7 @@ Conclusion for our project: very low cost, does not offer email template design 
 
 Conclusion: seems great for a application. The message design tool requires working with HTML and CSS.
 
-##### [Mad Mimi](http://madmimi.com/)
+#### [Mad Mimi](http://madmimi.com/)
 
   - More marketing and newsletter oriented. Newsletter and recipient list management features. 
   - Ruby gem available, with methods to send email and get tracking/status information as well.
@@ -74,7 +74,7 @@ Mailer API is extra: $10/month
 
 Conclusion: great for an application. Higher priced, but drag-and-drop message design interface seems very user friendly
 
-##### [SendGrid](http://sendgrid.com/)
+#### [SendGrid](http://sendgrid.com/)
 
 I originally heard about SendGrid through Heroku, since SendGrid is offered as an add-on to Heroku instances.
   - Track email clicks, opens, unsubscribes and more
@@ -90,15 +90,15 @@ Price: $9.95/month for 10,000 emails ($0.000995/email)
 
 Conclusion: Offers lots of features. May have a feature you really want that the others don’t have.
 
-##### Conclusion
+#### Conclusion
 
 For our company I think Mad Mimi will be the most valuable service. It has the capability through the Mailer API and variable substitution with curly braces ([documented here](http://garbageburrito.com/blog/entry/235921/outsource-your-email-notifications-with-madmimis-mailer-api)) to send customized emails from the application. It also has an interface to build promotions without writing any HTML or CSS (building HTML/CSS emails is also possible).
 
-##### Mad Mimi
+#### Mad Mimi
 
 Recipients specified through the Mailer API are automatically visible in the Mad Mimi UI. There are API methods to add contacts, so we should be able to keep our user database in sync with any other email recipients added from outside the application. Mad Mimi also offers a permalink to share a promotion without having to log-in, which I think would be useful over IM and email to make sure the promotion has the variables specified in it that the application will be supplying, or for general copy and image review.
 
-##### API
+#### API
 
 The API is wrapped in the [official madmimi Ruby gem](http://github.com/madmimi/madmimi-gem) that makes it very easy to work with. Here is some example code to send an email. Note that the Mailer API add-on requires a credit card to try, but is free if cancelled within the first 5 days (I used this to test).
 

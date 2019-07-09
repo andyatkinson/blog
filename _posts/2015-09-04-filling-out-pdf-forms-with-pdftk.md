@@ -3,7 +3,7 @@ layout: post
 title: "Filling out PDF forms with PDFtk"
 date: 2015-09-04 13:00
 comments: true
-categories: [Programming, Productivity, Ruby]
+tags: [Programming, Productivity, Ruby]
 ---
 
 At work we collect IRS W9 forms from our independent contractor partners each year. This year we wanted to automate the process of collecting the information, by allowing the contractors to supply their information through their existing app.

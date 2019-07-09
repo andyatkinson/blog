@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Help needed: Maintainer for Delayed Job Web"
-date: 2017-03-31 13:00
+title: "Help Needed: Maintainer for Delayed Job Web"
+date: 2017-03-31
 comments: true
-categories: [Ruby]
+tags: [Ruby, "Open Source"]
 ---
 
 In a past job we used [delayed_job](https://github.com/collectiveidea/delayed_job) to process background jobs. [Delayed Job Web](https://github.com/ejschmitt/delayed_job_web) is a UI for Delayed Job. We need help finding a new maintainer for Delayed Job Web!

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Automated daily backup solution for Postgres"
-date: 2014-04-30 23:00
+title: "Automated Daily Backup Solution for Postgres"
+date: 2014-04-30
 comments: true
-categories: [Productivity, Postgresql, Databases]
+tags: [Productivity, PostgreSQL, Databases, Tips]
 ---
 
 A Ruby gem called [safe](https://github.com/astrails/safe) provides a DSL for generating the commands to perform the backup. We used [this fork](https://github.com/mattberther/safe) which fixed some AWS issues.
@@ -49,7 +49,7 @@ require "yaml"
 db = YAML.load_file(File.join(Dir.getwd, 'config', 'database.yml'))[environment]
 ```
 
-##### Deployment
+#### Deployment
 
 Once the safe configuration file is specified, the `astrails-safe` executable can be run. We use cron to run this once a day. The whenever gem supplies a `config/schedule.rb` for crontab entries. The `whenever` command can be run to see what will be generated. Whenever also provides capistrano tasks to update the crontab file on every deploy.
 
@@ -62,6 +62,6 @@ every 1.day, :at => '4:30 am' do
 end
 ```
 
-##### Conclusion
+#### Conclusion
 
 This script has been running for a few days so far and is meeting our needs.

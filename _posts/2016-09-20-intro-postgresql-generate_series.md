@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Intro to PostgreSQL generate_series"
-date: 2016-09-20 17:00
+title: "Intro to PostgreSQL 'generate_series'"
+date: 2016-09-20
 comments: true
-categories: [SQL, Tips]
+tags: [SQL, Tips, Databases]
 ---
 
 

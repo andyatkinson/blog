@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Edit the filename of the current buffer in vim"
-date: 2013-10-09 11:14
+title: "Edit the Filename of the Current Buffer in Vim"
+date: 2013-10-09
 comments: true
-categories: [Tools]
+tags: [Tools, Vim, Tips]
 ---
 
 This blog is generated from text files that are comprised of a section of YAML code then markdown-formatted text. To convert the text files for use with new blog software I had to edit each filename and put the date the blog post was published on the front of the filename, which was in the YAML section of the file. I was looking for a solution that allowed me to preserve focus on the file contents and minimize buffer navigation while performing the rename and file edits within vim. There are a couple of ways to accomplish this. If the file is controlled by git and [fugitive.vim](https://github.com/tpope/vim-fugitive) is installed, then `:Gmove` can be used.

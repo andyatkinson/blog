@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Stats-driven lens shopping with Ruby
+title: Stats-driven Lens Shopping with Ruby
 date: 2009-03-05
 comments: true
-categories: Ruby
+tags: [Scripts, Ruby, Tips, Programming]
 ---
 
 I developed the script `photo_stats.rb` to move through date-based folders of photos, and grab EXIF data (thanks to the [exifr gem](http://exifr.rubyforge.org/)) for each photo. The script calculates the mean focal distance of all the photos, sums photos at the widest focal distance (18mm), maximum distance (200mm), and those in the bottom (18.0-46.0mm) and top (154.0-200.0mm) quarter of the focal range.
@@ -44,7 +44,7 @@ From my own favorite photos from the trip, I concluded that I don't shoot at a l
     top_quarter = photos.select{|p| tq_range.include?(p)}.length
 ```
 
-##### Focal length results for 240 photos
+#### Focal length results for 240 photos
 
  * 72 photos at minimum focal length of 18.0mm
  * 3 photos at maximum focal length of 200.0mm

@@ -1,9 +1,13 @@
 ---
 layout: post
 title: "Views, Stored Procedures, and Check Constraints"
-date: 2018-10-19 13:00
+date: 2018-10-19
 comments: true
-categories: [Databases]
+tags: [Databases, Tips]
+featured_image_thumbnail:
+featured_image: /assets/images/pages/andy-atkinson-south-dakota-badlands-2006.jpg
+featured_image_caption: Badlands National Park. &copy; 2006 <a href="/">Andy Atkinson</a>
+featured: true
 ---
 
 This post will take a quick look at views, stored procedures, and check constraints. What are they and what are their use cases? This post is specific to PostgreSQL.
@@ -12,7 +16,7 @@ This post will take a quick look at views, stored procedures, and check constrai
 
 A database view is kind of a virtual table, based on a `SELECT` query to an existing table. How are they used? One use case would be for security, limiting access to a table for a particular user to read only, and to a subset of the rows. This would be achieved by creating a view, and then granting permission to the view for that user (role).
 
-##### Basic View Example
+#### Basic View Example
 
 We'll put together a table for storing earnings by hour. Each record belongs to an employee. We'll insert some records with `employee_id` values between 1 and 5. We'll call the employees with IDs of 3 or less "special". [Views are currently read only](https://www.postgresql.org/docs/9.2/static/sql-createview.html).
 

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Sharing rake tasks defined in a gem"
-date: 2014-06-23 23:00
+title: "Sharing Rake Tasks Defined in a Gem"
+date: 2014-06-23
 comments: true
-categories: [Ruby, Tips]
+tags: [Ruby, Tips]
 ---
 
 This tip describes how to write a rake task in a gem, then use it in another Ruby gem or Rails app.

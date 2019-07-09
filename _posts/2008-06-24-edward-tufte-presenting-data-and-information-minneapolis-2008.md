@@ -3,7 +3,7 @@ layout: post
 title: Edward Tufte "Presenting Data And Information" Minneapolis 2008
 date: 2008-06-24
 comments: true
-categories: [Productivity, Conference]
+tags: [Books, Events, Productivity, Conferences]
 ---
 
 Edward Tufte is a statistician and considered an expert on presenting data visually. Tufte was highly recommended, so I decided to attend his 1-day course in Minneapolis. Part of the event cost included four of Tufte's books as hardcovers. 

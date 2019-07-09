@@ -3,12 +3,12 @@ layout: post
 title: Rails Deployments
 date: 2008-10-01
 comments: true
-categories: [Ruby, Rails]
+tags: [DevOps, Ruby, Rails]
 ---
 
 This September I deployed two Rails applications with different stacks, and I wanted to share the details.
 
-##### Personal project
+#### Personal project
 
  - Ubuntu Gutsy (7.10) [slicehost](http://www.slicehost.com/) image
  - Apache 2.2 with [Passenger](http://www.modrails.com/)
@@ -17,7 +17,7 @@ This September I deployed two Rails applications with different stacks, and I wa
 
 A 256MB slice runs this low traffic application OK. For two or more applications, more memory is preferred. I developed this application with [Git](http://git.or.cz/) version control, the repository was hosted on [github](http://github.com/).
 
-##### Work project
+#### Work project
 
  - Ubuntu Hardy (8.04) [Amazon EC2 image](http://aws.amazon.com/ec2/) (customized an existing AMI)
  - Asset storage on [Amazon S3](http://aws.amazon.com/s3/) via the <a href='http://github.com/technoweenie/attachment_fu/tree/master'>attachment_fu</a> plugin

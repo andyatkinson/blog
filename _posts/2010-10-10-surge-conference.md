@@ -3,7 +3,7 @@ layout: post
 title: Surge Conference
 date: 2010-10-10
 comments: true
-categories: [Conference]
+tags: [Conferences, Events]
 ---
 
 [Surge Conference](http://omniti.com/surge/2010) was held in Baltimore, MD in September 2010, put on by [OmniTI](http://omniti.com/). Some attendees compared it to the Velocity conference which also covers web performance, scalability, and operations.
@@ -12,7 +12,7 @@ Most attendees seemed to be system administrators or work in operations, though 
 
 Most of the content was new to me.
 
-##### Scalable Design Patterns
+#### Scalable Design Patterns
 
  - interesting idea: add latency and see how it affects business variables in order to fund an improvement
  - correlate business stats: ad-buy, convergence rates, page view time
@@ -27,7 +27,7 @@ caching
  - every type of data needs its own caching policy
  - don't have to pull all this data before you deliver the content
 
-##### Most common mysql mistakes (Ronald Bradford)
+#### Most common mysql mistakes (Ronald Bradford)
 
 This presenter was a database consultant with many years of experience.
 
@@ -50,7 +50,7 @@ Solution: identify blocking queries, use a transactional engine....usually long 
 Sharding products: akeban (automatic sharding), mysql monitoring, monyog (not free, easy to install) and cacti.
 
 
-##### Scaling LinkedIn
+#### Scaling LinkedIn
 
  - 0-90 million techcrunch disrupt, 1,000,000 content shares per day on facebook, throw hardware at the picture
   - first bottleneck, database, distributed database
@@ -65,7 +65,7 @@ Sharding products: akeban (automatic sharding), mysql monitoring, monyog (not fr
  - load datasets for developers. they use lucene (search, people search) and hadoop (used for background processing, batch environment, data is transferred in, business analytics, run queries against different logs etc.).
  - support public APIs, zookeeper: primarily manages clusters of servers, x86 solaris boxes, linux boxes more and more
 
-##### Facebook Operations
+#### Facebook Operations
 
 Tom Cook: systems engineer, tools, what does it look like, pain points. 500+ active million users (visited in less than 30 days), 80% return weekly.
 
@@ -87,11 +87,11 @@ Tom Cook: systems engineer, tools, what does it look like, pain points. 500+ act
  - heavy users of configuration management
  - plan ahead, facebook.com/engineering, facebook.com/opensource
 
-##### Wikia talk
+#### Wikia talk
 
  - Via twitter: Short version: GA, Varnish CDN, Riak/FS, Memcache, SSDs
 
-##### Big Data (Mike Malone)
+#### Big Data (Mike Malone)
 
  - HD, fault tolerant, choose non-relational database
  - cap theorem, PODC 2000 consistency, availability, partition tolerance, 2-phase commit pattern, acknowledgment comes after replica responds to write server
@@ -102,7 +102,7 @@ Tom Cook: systems engineer, tools, what does it look like, pain points. 500+ act
  - distributed hash-table overlay
 
 
-##### Get Rails to Scale
+#### Get Rails to Scale
 
 Synopsis: interesting talk by Geir Magnusson about how Gilt Groupe moved away from Rails, they needed to get away from the database due to their traffic patterns. [Gilt Groupe](http://www.gilt.com): limited availability sales from high end fashion.
 
@@ -115,7 +115,7 @@ Synopsis: interesting talk by Geir Magnusson about how Gilt Groupe moved away fr
  - "we have 400 thins" just hopeless
  - "falcon fastest in a dive, swift is fastest in level flight"
 
-##### How Etsy launches features
+#### How Etsy launches features
 
  - 96% of etsy's users are women
  - continuous deployment model, small and frequent changes, deploy 10-15 times per day, architecture review, development/ops feedback loop, go or no go, launch
@@ -143,7 +143,7 @@ Synopsis: interesting talk by Geir Magnusson about how Gilt Groupe moved away fr
  - graphite metrics collection, ganglia for infrastructure, ganglia log tailer, keeps cursor on the log, can get any metric out of those log lines, as long as you're logging, there are some built-in graphs
  - we use browser cookies for a/b testing for certain users to test things, if they have the cookie, they get a feature, otherwise they don't, they use A/B test framework for some of the ramp-up.  
 
-##### Chris Brown from Opscode
+#### Chris Brown from Opscode
 
  - Google, Amazon, Microsoft built their tools
  - "most folks are unprepared for success"
@@ -160,7 +160,7 @@ Synopsis: interesting talk by Geir Magnusson about how Gilt Groupe moved away fr
  - MVCC multi-version concurrency control, vector clocks, and reconciliation. don't resurrect objects.
  - splunk: data porn, it is beautiful, save everything, forever 
 
-##### Ops in the Cloud
+#### Ops in the Cloud
 
  - distributed databases, CouchDB
  - "what is availability?" more than uptime, who can operate on your system at a given point in time?
@@ -168,6 +168,6 @@ Synopsis: interesting talk by Geir Magnusson about how Gilt Groupe moved away fr
  - if a node goes bad, you attach it to a new EBS and you are good to go http://www.pingdom.com/
  
  
-##### Conclusion
+#### Conclusion
 
 Lots of interesting things to learn about Ops and devops, scaling, fault tolerance etc. A good conference overall.

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Cropping an image programmatically
+title: Cropping an Image Programmatically
 date: 2012-11-28
 comments: true
-categories: Productivity
+tags: [Tips, Productivity, Programming, CLI]
 ---
 
 Imagemagick is an image manipulation library that supports the ability to [crop an image programmatically](http://www.imagemagick.org/Usage/crop/#crop). There is a creative aspect to making a crop from an original image. A photo producer may be unhappy with a crop that was chosen automatically. It may make sense to build a tool that provides a nice front-end crop selection experience with imagemagick performing the actual crop on the server.

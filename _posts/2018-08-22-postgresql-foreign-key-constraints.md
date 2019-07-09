@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "A look at PostgreSQL Foreign Key Constraints"
-date: 2018-08-22 13:00
+title: "A Look at PostgreSQL Foreign Key Constraints"
+date: 2018-08-22
 comments: true
-categories: [Database, SQL]
+tags: [Databases, SQL]
 ---
 
 Foreign key constraints enforce that a referenced "thing" exists.
@@ -14,7 +14,7 @@ Constraints are not deferrable by default. From my investigation, the main use c
 
 A foreign key constraint may be altered later with [ALTER CONSTRAINT](https://www.postgresql.org/docs/9.4/static/sql-altertable.html) although to change this behavior with other constraints, I believe the constraint would need to be removed and then added again with the deferrable attribute set.
 
-##### SET CONSTRAINTS
+#### SET CONSTRAINTS
 
 > SET CONSTRAINTS sets the behavior of constraint checking within the current transaction.
 

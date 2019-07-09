@@ -3,12 +3,12 @@ layout: post
 title: "Node Frameworks: Geddy and Express"
 date: 2010-08-15
 comments: true
-categories: JavaScript
+tags: [Tips, JavaScript, Programming]
 ---
 
 In preparation for the [Node Knockout](http://nodeknockout.com/) competition, I decided to look at two frameworks [Geddy](http://geddyjs.org/) and [Express](http://expressjs.com/). 
 
-##### Geddy
+#### Geddy
 
 Geddy will be familiar to users of Ruby on Rails. Code is organized into model, view, and controller folders, it has a router that maps URLs to controller actions, and built-in generators to create new applications, models or controllers within an application. Geddy also includes ActiveRecord-style model validations.
 
@@ -20,7 +20,7 @@ From there I was able to add the model fields, and create records. I did not car
 
 Geddy even includes an `assert` framework for [unit testing your application JavaScript](http://wiki.github.com/mde/geddy/writing-tests).
 
-##### Express
+#### Express
 
 Express is more like the Ruby Sinatra framework than Rails.
 
@@ -30,7 +30,7 @@ The "upload" sample app in the Express framework source demonstrates using Haml 
 
 The Express documentation website doesn’t have anything on persistent server-side storage options (like SQLite or PostgreSQL). Depending on the application, perhaps an in-memory server-side JavaScript store would be fine. Or perhaps the application doesn't even need server-side persistent storage.
 
-##### Sample app
+#### Sample app
 
 Let’s store some `SnowDog` objects (from the Geddy sample app) with Express as well, and just store them in memory.  Using the "hello-world" example app from the Express source as a starting point, the following `app.js` demonstrates adding SnowDog objects to memory and serving them to the view layer through the Express `locals` object.
 
@@ -75,6 +75,6 @@ Let’s store some `SnowDog` objects (from the Geddy sample app) with Express as
     run()
 ```
     
-##### Conclusion
+#### Conclusion
 
 I hope this helped explain Geddy and Express.

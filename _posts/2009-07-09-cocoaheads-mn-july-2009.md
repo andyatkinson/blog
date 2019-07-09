@@ -3,7 +3,7 @@ layout: post
 title: Cocoaheads MN July 2009
 date: 2009-07-09
 comments: true
-categories: [Cocoa, Objective-C]
+tags: [Events, iOS, Objective-C]
 ---
 
 Bill Heyman from [Code Morphic](http://codemorphic.com/) led a discussion on some topics from WWDC 2009 and iPhone 3.0 SDK features.

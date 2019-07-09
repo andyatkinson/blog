@@ -1,94 +1,123 @@
 ---
 layout: default
-disqus: true
-archive: false
-about: 'about'
+disqus: false
+post_class: post-template
 ---
 
-<main class="content" role="main">
+    <main id="main" class="site-main">
+    
+        <article class="post-full inner">
 
-    <article class="post">
-        <header class="post-header">
-            <a id="blog-logo" href="{{site.url }}">
-              <span class="blog-title">{{ site.name }}</span>
-            </a>
-        </header>
+            <header class="post-header">
+                <div class="post-meta">
+                    <time class="post-date" datetime="{{ page.date | date: "%Y-%m-%d" }}">{{ page.date | date: "%B %-d,
+                        %Y" }}</time>
+                </div><!-- .post-meta -->
+                <h1 class="post-title">{{ page.title }}</h1>
+                {% if page.tags.size > 0 %}
+                <div class="post-tags">
+                    {% for tag in page.tags %} {% if forloop.index == page.tags.size %}
+                    <!-- site.baseurl here was not a leading slash, so removing it
+                      from here and in the else case
+                    -->
+                    <!-- <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '&#45; ' }}/'>{{ tag | camelcase }}</a> -->
+                    <a href='/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | camelcase }}</a>
+                    {% else %}
+                    <a href='/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | camelcase }}</a>
+                    {% endif %}
+                    {% endfor %}
+                </div>
+                {% endif %}
+            </header><!-- .post-header -->
 
-        <span class="post-meta">
-          <time datetime="{{ page.date | date:"%Y-%m-%d" }}">{{ page.date | date_to_string }}</time>
-          {% if page.categories %}
-        		on
-	        	{% for category in page.categories %}
-	        	    {{category}}
-	        	{% endfor %}
-	        {% endif %}
-       	</span>
-
-        <h1 class="post-title">{{ page.title }}</h1>
-
-        <section class="post-content">
-            {{content}}
-        </section>
-
-        {% if page.archive %}
-        <section class="archive">
-        	<h5>Archive</h5>
-    		<ul>
-    			{% for post in site.posts %}
-    				<li><span>{{ post.date | date_to_string }}</span>  <a href="{{ post.url }}">{{ post.title }}</a></li>
-    			{% endfor %}	
-    		</ul>
-        </section>
+            {% if page.featured_image %}
+            <div class="post-thumbnail">
+                <img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{{ page.title }}">
+                {% if page.featured_image_caption %}
+                  <small>{{ page.featured_image_caption }}</small>
+                {% endif %}
+            </div>
+            {% endif %}
+            <div class="post-content">
+                {{content}}
+            </div>
+            <footer class="post-footer">
+                <div class="post-share">
+                    <span class="post-share-title">Share:</span>
+                    <a target="_blank" href="https://twitter.com/share?text={{ page.title | url_encode }}&amp;url={{ site.production_url }}{{ page.url | remove_first: '/' }}">Twitter</a>
+                    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.production_url }}{{ page.url | remove_first: '/' }}">Facebook</a>
+                </div><!-- .share-post -->
+            </footer>
+            {% include disqus.html %}
+        </article>
+        {% if site.mailchimp_url %}
+            {% include newsletter-box.html %}
         {% endif %}
-
-        <footer class="post-footer">
-        	<!-- If we want to display author's name and bio -->
-            {% if site.author %}
-                <section class="author">
-                	<header> <a href="{{ site.url }}"> <img class="profile" src="/assets/images/profile-pic-new.jpg" alt="Author's profile picture"></a></header>
-                	<article>
-                		<!-- Author Name -->
-                    	<h4> {{ site.author }} </h4>
-                    	<!-- Author Bio -->
-                      <div>
-                        <p><a href="{{ site.url }}/about">Learn More</a></p>
-                      </div>
-                    </article>
-                </section>
+        <section class="read-next inner">
+            <h2 class="read-next-title">Read Next</h2>
+            {% if page.previous.url %}
+            <article class="post">
+                <header class="post-header">
+                    <div class="post-meta">
+                        <time class="published" datetime="{{page.previous.date | date: '%B %-d, %Y'}}">{{page.previous.date
+                            | date: "%B %-d, %Y"}}</time>
+                    </div>
+                    <h3 class="post-title"><a href="{{ site.baseurl }}{{page.previous.url}}">{{page.previous.title}}</a></h3>
+                    <p class="post-tags">
+                        {% if page.previous.tags.size > 0 %}
+                        {% for tag in page.previous.tags %}
+                        {% if forloop.index == page.previous.tags.size %}
+                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | capitalize
+                            }}</a>
+                        {% else %}
+                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | capitalize
+                            }}</a>
+                        {% endif %}
+                        {% endfor %}
+                        {% endif %}
+                    </p>
+                </header>
+            </article>
             {% endif %}
-
-            <section class="share">
-                <h4>Share this post</h4>
-                <a class="icon-twitter" href="http://twitter.com/share?text={{page.title}}&amp;url={{site.url}}{{ page.url }}"
-                    onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
-                    <span class="hidden">Twitter</span>
-                </a>
-                <a class="icon-facebook" href="https://www.facebook.com/sharer/sharer.php?u={{site.url}}{{page.url}}"
-                    onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
-                    <span class="hidden">Facebook</span>
-                </a>
-            </section>
-            
-            {% if page.disqus %}
-            <section class="disqus">
-            	<div id="disqus_thread"></div>
-            	<script type="text/javascript">
-
-            	    var disqus_shortname = 'andyatkinson'; 
-            		var disqus_developer = 0; // developer mode is on
-            	    (function() {
-            	        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            	        dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
-            	        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            	    })();
-            	</script>
-            	<noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-            	<a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
-            </section>
+            {% if page.next.url %}
+            <article class="post">
+                <header class="post-header">
+                    <div class="post-meta">
+                        <time class="published" datetime="{{page.next.date | date: '%B %-d, %Y'}}">{{page.next.date |
+                            date: "%B %-d, %Y"}}</time>
+                    </div>
+                    <h3 class="post-title"><a href="{{ site.baseurl }}{{page.next.url}}">{{page.next.title}}</a></h3>
+                    <p class="post-tags">
+                        {% if page.next.tags.size > 0 %}
+                        {% for tag in page.next.tags %}
+                        {% if forloop.index == page.next.tags.size %}
+                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | capitalize
+                            }}</a>
+                        {% else %}
+                        <a href='{{ site.baseurl }}/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | capitalize
+                            }}</a>
+                        {% endif %}
+                        {% endfor %}
+                        {% endif %}
+                    </p>
+                </header>
+            </article>
             {% endif %}
-        	
-        </footer>
+        </section><!-- .read-next -->
 
-    </article>
+        <!-- Create a sorted array of tags -->
+        {% capture site_tags %}{% for tag in site.tags %}{{ tag | first }}{% unless forloop.last %},{% endunless %}{% endfor
+        %}{%
+        endcapture %} {% assign sortedTags = site_tags | split:',' | sort %}
+        <section class="tagcloud inner">
+            <h2 class="tagcloud-title">Tags</h2>
+            <div class="tag-links">
+                {% for tag in sortedTags %}
+                <!-- site.production_url here was not a leading slash, so removed it -->
+                <!-- <a href='{{ site.production_url }}/tag/{{ tag | downcase | replace: ' ', '&#45; ' }}/'>{{ tag | camelcase }}</a> -->
+                <a href='/tag/{{ tag | downcase | replace: ' ', '&#45;' }}/'>{{ tag | camelcase }}</a>
+                {% endfor %}
+            </div><!-- .tag-links -->
+        </section><!-- .tagcloud -->
 
-</main>
+    </main><!-- .site-main -->

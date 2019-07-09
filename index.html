@@ -2,56 +2,40 @@
 layout: default
 title: Home
 ---
+<main id="main" class="site-main">
 
-<header class="site-head">
-  <div class='custom-header'>
-    <div class='content'>
-      <div class='inner'>
-        <div class='top-row'>
-          <img class="profile" src="/assets/images/profile-pic-new.jpg" alt=""></a>
-          <h1 class="blog-title">{{ site.name }}</h1>
-          <h2 class="blog-description">
-              {{ site.description }}
-          </h2>
-        </div>
-      </div>
-      <ul class='nav-links'>
-        <li><a href='/about'>About</a></li>
-        <li><a href='/projects'>Projects</a></li>
-      </ul>
-    </div>
-  </div>
-</header>
+{% if page.url == "/" %}
+<div class="hero inner">
+    <p class="hero-text">{{ site.author.greetings }}</p>
+</div>        
+{% endif %}
 
-<main class="content homepage" role="main">
-
-    {% for post in paginator.posts %}
-
-    <article class="post">
-        <header class="post-header">
-            <span class="post-meta"><time datetime="{{ post.date | date:"%Y-%m-%d" }}">{{ post.date | date_to_string }}</time> {{!tags prefix="on "}}</span>
-            <h2 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h2>
-
-        </header>
-        <section class="post-excerpt">
-        </section>
-    </article>
-
+{% if page.url == "/" %}
+<!-- Featured-->
+<div id="featured-posts" class="featured-posts">
+    {% for post in site.posts %}
+    {% if post.featured == true %}
+    {% include featuredbox.html %}
+    {% endif %}
     {% endfor %}
+</div>
 
-    <nav class="pagination" role="pagination">
-        {% if paginator.previous_page %}
-          {% if paginator.previous_page == 1 %}
-          <a class="newer-posts" href="/" title="Previous Page">&laquo; Newer Posts</a>
-          {% else %}
-          <a class="newer-posts" href="/page{{ paginator.previous_page }}/" title="Previous Page">&laquo; Newer Posts</a>
-          {% endif %}
-        {% endif %}
+{% endif%}
 
-        <span class="page-number"> Page {{paginator.page}} of {{paginator.total_pages}} </span>
-        {% if paginator.next_page %} 
-        <a class="older-posts" href="/page{{ paginator.next_page }}/" title="Next Page">Older Posts &raquo;</a>
-        {% endif %} 
-    </nav>
-
+<!-- Posts Index -->
+<div class="post-feed inner">
+    {% if page.url == "/" %}
+    <div class="post-feed-title">Latest Articles</div>
+    {% endif %}
+    <div class="post-feed inner-wide">
+        {% for post in paginator.posts %}
+            {% include postbox.html %}
+        {% endfor %}
+    </div>
+</div>
+<!-- Pagination-->
+{% include pagination.html %}
+{% if site.mailchimp_url %}
+    {% include newsletter-box.html %}
+{% endif %}
 </main>

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "This Week in Rails"
-date: 2017-04-21 13:00
+date: 2017-04-21
 comments: true
-categories: [Ruby, Rails]
+tags: [Ruby, Rails, "Open Source"]
 ---
 
 "This Week in Rails" is a weekly newsletter, started by [Godfrey Chan](https://twitter.com/chancancode), that covers a week's worth of interesting changes to the Ruby on Rails framework.
@@ -50,8 +50,8 @@ I've written or co-written a handful of issues over the last couple of years. Ch
 * [This Week in Rails: hooks, fixtures, fetch_values, database connections and more!](https://rails-weekly.ongoodbits.com/2017/04/15/hooks-fixtures-fetch_values-database-connections-and-more)
 * [New APIs, bug fixes, #Rio2016 🇧🇷](https://rails-weekly.ongoodbits.com/2016/08/05/new-apis-bug-fixes-rio2016)
 * [Happy New Year! (2016)](https://rails-weekly.ongoodbits.com/2016/01/08/happy-new-year)
-* [Job Priorities, Fast Failing Tests and Fixtures... Oh My!](https://rails-weekly.ongoodbits.com/2015/10/02/job-priorities-fast-failing-tests-and-fixtures-oh-my)
-* [GSoC, performance improvements and bug fixes!](https://rails-weekly.ongoodbits.com/2015/09/25/gsoc-performance-improvements-and-bug-fixes)
+* [Job Priorities, Fast Failing Tests and Fixtures... Oh My!](https://rails-weekly.ongoodbits.com/2015/10/02/job-priorities-fast-failing-tests-and-fixtures-oh-my) (Co-written with [Greg](https://twitter.com/gregmolnar))
+* [GSoC, performance improvements and bug fixes!](https://rails-weekly.ongoodbits.com/2015/09/25/gsoc-performance-improvements-and-bug-fixes) (Co-written with [Marcel](https://twitter.com/marcelmorgan))
 
 ### Get Involved
 

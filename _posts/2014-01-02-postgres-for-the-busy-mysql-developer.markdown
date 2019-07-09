@@ -1,18 +1,18 @@
 ---
 layout: post
-title: "Postgres for the busy MySQL developer"
-date: 2014-01-02 14:50
+title: "Postgres for the Busy MySQL Developer"
+date: 2014-01-02
 comments: true
-categories: [PostgreSQL, Productivity, Databases]
+tags: [MySQL, PostgreSQL, Productivity, Databases]
 ---
 
 For a new project I will be using PostgreSQL. I have more experience with MySQL at this point so I wanted to quickly learn about PostgreSQL and port over some of the skills I have.
 
-##### Roles
+#### Roles
 
 Permissions are managed with "roles". To see all roles, type `\du`. A Superuser is created that is the same as my login user. To see the privileges for all tables, run `\l`. Here is a [list of privileges](http://www.postgresql.org/docs/9.0/static/sql-grant.html).
 
-##### Working with Rails
+#### Working with Rails
 
 For a Rails application, create a `rails` role and make it the owner:
 
@@ -37,7 +37,7 @@ select rolcreatedb from pg_roles where rolname = 'rails';
  t
 ```
 
-##### Working with CSV data
+#### Working with CSV data
 
 Like Mysql, Postgres supports working with data from CSV files. The following example uses a `company_stuff` database with a `customers` table. First we need to create the database, connect to it, and create the table.
 
@@ -93,7 +93,7 @@ jane@example.com, Jane Doe
 andy@example.com,andy
 ```
 
-##### Running one-off queries
+#### Running one-off queries
 
 Running a query from the command line then combining it with `grep` or other command line tools is very useful. Here is quick search in the "customers" database for columns named something like "email", using grep:
 
@@ -102,7 +102,7 @@ Running a query from the command line then combining it with `grep` or other com
      email     | character varying(100) |
 ```
 
-##### More Mysql to Postgres articles
+#### More Mysql to Postgres articles
 
  * [Useful guide on equivalent commands in postgres from mysql](http://granjow.net/postgresql.html)
  * [PostgreSQL quick start for people who know MySQL](http://clarkdave.net/2012/08/postgres-quick-start-for-people-who-know-mysql/)

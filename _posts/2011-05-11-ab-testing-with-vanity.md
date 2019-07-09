@@ -3,14 +3,14 @@ layout: post
 title: A/B Testing with Vanity
 date: 2011-05-11
 comments: true
-categories: [Ruby, Tools]
+tags: [Ruby, Tools, Lean Startup]
 ---
 
 Vanity is an A/B Testing framework for Ruby on Rails applications. I covered A/Bingo previously which is a similar framework. We have moved to Vanity at work as our A/B testing tool for a number of reasons. We are using Redis already and Vanity does its metrics and metric tracking in Redis. One of my colleagues has a good understanding of the internals of the Vanity source code as well. 
 
 The Vanity documentation is pretty good but I thought this post could help for those getting started. Read the [labnotes blog documentation](http://vanity.labnotes.org/) and the 2-minute demo instructions first. We have used Vanity with Redis, which is the single data store it originally supported, but it has since been expanded to support ActiveRecord (RDBMS) and MongoDB. Keeping experiment and participant tracking in a separate data store like Redis was better than the database in terms of speed. We have also been able to develop some patches to disable Vanity if Redis goes down without taking the (database-backed) site down as well.
 
-##### Getting started
+#### Getting started
 
 **Create the experiment directory and files**. A generator would be useful here. This example creates an experiment that presents multiple prices for a commerce website. In vanity each experiment requires a Ruby source file in the `experiments` directory, which is at the root of the Rails app. Run the following from the Rails root:
 
@@ -45,7 +45,7 @@ end
 
 Site visitors need to be identified in some way for Vanity to work properly. This is a bit easier with logged-in users, because they probably have a database record that identifies their account uniquely, which could be used with Vanity. Without a database record, you can create a session to identify each user, or use their IP address, or some other way that makes sense for your application. In the project I'm working on, we have visitors that do not have accounts yet. I use the `use_vanity` method from Vanity without any arguments, which creates a `vanity_id` for that visitor. The `vanity_id` for a user is available across multiple requests since it is available as a cookie and sent with each request.
 
-##### Reporting
+#### Reporting
 
 When participants have viewed alternatives and you're ready to look at report output, you can generate results to a output file or use a dashboard. As of this writing, the report output does not work. You will need to have your data store running (Redis in our case) since it will use the datastore to pull participant data. Typically we just use the dashboard to view participation counts.
 
@@ -53,7 +53,7 @@ When participants have viewed alternatives and you're ready to look at report ou
 vanity report --output vanity.html
 ```
 
-##### Dashboard
+#### Dashboard
 
 Vanity reports are available with some controller and view code provided by the gem. The documentation has you create a vanity controller, but you can also move these controller actions and view code around in your application. If you follow the instructions, the gem has actions that make assumptions about the controller being there and being named a certain way, and a route being available to route to the vanity controller. The following syntax works in Rails 3.
 

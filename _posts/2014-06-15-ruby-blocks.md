@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Using Ruby blocks"
-date: 2014-05-21 23:00
+title: "Using Ruby Blocks"
+date: 2014-05-21
 comments: true
-categories: [Ruby, Tips, Programming]
+tags: [Ruby, Tips, Programming]
 ---
 
 A nice usage of Ruby blocks in application code is to externalize some repeated code.

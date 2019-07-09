@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Using a Set in Ruby"
-date: 2013-11-14 16:50
+date: 2013-11-14
 comments: true
-categories: [Ruby]
+tags: [Ruby, Tips]
 ---
 
 A Set [^rubydoc] is a useful collection and something I under-utilize in Ruby. A Set does not allow duplicates. Converting between a Set and an Array is easy. In the article *A Guide to Ruby Collections, II: Hashes, Sets, and Ranges* [^sitepoint] the author has listed some nice examples where Sets are useful.
@@ -22,7 +22,7 @@ Set[1,2].hash == Set[2,1].hash # => true
 
 Sets can be used to store different types of objects like Array. Set operations can be performed which might make cleaner code when finding a subset of values. More Set operations can be found in the article *When Is a Set Better Than an Array in Ruby?* [^setbetter]. 
 
-##### Set operations
+#### Set operations
 
 Set operations can also be performed on Arrays which Avdi Grimm describes in his article *Array Set Operations in Ruby* [^setarray].
 
@@ -35,7 +35,7 @@ s1 | s2 # => #<Set: {1, 2, 3}>
 s1 ^ s2 # => #<Set: {3, 1}>
 ```
 
-##### Conclusion
+#### Conclusion
 
 Next time try a Set!
 

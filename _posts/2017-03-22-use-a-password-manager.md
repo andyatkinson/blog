@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "Use a Password Manager"
-date: 2017-03-22 13:00
+date: 2017-03-22
 comments: true
-categories: [Tips]
+tags: [Tips, Tools, Productivity]
 ---
 
 Password managers have been around for a while, but I've been skeptical about using them and was turned off to the recurring billing model (more on that later).

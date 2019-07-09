@@ -1,9 +1,9 @@
 ---
 layout: post
-title: Working with large amounts of data using MySQL
+title: Working with Large Amounts of Data using MySQL
 date: 2012-11-27
 comments: true
-categories: [Productivity, MySQL]
+tags: [Productivity, MySQL, Databases]
 ---
 
 MySQL [LOAD DATA INFILE](http://dev.mysql.com/doc/refman/4.1/en/load-data.html) can be used to load thousands or millions of records very quickly. Each row in a CSV text file will be created as a record in the database.

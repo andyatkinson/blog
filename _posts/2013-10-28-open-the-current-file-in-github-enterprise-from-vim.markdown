@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Open the current file in github enterprise from Vim"
-date: 2013-10-28 17:46
+title: "Open the Current File in Github Enterprise from Vim"
+date: 2013-10-28
 comments: true
-categories: [Git, Productivity, Tools]
+tags: [Scripts, Vim, Tips, Git, Productivity]
 ---
 
-##### fugitive.vim
+#### fugitive.vim
 
 The fugitive.vim plugin [^plugin] for Vim has a nice feature to open a file in github. It is even possible to have a range or line highlighted from a visual selection!
 
@@ -30,7 +30,7 @@ To keep this private URL out of my public Vim configuration [^vim_config], I mad
 let g:fugitive_github_domains = ['http://secret_github_enterprise_url']
 ```
 
-##### Opening files
+#### Opening files
 
 In a new Vim instance or after reloading the main Vim config, `:Gbrowse` opens the current file at the correct URL in github enterprise! This is a nice time saver when sharing links to code with colleagues. 
 
@@ -38,7 +38,7 @@ To have one or more lines automatically highlighted on the opened page, type `Gb
 
 Another nice tip [^tip] to copy the path to the clipboard without opening the browser, is `:Gbrowse! -`.
 
-##### Conclusion
+#### Conclusion
 
 Have any other time savers in your workflow to share?
 

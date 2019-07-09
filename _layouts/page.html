@@ -2,35 +2,19 @@
 layout: default
 ---
 
-<main class="content" role="main">
-    <article class="post">
+<main id="main" class="site-main">
+    <article class="post-full inner">
         <header class="post-header">
-          <a id="blog-logo" href="{{ site.url }}">
-            <span class="blog-title">{{ site.name }}</span>
-          </a>
-        </header>
-
-        <h1 class="post-title">{{ page.title }}</h1>
-
-        <section class="post-content">
-          {{content}}
-        </section>
-
-        {% if page.show_footer %}
-        <footer class="post-footer">
-          {% if site.author %}
-            <section class="author">
-             <header> <a href="{{ site.url }}"> <img class="profile" src="/assets/images/profile-pic-new.jpg" alt="Author's profile picture"></a></header>
-             <article>
-                 <h4> {{ site.author }} </h4>
-                 <div>
-                   <p>Andy is a senior engineer building web applications with Ruby and Rails. <a href="{{ site.url }}/about">Learn More</a></p>
-                 </div>
-               </article>
-             </section>
-          {% endif %}
-        </footer>
+            <h1 class="post-title">{{ page.title }}</h1>
+        </header><!-- .post-header -->
+        {% if page.featured_image %}
+        <div class="post-thumbnail"><img src="{{ site.baseurl }}{{ page.featured_image }}" alt="{% if page.featured_image_alt %}{{ page.featured_image_alt }}{% else %}{{ page.title }}{% endif %}" /></div>
         {% endif %}
-
+        <div class="post-content inner">
+            {{content}}
+        </div>
     </article>
-</main>
+    {% if site.mailchimp_url %}
+    {% include newsletter-box.html %}
+    {% endif %}
+</main><!-- .site-main -->

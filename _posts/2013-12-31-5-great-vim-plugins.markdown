@@ -1,9 +1,9 @@
 ---
 layout: post
 title: "5 Great Vim Plugins"
-date: 2013-12-31 23:32
+date: 2013-12-31
 comments: true
-categories: [Tools, Productivity]
+tags: [Tools, Productivity, Vim, Tips]
 ---
 
 These are some useful Vim plugins I've tried out and recommend.
@@ -17,5 +17,5 @@ These are some useful Vim plugins I've tried out and recommend.
  * [ctrlp-funky](https://github.com/tacahiroy/ctrlp-funky) is a plugin for CtrlP, which is a fuzzy finding plugin. `leader-p` brings up CtrlP, and `leader-b` brings up a most-recently-used buffer list, which also supports fuzzy finding by name. A feature from Textmate I was missing was a list of function names, that I could fuzzy find on. The ctrlp-funky extension adds this functionality to CtrlP.
 
  * [vim-sparkup](https://github.com/tristen/vim-sparkup) is nice for writing HTML snippets and expanding them. `C-e` expands `div.container` to `<div class="container"></div>`, puts the cursor in between the tag, and enters insert mode.
- 
- What are your favorite Vim plugins?
+
+What are your favorite Vim plugins?
