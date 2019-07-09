@@ -6,7 +6,7 @@ This is the source for my blog.
 
 ### Run jekyll server locally
 
-    bundle exec jekyll serve
+    bundle exec jekyll serve --incremental
 
 ### Deployment
 
