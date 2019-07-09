@@ -1,6 +1,3 @@
-namespace :assets do
-  desc 'Precompile assets'
-  task :precompile do
-    sh "bundle exec jekyll build"
-  end
+task "assets:precompile" do
+  exec("jekyll build")
 end
