@@ -11,6 +11,12 @@ Multi-word tags had a whitespace character after the hyphen. Removed that so URL
 
 `site.baseurl` did not have a leading slash in `_layouts/post.html` and did elsewhere, so this was breaking links. For now I manually inserted the leading slash in that file.
 
+#### More Resources
+
+[Setting up Namecheap DNS with Github Pages](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages)
+
+[Setting up Github Pages Custom Domains](https://github.blog/2018-05-01-github-pages-custom-domains-https/)
+
 
 ### Development
 
