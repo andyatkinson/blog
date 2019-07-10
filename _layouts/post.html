@@ -21,9 +21,9 @@ post_class: post-template
                       from here and in the else case
                     -->
                     <!-- <a href='{{ site.baseurl }}tag/{{ tag | downcase | replace: ' ', '&#45; ' }}/'>{{ tag | camelcase }}</a> -->
-                    <a href='/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | camelcase }}</a>
+                    <a href='/tag#{{ tag | downcase | replace: ' ', '-' }}'>{{ tag | camelcase }}</a>
                     {% else %}
-                    <a href='/tag/{{ tag | downcase | replace: ' ', '-' }}/'>{{ tag | camelcase }}</a>
+                    <a href='/tag#{{ tag | downcase | replace: ' ', '-' }}'>{{ tag | camelcase }}</a>
                     {% endif %}
                     {% endfor %}
                 </div>
