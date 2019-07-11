@@ -54,13 +54,13 @@ Mike Clark has written a lengthy overview of [Webby](http://clarkware.com/cgi/bl
 #### [Jekyll](http://github.com/mojombo/jekyll)
 
  - Supports migrating from other platforms like Movable Type and Typo
- - Jekyll used daily in the real world by powering Github Pages
+ - Jekyll used daily in the real world by powering GitHub Pages
  - Source code highlighting
 
 
 #### Summary
 
-Staticmatic, Webby, and Jekyll are the best options. Webby has more features and has been around longer. Jekyll works locally or can be used through Github pages.
+Staticmatic, Webby, and Jekyll are the best options. Webby has more features and has been around longer. Jekyll works locally or can be used through GitHub pages.
 
 After spending a few minutes and doing basic testing with each, I prefer Staticmatic for static webpage development where I'm building out a site in Haml quickly.
 

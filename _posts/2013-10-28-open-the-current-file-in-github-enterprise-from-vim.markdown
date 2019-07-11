@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Open the Current File in Github Enterprise from Vim"
+title: "Open the Current File in GitHub Enterprise from Vim"
 date: 2013-10-28
 comments: true
 tags: [Scripts, Vim, Tips, Git, Productivity]
@@ -14,7 +14,7 @@ From the README:
 
 > Use :Gbrowse to open the current file on GitHub, with optional line range (try it in visual mode!). If your current repository isn't on GitHub, git instaweb will be spun up instead.
 
-But what if your team uses the Github Enterprise version of github or a private git server? We are in luck, the `Gbrowse` feature still works, it just requires a little configuration.
+But what if your team uses the GitHub Enterprise version of github or a private git server? We are in luck, the `Gbrowse` feature still works, it just requires a little configuration.
 
 First on OS X, I had to tell git that I want web URLs to open with the `open` command. By default they were being opened with a command line browser.
 
@@ -22,7 +22,7 @@ First on OS X, I had to tell git that I want web URLs to open with the `open` co
 git config --global web.browser open
 ```
 
-Next, the github domain can be set via a variable that the plugin reads. This was set to our private Github Enterprise URL. 
+Next, the github domain can be set via a variable that the plugin reads. This was set to our private GitHub Enterprise URL. 
 
 To keep this private URL out of my public Vim configuration [^vim_config], I made a `workvimrc` file and called `source ~/.workvimrc` to "source" it into my main config. Now the value is read when new Vim instances are started.
 

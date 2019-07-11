@@ -1,12 +1,12 @@
 ---
 layout: post
-title: "Rubyconf Argentina 2012"
+title: "RubyConf Argentina 2012"
 date: 2013-11-27
 comments: true
 tags: [Events, Ruby, Conferences, Lean Startup]
 ---
 
-Rubyconf Argentina 2012 was held in Buenos Aires, Argentina, at a theater in the Paseo La Plaza area. This area is in the center of Buenos Aires near the obelisk landmark. Attendees came from Buenos Aires, Brazil, Chile, Uruguay, Peru, the United States and Europe. All the [conference talks were posted on Vimeo](http://vimeo.com/album/2344729).
+RubyConf Argentina 2012 was held in Buenos Aires, Argentina, at a theater in the Paseo La Plaza area. This area is in the center of Buenos Aires near the obelisk landmark. Attendees came from Buenos Aires, Brazil, Chile, Uruguay, Peru, the United States and Europe. All the [conference talks were posted on Vimeo](http://vimeo.com/album/2344729).
 
 This was my first experience in South America and I felt very fortunate to have the opportunity to travel and give a talk.
 
@@ -18,7 +18,7 @@ The day before the conference, the organizers held an [asado](http://en.wikipedi
 
 My talk was scheduled in the second slot on the first day. By the time I was giving the talk, I had practiced a lot, but I was still nervous because I'd never done any public speaking on an actual stage before, and I was planning an introduction in Spanish. The [Bmore on Rails](http://bmoreonrails.org/) group was nice enough to listen to a (rough) first version of the talk. The talk went ok and several people came up to me afterwards for more information, which was nice.
 
-That evening, Github sponsored a drinkup at Temple Bar, a short walk from the venue. The second day of the conference had sessions given in Spanish and English. There was another social event at Paseo La Plaza following the second day, which was a more relaxed outdoor place to socialize.
+That evening, GitHub sponsored a drinkup at Temple Bar, a short walk from the venue. The second day of the conference had sessions given in Spanish and English. There was another social event at Paseo La Plaza following the second day, which was a more relaxed outdoor place to socialize.
 
 #### Food, drink, sightseeing
 
@@ -35,5 +35,5 @@ Giving a conference talk was a challenging experience. However being able to tra
 #### External links to conference and talk
 
  * [RubyConf Argentina 2012](http://thewritermoustache.com/2012/10/24/rubyconf-argentina-2012/)
- * [NilClass Rubyconf 2012](http://nilclass.blogspot.com/2012/10/rubyconf-2012.html)
+ * [NilClass RubyConf 2012](http://nilclass.blogspot.com/2012/10/rubyconf-2012.html)
  * [RubyConfAR 2012 - Day#1](http://code54.com/blog/2012/11/09/rubyconfar-2012-day1.html)

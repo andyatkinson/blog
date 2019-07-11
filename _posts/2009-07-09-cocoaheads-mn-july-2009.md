@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Cocoaheads MN July 2009
+title: CocoaHeads MN July 2009
 date: 2009-07-09
 comments: true
 tags: [Events, iOS, Objective-C]

@@ -46,6 +46,8 @@ navigation:
     url: /speaking-opportunities
   - text: Events
     url: /events-and-volunteering
+  - text: Archive
+    url: /tag
   - text: Contact Me
     url: /contact
 

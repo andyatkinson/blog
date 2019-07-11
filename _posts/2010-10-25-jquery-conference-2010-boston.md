@@ -1,6 +1,6 @@
 ---
 layout: post
-title: jQuery Conference 2010 Boston
+title: jQuery Conference Boston 2010
 date: 2010-10-25
 comments: true
 tags: [Events, JavaScript, Conferences]
@@ -131,11 +131,11 @@ Yehuda Katz recently joined the Sproutcore team. He shared that Sproutcore uses 
  - binds an object to a field
 
 
-#### JavascriptMVC session
+#### JavaScriptMVC session
 
 JavaScriptMVC is a heavier framework that "has it all" for large JavaScript projects, more like Rails than Sinatra. For example, it has conventions for breaking up functionality, organizing files, and testing tools built-in.
 
- - not strong conventions in JavaScript projects when you start to break things up into several files. JavascriptMVC does dependency management
+ - not strong conventions in JavaScript projects when you start to break things up into several files. JavaScriptMVC does dependency management
  - StealJS is what JMVC uses
  - "resources" are third party scripts
  - "controller" controls a dom element, uses pubsub to communicate

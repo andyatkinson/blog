@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Surge Conference
+title: Surge Conference 2010
 date: 2010-10-10
 comments: true
 tags: [Conferences, Events]

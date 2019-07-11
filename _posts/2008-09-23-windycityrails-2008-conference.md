@@ -1,6 +1,6 @@
 ---
 layout: post
-title: WindyCityRails 2008 Conference
+title: WindyCityRails Conference 2008
 date: 2008-09-23
 comments: true
 tags: [Ruby, Rails, Conferences, Events]

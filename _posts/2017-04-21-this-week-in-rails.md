@@ -40,7 +40,7 @@ Initially I hoped to get more involved as a Rails contributor, but that hasn't h
 
  * Basecamp for document storage (details about the editing team and process), editor schedule, chat with the team
  * Goodbits for the newsletter itself
- * Github, of course!
+ * GitHub, of course!
 
 ### Issues
 
@@ -55,4 +55,4 @@ I've written or co-written a handful of issues over the last couple of years. Ch
 
 ### Get Involved
 
-I'll be at Railsconf 2017 in Phoenix, AZ, and hope to meet other editors (in person) that will be there. If you're interested in helping out, get in touch!
+I'll be at RailsConf 2017 in Phoenix, AZ, and hope to meet other editors (in person) that will be there. If you're interested in helping out, get in touch!

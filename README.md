@@ -1,6 +1,6 @@
 ## Hello!
 
-This is the source for my website, blog, and portfolio at [andyatkinson.com](https://andyatkinson.com) built with Jekyll and hosted on Github Pages.
+This is the source for my website, blog, and portfolio at [andyatkinson.com](https://andyatkinson.com) built with Jekyll and hosted on GitHub Pages.
 
 #### Theme bugs and issues
 
@@ -13,9 +13,9 @@ Multi-word tags had a whitespace character after the hyphen. Removed that so URL
 
 #### More Resources
 
-[Setting up Namecheap DNS with Github Pages](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages)
+[Setting up Namecheap DNS with GitHub Pages](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages)
 
-[Setting up Github Pages Custom Domains](https://github.blog/2018-05-01-github-pages-custom-domains-https/)
+[Setting up GitHub Pages Custom Domains](https://github.blog/2018-05-01-github-pages-custom-domains-https/)
 
 
 ### Development

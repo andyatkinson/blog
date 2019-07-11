@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to Code Review a Repository with Github"
+title: "How to Code Review a Repository with GitHub"
 date: 2013-10-16
 comments: true
 tags: [Tips, Git]
