@@ -121,7 +121,7 @@ In order to make the move from Slicehost really complete, I need to move my doma
 
 #### Production data
 
-Pulling the data from the production system into the Heroku app database will complete the transition. In this way I can get the system up and running before updating the domain name, allowing me to do a zero downtime switch. For my blog I wouldn’t care if it was down for a while, but for a company website, it is neat to be able to pull data via the taps gem from the current production database and test everything out first. [Blog post on the taps gem](http://adam.heroku.com/past/2009/2/11/taps_for_easy_database_transfers/)
+Pulling the data from the production system into the Heroku app database will complete the transition. In this way I can get the system up and running before updating the domain name, allowing me to do a zero downtime switch. For my blog I wouldn't care if it was down for a while, but for a company website, it is neat to be able to pull data via the taps gem from the current production database and test everything out first. [Blog post on the taps gem](http://adam.heroku.com/past/2009/2/11/taps_for_easy_database_transfers/)
 
 I needed to update RubyGems on my slice and I opened a port on my firewall with iptables following the Slicehost instructions: 
 

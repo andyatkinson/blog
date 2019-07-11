@@ -27,7 +27,7 @@ caching
  - every type of data needs its own caching policy
  - don't have to pull all this data before you deliver the content
 
-#### Most common mysql mistakes (Ronald Bradford)
+#### Most Common MySQL Mistakes (Ronald Bradford)
 
 This presenter was a database consultant with many years of experience.
 
@@ -37,7 +37,7 @@ Solution: identify blocking queries, use a transactional engine....usually long 
 
  - why is my database so large? Don't put large assets in the database, or large chunks of uncompressed data that could be compressed (maximize memory usage for important data, reduce database recovery time). Compress text data, particularly with no indexes on it and when it is not searchable.
  
- - I can't access my website: monitoring, alerting, dashboard, status site. monitoring/alerting are good but are reactive, useless for realtime analysis. recommendation: dashboard page, sampling at 1s/3s/5s, e.g. 1% of throughput, uptime of server, latency time, number of db connections, locked, not locked, how big pages are, how many apache connections there are.
+ - I can't access my website: monitoring, alerting, dashboard, status site. monitoring/alerting are good but are reactive, useless for realtime analysis. Recommendation: dashboard page, sampling at 1s/3s/5s, e.g. 1% of throughput, uptime of server, latency time, number of db connections, locked, not locked, how big pages are, how many apache connections there are.
  
  - my replication slave can't keep up: most mysql environments have a couple servers at least, writes happen on the master and are replayed on the slave, understand what the threshold is with how fast the slave can replay the writes on the master (identify the weakest link), on the slave everything is replayed in a single thread (compared with writes on the master). Have you ever performed a database recovery?, have a DR plan in place (documented, tested, timed, verified end to end). Do you pass the mysql backup quiz?
  
@@ -45,7 +45,7 @@ Solution: identify blocking queries, use a transactional engine....usually long 
  
  - my database is slow: evaluate the time taken in database and between application tiers. tools: httpwatch, stevesouders.com, Yahoo performance rules
  
- - I want to add new hardware, how do I change my application to support this? requires no code changes, to add add more hardware. API in place: one code path for business functionality, enables testability. Store results of query in cache, hates ORMs in use in Rails/hibernate because returning the whole row is unnecessary
+ - I want to add new hardware, how do I change my application to support this? Requires no code changes, to add add more hardware. API in place: one code path for business functionality, enables testability. Store results of query in cache, hates ORMs in use in Rails/hibernate because returning the whole row is unnecessary
  
 Sharding products: akeban (automatic sharding), mysql monitoring, monyog (not free, easy to install) and cacti.
 

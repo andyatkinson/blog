@@ -30,11 +30,11 @@ One of the most frequent problems team members have with bundler (especially whe
 
 The other problem is adding new gems in an application where they are all frozen. Previously I had been running `bundle install` with the `--deployment` option (it seems to have the same effect as package, i.e. building a `.gem` file in vendor/cache), but the bundler documentation says to not use `--deployment` on a development machine. However running `bundle install` first, then  again with the `--deployment` option, fixes the issue.
 
-The [bundler documentation on packaging](http://gembundler.com/bundle_package.html) says to run `bundle package` to build the the `.gem` files in vendor/cache. 
+The [bundler documentation on packaging](http://gembundler.com/bundle_package.html) says to run `bundle package` to build the `.gem` files in vendor/cache. 
 
 #### Editing a gem locally
 
-If you have local edits to a gem, you probably want to keep the source in a separate location from where bundler would put it (`vendor/bundle`). To store the gem source in another location, specify the `--path` option to `bundle install`, e.g. `bundle install --path vendor/gems`. Another option is to specify a git repository with the `:git` option on a per-gem basis in the `Gemfile`. In one case bundler downloads and builds a gem from a project fork on github using this option in our project. We have a lot of internal gems behind the firewall using [Gem in a box](https://github.com/geminabox/geminabox) with the internal gem host added to the project `Gemfile`.
+If you have local edits to a gem, you probably want to keep the source in a separate location from where bundler would put it (`vendor/bundle`). To store the gem source in another location, specify the `--path` option to `bundle install`, e.g. `bundle install --path vendor/gems`. Another option is to specify a git repository with the `:git` option on a per-gem basis in the `Gemfile`. In one case bundler downloads and builds a gem from a project fork on GitHub using this option in our project. We have a lot of internal gems behind the firewall using [Gem in a box](https://github.com/geminabox/geminabox) with the internal gem host added to the project `Gemfile`.
 
 #### Binaries or other executables
 

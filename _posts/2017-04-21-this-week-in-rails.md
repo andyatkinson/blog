@@ -10,33 +10,33 @@ tags: [Ruby, Rails, "Open Source"]
 
 I have been helping write issues since 2015, and I wanted to share my story and some thoughts about becoming an editor.
 
-### A brief history
+### A Brief History
 
 After Godfrey became a regular Rails contributor, [he started a side project](https://rails-weekly.ongoodbits.com/2017/04/09/an-incredible-journey) to write about changes in Rails each week. The first issue was written over 3 years ago in March 2014, and had 14 recipients. Since then, a team of editors has formed, creating new issues each week, being delivered to over 7000 subscribers!
 
-I was a reader of the newsletter and attended a talk Godfrey gave at the Rubynation conferece. I met him briefly after his talk, and followed up by email, expressing my interest in helping out. Soon after I was scheduled to co-write an issue!
+I was a reader of the newsletter and attended a talk Godfrey gave at the RubyNation conference. I met him briefly after his talk, and followed up by email, expressing my interest in helping out. Soon after I was scheduled to co-write an issue!
 
-### Distributed team and mentorship
+### Distributed Team and Mentorship
 
 After getting in touch, I learned there was a team of editors that write the issues. I was paired up with [Marcel](https://twitter.com/marcelmorgan), and we co-wrote an issue (over Google Hangouts, him from Jamaica, and me from Minnesota, USA), where I learned the tools and the process the team generally followed. Later on, I paired up with [Greg](https://twitter.com/gregmolnar) (Greg was in the UK) for another issue before striking out on my own.
 
 I think the distributed team (many countries and timezones) works because of the tools, but also because the mentorship approach for onboarding new editors.
 
-### Mangement style
+### Management Style
 
 Godfrey has a jovial writing style, and manages the newsletter and team in a similar way. Each editor can put their personal touch on the issue they're writing, but there is also consistency. Generally a lot of responsibility is left up to the author, which worked for me, but there is also a team of people to reach out to for help.
 
-### Writing style
+### Writing Style
 
 Since we're writing about code, for programmers, as programmers, the content can be a little dry. The writing style tries to be fun, and not take things too seriously. An issue having a theme can be helpful. I've taken inspiration from holidays and world events.
 
 The real nuts and bolts of the issues though involve reading through most of the commits for the week (dozens generally), looking for interesting Pull Requests with with comments and context, or bug fixes and features with a broad impact. We also like to highlight the number of contributors, and call out first-time contributors, to help get these individuals some recognition for their hard work.
 
-### Personal motivation
+### Personal Motivation
 
 Initially I hoped to get more involved as a Rails contributor, but that hasn't happened. I have dug into some Rails commits in more depth though, having researched them more, and I've enjoyed meeting the other editors (online and in person).
 
-### Tools of the trade
+### Tools of the Trade
 
  * Basecamp for document storage (details about the editing team and process), editor schedule, chat with the team
  * Goodbits for the newsletter itself

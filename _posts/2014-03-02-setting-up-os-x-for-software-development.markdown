@@ -6,7 +6,7 @@ comments: true
 tags: [OS X, Productivity, Tips, Tools, Vim]
 ---
 
-I do software development on my Mac, mostly web application development with Ruby on Rails. Code is stored on either github or bitbucket.
+I do software development on my Mac, mostly web application development with Ruby on Rails. Code is stored on either GitHub or BitBucket.
 
 #### Dependencies
 
@@ -14,7 +14,7 @@ Everything below depends on having these installed.
 
  * Homebrew
  * Xcode and Command Line Tools (starts automatically)
- * Git (I installed with homebrew `brew install git`)
+ * Git (I installed with Homebrew `brew install git`)
  * Run `sudo xcodebuild -license` and agree to the terms
 
 #### Ruby
@@ -28,11 +28,11 @@ I use rbenv and ruby-build to manage multiple versions of ruby.
 
 #### dotfiles
 
-My configuration files and installation scripts are stored publicly on github in my [dotfiles](https://github.com/andyatkinson/dotfiles) project. I keep my work and personal source code in a directory called `~/Projects`. 
+My configuration files and installation scripts are stored publicly on GitHub in my [dotfiles](https://github.com/andyatkinson/dotfiles) project. I keep my work and personal source code in a directory called `~/Projects`. 
 
  * `mkdir ~/Projects`
  * brew install macvim
- * Clone dotfiles repository, and run various installation rake tasks. (`rake dotfiles`), install homebrew formulas manually or with the rake task, install npm packages, install OS X defaults (`rake os_x_defaults`)
+ * Clone dotfiles repository, and run various installation rake tasks. (`rake dotfiles`), install Homebrew formulas manually or with the rake task, install npm packages, install OS X defaults (`rake os_x_defaults`)
 
 #### OS X apps
 

@@ -10,7 +10,7 @@ In preparation for the [Node Knockout](http://nodeknockout.com/) competition, I 
 
 #### Geddy
 
-Geddy will be familiar to users of Ruby on Rails. Code is organized into model, view, and controller folders, it has a router that maps URLs to controller actions, and built-in generators to create new applications, models or controllers within an application. Geddy also includes ActiveRecord-style model validations.
+Geddy will be familiar to users of Ruby on Rails. Code is organized into model, view, and controller folders, it has a router that maps URLs to controller actions, and built-in generators to create new applications, models or controllers within an application. Geddy also includes Active Record-style model validations.
 
 I tried out the [2-minute geddy app](http://wiki.github.com/mde/geddy/the-two-minute-geddy-app) (accessible through the wiki), which demonstrates CRUD operations on a resource. Overall it worked well. Geddy told me on startup that my Node version was too old, so I built a newer version of Node from source which worked fine. I used SQLite as the data store.
 
@@ -28,7 +28,7 @@ To get started with Express I recommend copying the directories `lib` and `examp
 
 The "upload" sample app in the Express framework source demonstrates using Haml and Sass for markup and style.
 
-The Express documentation website doesn’t have anything on persistent server-side storage options (like SQLite or PostgreSQL). Depending on the application, perhaps an in-memory server-side JavaScript store would be fine. Or perhaps the application doesn't even need server-side persistent storage.
+The Express documentation website doesn't have anything on persistent server-side storage options (like SQLite or PostgreSQL). Depending on the application, perhaps an in-memory server-side JavaScript store would be fine. Or perhaps the application doesn't even need server-side persistent storage.
 
 #### Sample app
 

@@ -49,6 +49,3 @@ I created all my accounts manually in 1Password. Primarily I harvested the accou
 
 Wirecutter published 
 [Password Managers Are for Everyone—Including You](http://thewirecutter.com/blog/password-managers-are-for-everyone-including-you/) which does a great job of comparing the options. Check it out.
-
-
-

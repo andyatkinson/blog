@@ -20,9 +20,9 @@ The Heroku part started off easy [thanks to this guide](http://mmcgrana.github.i
 
 #### Gournay
 
-Gournay is a simple web app that shrinks URLs, written in Go. The [source is on github](https://github.com/andyatkinson/gournay) and the app is deployed at [gournay.herokuapp.com](http://gournay.herokuapp.com/). Gournay depends on the `pq` package to connect to a postgres database, and uses `godep` to manage its dependencies.
+Gournay is a simple web app that shrinks URLs, written in Go. The [source is on GitHub](https://github.com/andyatkinson/gournay) and the app is deployed at [gournay.herokuapp.com](http://gournay.herokuapp.com/). Gournay depends on the `pq` package to connect to a PostgreSQL database, and uses `godep` to manage its dependencies.
 
-Gournay takes a long url like `http://www.npr.org/2014/05/17/313142425/a-worldwide-voyage-to-prove-stars-wind-and-waves-are-enough` and makes a short hash from it. The URL and hash are stored in a database table. If the hash is posted back at gournay, the user is redirected to the original URL.
+Gournay takes a long URL like `http://www.npr.org/2014/05/17/313142425/a-worldwide-voyage-to-prove-stars-wind-and-waves-are-enough` and makes a short hash from it. The URL and hash are stored in a database table. If the hash is posted back at Gournay, the user is redirected to the original URL.
 
 #### Conclusion
 

@@ -10,9 +10,9 @@ tags: [JavaScript, API, Programming]
 
 My quick summary would be that it claims to avoid the bloat of unused REST API actions, large request payloads with unnecessary data, the complexity of API versions, endpoints, and documentation, while still providing fast server responses.
 
-Those claims could be leveraged to move faster in development on the client side, by not having to add new endpoints, change endpoints, or make client-specific changes, such as between a mobile web browser, and a native mobile client. If query performance on the back-end is fast, and payload sizes are small, then this architecture could result in faster experiences for clients compared with the alternative. However, my guess would be that a heavility optimized endpoint would still be useful in specific cases.
+Those claims could be leveraged to move faster in development on the client side, by not having to add new endpoints, change endpoints, or make client-specific changes, such as between a mobile web browser, and a native mobile client. If query performance on the back-end is fast, and payload sizes are small, then this architecture could result in faster experiences for clients compared with the alternative. However, my guess would be that a heavily optimized endpoint would still be useful in specific cases.
 
-I started [typing out the code samples in the the GraphQL tutorial](https://github.com/andyatkinson/graphql-demo) to get more of a sense of these claimed benefits.
+I started [typing out the code samples in the GraphQL tutorial](https://github.com/andyatkinson/graphql-demo) to get more of a sense of these claimed benefits.
 
 #### Evolve the API without versions
 

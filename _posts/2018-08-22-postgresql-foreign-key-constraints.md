@@ -34,7 +34,7 @@ Specifying deferrable this way would be more surprising than `INITIALLY IMMEDIAT
 
 #### ON DELETE and ON UPDATE
 
-Another attribute to specify on foreign key constraints is how to handle when deletes or updates happen on referenced data. The [Postgres constraints documentation](https://www.postgresql.org/docs/9.5/static/ddl-constraints.html) has an example with products, orders, and order items that is helpful.
+Another attribute to specify on foreign key constraints is how to handle when deletes or updates happen on referenced data. The [PostgreSQL constraints documentation](https://www.postgresql.org/docs/9.5/static/ddl-constraints.html) has an example with products, orders, and order items that is helpful.
 
 For example, `ON DELETE RESTRICT` restricts deleting a product that an order item references.
 

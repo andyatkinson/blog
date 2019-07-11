@@ -34,6 +34,6 @@ The [paperclip](https://github.com/thoughtbot/paperclip) gem has been very usefu
 
 #### Periodic jobs
 
-We have found the [whenever](https://github.com/javan/whenever) gem to be a nice way to manage crontab files. By expressing the periodic task details with a Ruby DSL, the file is easier to read and change. Whenever also supplies capistrano hooks to make it easy to update the crontab on each deploy.
+We have found the [whenever](https://github.com/javan/whenever) gem to be a nice way to manage crontab files. By expressing the periodic task details with a Ruby DSL, the file is easier to read and change. Whenever also supplies Capistrano hooks to make it easy to update the crontab on each deploy.
 
 Much thanks to the authors and maintainers of these gems! What are your essential Ruby gems for Rails apps? Please leave a comment or get in touch by email.

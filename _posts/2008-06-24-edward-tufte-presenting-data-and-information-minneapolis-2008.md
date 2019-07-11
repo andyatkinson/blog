@@ -8,7 +8,7 @@ tags: [Books, Events, Productivity, Conferences]
 
 Edward Tufte is a statistician and considered an expert on presenting data visually. Tufte was highly recommended, so I decided to attend his 1-day course in Minneapolis. Part of the event cost included four of Tufte's books as hardcovers. 
 
-Tufte presented to a room of hundreds the the day I attended, and there was another day scheduled with hundreds more! I enjoyed the course and met him briefly at the end to get a book autographed.
+Tufte presented to a room of hundreds the day I attended, and there was another day scheduled with hundreds more! I enjoyed the course and met him briefly at the end to get a book autographed.
 
 My notes:
 
@@ -44,7 +44,7 @@ My notes:
  - use small multiples (natural comparisons), easy on the viewer
  - take advantage of viewer's investment in learning the format
  - avoid "de-quantification"
- - "chartoonist" (note: derogatory term for charts that look like cartoons)
+ - "chartoonist" (sic) (note: derogatory term for charts that look like cartoons)
  - PowerPoint presentations are a "dominance relationship", the "dreaded slow reveal" (note: advocates having handouts and encouraging users to read ahead, not conform to presenter's slide reveal speed)
  - turning cognitive tasks into design principles
  - principles help to be a smarter consumer

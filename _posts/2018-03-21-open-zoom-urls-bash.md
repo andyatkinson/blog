@@ -35,7 +35,7 @@ The function `zmn` (Zoom meeting now) takes the first URL from the list above an
 `function zmn { url=$(echo "$ZOOM_BASE_URL"); icalBuddy eventsToday | egrep -o "https:\/\/
 $url.zoom.us\/j\/([0-9]+)" | head -n1 | open $(xargs); }`
 
-An improvement here would be to present the URLs and and prompt the user to make a selection, then proceed with opening their selected meeting link.
+An improvement here would be to present the URLs and prompt the user to make a selection, then proceed with opening their selected meeting link.
 
 
 ### Wrapping up

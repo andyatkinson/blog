@@ -12,7 +12,7 @@ Some feaures from Rails 2.3 that I wanted to highlight:
 
 Rails application templates are a way to put project configuration in a single file. Common setup chores like installing gems, plugins, JavaScript libraries, adding initializers, or writing custom rake tasks can be automated with Rails templates. 
 
-Use `rails app -m mytemplate` or a template can even be applied to an existing project. Browsing templates on github is also a nice way to see which tools and techniques other developers are using.
+Use `rails app -m mytemplate` or a template can even be applied to an existing project. Browsing templates on GitHub is also a nice way to see which tools and techniques other developers are using.
 
 #### Nested Model Forms
 

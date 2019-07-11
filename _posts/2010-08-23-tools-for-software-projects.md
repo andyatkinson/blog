@@ -18,7 +18,7 @@ In the last couple of years I have worked as an employee and as a freelancer doi
 
 #### Project tasks and due dates
 
-For project information that doesn’t fit into a bug report or feature request, a project management tool may be better. This is also useful to collaborate with non-programmer team members. 
+For project information that doesn't fit into a bug report or feature request, a project management tool may be better. This is also useful to collaborate with non-programmer team members. 
 
  * [Basecamp](http://basecamphq.com/): simple project management. First project is free. A private google group also works and gives you 100MB upload space. Both can be used to read and send emails to project members.
  * [PBWorks](http://pbworks.com/) is a more advanced wiki I've used in the past. We found GitHub wikis to be "good enough" but use other tools for issue tracking.

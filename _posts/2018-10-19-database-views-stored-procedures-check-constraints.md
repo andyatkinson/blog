@@ -38,7 +38,7 @@ Now a user may be configured to have no access to the `earnings` table, and read
 
 #### Stored Procedures
 
-> "The stored procedures define functions for creating triggers or custom aggregate functions." PL/pgSQL is a safe choice. One of the advantages is re-use across various applications (by moving logic to the database) as well as performance by having the logic execute in the database as opposed to the application layer.
+"The stored procedures define functions for creating triggers or custom aggregate functions." PL/pgSQL is a safe choice. One of the advantages is re-use across various applications (by moving logic to the database) as well as performance by having the logic execute in the database as opposed to the application layer.
 
 Stored procedures are how functions are defined within the database. One language option is PL/pgSQL for PostgreSQL. I made a repo called [db-stuff](https://github.com/andyatkinson/db-stuff) with like `get_sum(a,b)` from the [Stored Procedures Tutorial](http://www.postgresqltutorial.com/postgresql-stored-procedures/).
 

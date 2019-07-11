@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Postgres for the Busy MySQL Developer"
+title: "PostgreSQL for the Busy MySQL Developer"
 date: 2014-01-02
 comments: true
 tags: [MySQL, PostgreSQL, Productivity, Databases]
@@ -39,7 +39,7 @@ select rolcreatedb from pg_roles where rolname = 'rails';
 
 #### Working with CSV data
 
-Like Mysql, Postgres supports working with data from CSV files. The following example uses a `company_stuff` database with a `customers` table. First we need to create the database, connect to it, and create the table.
+Like Mysql, PostgreSQL supports working with data from CSV files. The following example uses a `company_stuff` database with a `customers` table. First we need to create the database, connect to it, and create the table.
 
 ``` sql
 create database company_stuff;
@@ -52,7 +52,7 @@ create table customers
 
 Type `\d customers` to verify the table is set up correctly.
 
-Now assuming we have the same CSV text file from the previous article when I covered how to work with CSV files using MySQL, we can load it into postgres using the `copy` command. This example specifies the column names, and note that the primary key column value is populated automatically.
+Now assuming we have the same CSV text file from the previous article when I covered how to work with CSV files using MySQL, we can load it into PostgreSQL using the `copy` command. This example specifies the column names, and note that the primary key column value is populated automatically.
 
 ``` bash
 % cat customers.txt
@@ -102,7 +102,7 @@ Running a query from the command line then combining it with `grep` or other com
      email     | character varying(100) |
 ```
 
-#### More Mysql to Postgres articles
+#### More Mysql to PostgreSQL articles
 
  * [Useful guide on equivalent commands in postgres from mysql](http://granjow.net/postgresql.html)
  * [PostgreSQL quick start for people who know MySQL](http://clarkdave.net/2012/08/postgres-quick-start-for-people-who-know-mysql/)

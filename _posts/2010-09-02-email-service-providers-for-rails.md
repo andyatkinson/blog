@@ -45,7 +45,7 @@ Conclusion for our project: very low cost, does not offer email template design 
 
   - Rails gem available
   - Emails are encoded as JSON and sent as HTTP Post requests to PostageApp. 
-  - Message Template user interface, build html/css emails with a preview. Templates can be stored.
+  - Message Template user interface, build HTML/CSS emails with a preview. Templates can be stored.
    - 5 projects, 2 user accounts, 50KB message size (this size includes attachments)
 
 (monthly cost is greater than per email cost)
@@ -100,9 +100,9 @@ Recipients specified through the Mailer API are automatically visible in the Mad
 
 #### API
 
-The API is wrapped in the [official madmimi Ruby gem](http://github.com/madmimi/madmimi-gem) that makes it very easy to work with. Here is some example code to send an email. Note that the Mailer API add-on requires a credit card to try, but is free if cancelled within the first 5 days (I used this to test).
+The API is wrapped in the [official madmimi Ruby gem](http://github.com/madmimi/madmimi-gem) that makes it very easy to work with. Here is some example code to send an email. Note that the Mailer API add-on requires a credit card to try, but is free if canceled within the first 5 days (I used this to test).
 
-I created a test promotion called `Promo test 1` and in one of the text blocks specified a variable like this: `Hello {name}!`. Creating an email and supplying the value for `{name}` looks like this. I didn’t find the curly braces documented on the Mad Mimi site. Another feature called [personalization_tags](http://help.madmimi.com/personalization-tag/) are similar but don’t work when supplying variable values as below, use the curly brace syntax.
+I created a test promotion called `Promo test 1` and in one of the text blocks specified a variable like this: `Hello {name}!`. Creating an email and supplying the value for `{name}` looks like this. I didn't find the curly braces documented on the Mad Mimi site. Another feature called [personalization_tags](http://help.madmimi.com/personalization-tag/) are similar but don’t work when supplying variable values as below, use the curly brace syntax.
 
 ``` ruby
 mimi = MadMimi.new(APP_CONFIG[:mad_mimi_email], APP_CONFIG[:mad_mimi_api_key])

@@ -72,4 +72,3 @@ Finally, verify the contents in the new CSV file are the records from the custom
 bob@example.com,Bob Johnson
 jane@example.com,Jane Doe
 ```
-

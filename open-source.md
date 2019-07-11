@@ -26,7 +26,6 @@ title: Open Source
  * [Singstar](https://github.com/andyatkinson/singstar) - Created a Mobile/searchable website for PS3 karaoke song list for parties! 👉 [Live demo](https://karaoke-songs.herokuapp.com/)
  * [shuttle_schedule](https://github.com/andyatkinson/shuttle_schedule) - Sinatra app to display shuttle bus schedule and stations!
  * [minimail](https://github.com/andyatkinson/minimail) - Minimail sends emails from ruby apps using `mail`
- * [applescripts](https://github.com/andyatkinson/applescripts) - Personal collection of applescripts
 
 #### For Learning 📚
 

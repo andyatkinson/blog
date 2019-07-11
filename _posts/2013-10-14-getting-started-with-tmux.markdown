@@ -8,14 +8,14 @@ tags: [Tips, Tools, Productivity]
 
 I started learning tmux and highly recommend the book **_tmux: Productive Mouse-Free Development_** [^book] as a guide. My `tmux.conf` [^conf] configuration file is available as well.
 
-#### Keyboard tips 
+#### Keyboard Tips
 
   * `Ctrl-b` is the default prefix which I kept so that I could continue to use `Ctrl-a` to move the cursor to the front in bash and vim. 
   * On OS X I remapped my caps lock key to be the control key
   * `Ctrl-b z` can be used to toggle a pane into a window, and back to a pane. 
   * To scroll back through output `Ctrl-b [` enters copy mode. I use vim navigation to move around (`Ctrl-u` and `Ctrl-d` up and down 1/2 page, `Shift j/k` to move a line at a time). If I know I need to read back though, I usually tail the log file in a separate terminal window and use the mouse since I find it to be faster.
 
-#### shortcuts
+#### Shortcuts
 
  * `tmux ls` when detached, lists any running tmux sessions. `tmux attach -t X` can be used to attach to an existing session, where X is the number of the session.
  * `Ctrl-b d` detaches from an existing session
@@ -35,13 +35,6 @@ At this time it is not possible to give names to panes within windows. I tried h
 Do you have any favorite tmux tips or tricks? Please get in touch.
 
 
-[^book]:
-    [tmux: Productive Mouse-Free Development](http://pragprog.com/book/bhtmux/tmux)
-    by Brian P. Hogan
-    The Pragmatic Programmers
-
-[^1]:
-    [Stack overflow answer on switching window size with tmux session](http://stackoverflow.com/a/7819465/126688)
-
-[^conf]:
-    [tmux.conf configuration file](https://github.com/andyatkinson/dotfiles/blob/master/tmux.conf)
+[^book]: [tmux: Productive Mouse-Free Development](http://pragprog.com/book/bhtmux/tmux) by Brian P. Hogan The Pragmatic Programmers
+[^1]: [Stack overflow answer on switching window size with tmux session](http://stackoverflow.com/a/7819465/126688)
+[^conf]: [tmux.conf configuration file](https://github.com/andyatkinson/dotfiles/blob/master/tmux.conf)

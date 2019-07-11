@@ -6,7 +6,7 @@ comments: true
 tags: [Programming, Ruby, JavaScript, Tips, Scripts]
 ---
 
-Ruby on Rails introduced me to a the concept of an `auto_link` helper method, which finds and hyperlinks URLs within text.
+Ruby on Rails introduced me to the concept of an `auto_link` helper method, which finds and hyperlinks URLs within text.
 
 How do we write our own auto-link in Ruby and JavaScript?
 

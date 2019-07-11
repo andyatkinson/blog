@@ -22,7 +22,7 @@ Set[1,2].hash == Set[2,1].hash # => true
 
 Sets can be used to store different types of objects like Array. Set operations can be performed which might make cleaner code when finding a subset of values. More Set operations can be found in the article *When Is a Set Better Than an Array in Ruby?* [^setbetter]. 
 
-#### Set operations
+#### Set Operations
 
 Set operations can also be performed on Arrays which Avdi Grimm describes in his article *Array Set Operations in Ruby* [^setarray].
 
@@ -40,9 +40,6 @@ s1 ^ s2 # => #<Set: {3, 1}>
 Next time try a Set!
 
 [^rubydoc]: [ruby-doc Set](http://www.ruby-doc.org/stdlib-2.0.0/libdoc/set/rdoc/Set.html)
-
 [^setbetter]: [When Is a Set Better Than an Array in Ruby?](http://spin.atomicobject.com/2012/09/04/when-is-a-set-better-than-an-array-in-ruby/)
-
 [^setarray]: [Array Set Operations in Ruby](http://devblog.avdi.org/2012/08/27/array-set-operations-in-ruby/)
-
 [^sitepoint]: [A Guide to Ruby Collections, II: Hashes, Sets, and Ranges](http://www.sitepoint.com/guide-ruby-collections-ii-hashes-sets-ranges/)

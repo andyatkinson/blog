@@ -80,7 +80,7 @@ Assignment.send(:sanitize_sql, ["sql", {block_ids: block_ids}])
 
 Generating 2 weeks of calendar data per driver, for our thousands of drivers using the app and expecting a fast user experience, was tricky! Using the approaches here <mark>allowed us to stay in the 50-100ms range</mark> for rendering this data, providing a fast experience with rich data to interact with.
 
-The applicability of this approach will really depend on your specific application. However it seems like a handy tool to keep in mind for highly structured data, where the end result requires the data is denormalized and re-structed as JSON.
+The applicability of this approach will really depend on your specific application. However it seems like a handy tool to keep in mind for highly structured data, where the end result requires the data is denormalized and re-structured as JSON.
 
 
 [^ht1]: [Taking Hash Tables Off The Shelf](https://dev.to/vaidehijoshi/taking-hash-tables-off-the-shelf) by Vaidehi Joshi

@@ -39,13 +39,8 @@ The authors of these fine pieces of software deserve recognition. Great work, us
 
 
 [^spec]: [Spectacle](https://www.spectacleapp.com/) (donations accepted)
-
 [^itsycal]: [Itsycal](http://www.mowglii.com/itsycal/)
-
 [^mac]: [MacDown](http://macdown.uranusjr.com/) (donations accepted)
-
 [^duck]: [Cyberduck](https://cyberduck.io/?l=en) (donations accepted)
-
 [^lice]: [LICEcap](http://www.cockos.com/licecap/)
-
 [^brew]: [Homebrew Cask](http://caskroom.io/)

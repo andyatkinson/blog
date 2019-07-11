@@ -10,7 +10,7 @@ At [OrderUp](http://orderup.com) we rely on voice calls and SMS messages to comm
 
 [Twilio](https://www.twilio.com/) (and the [twilio-ruby gem](https://github.com/twilio/twilio-ruby)) are great tools. Twilio has a rich API and tons of documentation to build SMS and voice services for a variety of use cases. [Tropo](http://tropo.com/) and [Nexmo](http://nexmo.com/) offer similar services to Twilio.
 
-#### SMS verification for new customers
+#### SMS Verification for New Customers
 
 Like many startups we want to acquire new, high-quality customers. To help do that we offer a one-time credit for new customers. The tricky part is trying to maintain a low-friction sign-up process while simultaneously reducing or preventing fraudulent usage of the credit.
 

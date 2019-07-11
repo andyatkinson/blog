@@ -48,7 +48,7 @@ resources :subscriptions, :only => [:new, :create]
 match 'abingo(/:action(/:id))', :to => 'abingo_dashboard', :as => :abingo
 ```
 
-Now we can create a simple experiment to alter some copy on the site. I'll use a variant of the example Ryan Bates created for the A/Bingo Railscast episode. In my case I'm putting the abingo test code into the `new.html.erb` template for the Subscription resource. The view code to measure which of the three alternatives creates the most Subscriptions would be the following. For this sample app, clicking the button (which posts to the create action) is a conversion.
+Now we can create a simple experiment to alter some copy on the site. I'll use a variant of the example Ryan Bates created for the A/Bingo RailsCast episode. In my case I'm putting the abingo test code into the `new.html.erb` template for the Subscription resource. The view code to measure which of the three alternatives creates the most Subscriptions would be the following. For this sample app, clicking the button (which posts to the create action) is a conversion.
 
 ``` ruby
 <%= button_to ab_test("signup_title", ["Sign up", "Registration", "Free Sign up"], :conversion => 'subscription') %>

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Automated Daily Backup Solution for Postgres"
+title: "Automated Daily Backup Solution for PostgreSQL"
 date: 2014-04-30
 comments: true
 tags: [Productivity, PostgreSQL, Databases, Tips]
@@ -10,7 +10,7 @@ A Ruby gem called [safe](https://github.com/astrails/safe) provides a DSL for ge
 
 The gist of what safe does is run `pg_dump` to create a backup file, encrypt it, then push it to Amazon S3. We added a command to run the script daily.
 
-We also use the [whenever](https://github.com/javan/whenever) gem to generate our crontab file. Our configuration is below, see github for the complete set of options. Encryption via gpg can use public and private keys, or a simple passphrase.
+We also use the [whenever](https://github.com/javan/whenever) gem to generate our crontab file. Our configuration is below, see GitHub for the complete set of options. Encryption via gpg can use public and private keys, or a simple passphrase.
 
 ``` ruby
 safe do
@@ -51,7 +51,7 @@ db = YAML.load_file(File.join(Dir.getwd, 'config', 'database.yml'))[environment]
 
 #### Deployment
 
-Once the safe configuration file is specified, the `astrails-safe` executable can be run. We use cron to run this once a day. The whenever gem supplies a `config/schedule.rb` for crontab entries. The `whenever` command can be run to see what will be generated. Whenever also provides capistrano tasks to update the crontab file on every deploy.
+Once the safe configuration file is specified, the `astrails-safe` executable can be run. We use cron to run this once a day. The whenever gem supplies a `config/schedule.rb` for crontab entries. The `whenever` command can be run to see what will be generated. Whenever also provides Capistrano tasks to update the crontab file on every deploy.
 
 We used the `job_template` option to so that the command was run from the app directory and is run with `bundle exec`.
 

@@ -6,7 +6,7 @@ comments: true
 tags: [Events, JavaScript, Programming]
 ---
 
-This past weekend I participated in Node Knockout with three teammates: Paul Armstrong, Zach Johnson, and Nate Kadlac. Nate and I have worked together on [Train Brain](http://trainbrainapp.com/), I met Paul through work at a previous employer, and Zach through Paul, and at [Minnedemo](http://minnedemo.org/).
+This past weekend I participated in Node Knockout with three teammates: Paul Armstrong, Zach Johnson, and Nate Kadlac. Nate and I have worked together on [Train Brain](http://trainbrainapp.com/), I met Paul through work at a previous employer, and Zach through Paul, and at [MinneDemo](http://minnedemo.org/).
 
 #### Competition
 
@@ -16,7 +16,7 @@ We all signed-up because we'd heard that Node was a big deal and wanted to try a
 
 At work we’re using WebSockets in our web application to push data to connected web clients from a Rails application. My coworker John added Node to hold on to incoming WebSocket client connections, and Redis to communicate between Rails and Node.
 
-I added a project to my github account that uses a similar stack of tools, the start of a checkers game, to push checker moves between clients. With that experience, and the extremely valuable [Node.JS Peepcode screencast](http://peepcode.com/products/nodejs-i) ($9, highly recommended), we organized our virtual team (1 person in Maryland, 2 in Minnesota, 1 in California) via Basecamp and Skype ahead of the competition. During the competition we used the Campfire chat app and had Skype conference calls during the weekend to report on progress and assign new tasks.
+I added a project to my GitHub account that uses a similar stack of tools, the start of a checkers game, to push checker moves between clients. With that experience, and the extremely valuable [Node.JS Peepcode screencast](http://peepcode.com/products/nodejs-i) ($9, highly recommended), we organized our virtual team (1 person in Maryland, 2 in Minnesota, 1 in California) via Basecamp and Skype ahead of the competition. During the competition we used the Campfire chat app and had Skype conference calls during the weekend to report on progress and assign new tasks.
 
 #### Getting started
 
@@ -36,7 +36,7 @@ Meanwhile Zach and Paul decided to go another route and use a different Heatmap 
 
 #### Refining the project scope
 
-We hoped that visitors could get heatmaps of any page they included some JS on, but that added significant complexity to the admin interface (choosing a site), and the back end (routing data), so we moved that out of our initial scope. We decided to make a test web page and include the snippet there. Paul designed and built that page, and deployed it as a github page from a public repo. 
+We hoped that visitors could get heatmaps of any page they included some JS on, but that added significant complexity to the admin interface (choosing a site), and the back end (routing data), so we moved that out of our initial scope. We decided to make a test web page and include the snippet there. Paul designed and built that page, and deployed it as a GitHub page from a public repo. 
 
 We also planned to use a screenshot web service to insert a screenshot of the page being tracked on the page dynamically, but since we had just one test web page, we added a screenshot to the admin interface of the test website manually. Zach was also able to add some code towards the end to count the number of open connections, and we added that to the interface to see how many others were sending data at the same time. 
 

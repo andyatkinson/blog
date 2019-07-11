@@ -19,7 +19,7 @@ The book **_The Startup Owner's Manual_** [^book] has a lot of practical tips to
 #### Concepts
 
  * Develop the product for the few, not the many.
- * Find the *earlyvangelists*. Earlyvangelists are willing to pay for the product. The buying process can be tested with the earlyvangelists.
+ * Find the *earlyvangelists* (sic). Earlyvangelists are willing to pay for the product. The buying process can be tested with the earlyvangelists.
  * Look for people solving the problem with a homegrown solution.
  * After developing the MVP features, delay new features until the MVP features are not attracting new customers.
  * Gather a massive and growing audience efficiently and cost-effectively.

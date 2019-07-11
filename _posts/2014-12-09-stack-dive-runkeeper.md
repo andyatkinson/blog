@@ -3,7 +3,7 @@ layout: post
 title: "Stack Dive with RunKeeper"
 date: 2014-12-09
 comments: true
-tags: [Programming, Productivity]
+tags: [Programming, Productivity, Events]
 ---
 
 Doug Williams and Joe Bondi from [RunKeeper](http://runkeeper.com/) gave a technical talk at the [WeWork Boston South Station](https://www.wework.com/locations/boston/south-station/) location in December 2014, as part of the [Stack Dive](http://www.stackdive.com/) series. The talk explored the technical stack that supports the app and web site, as well as tools and processes that have worked well for their team. RunKeeper has huge growth, currently at 38.5 million users, using their native mobile apps in the US and around the world.
