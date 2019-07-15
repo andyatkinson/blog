@@ -3,7 +3,7 @@ layout: post
 title: "Views, Stored Procedures, and Check Constraints"
 date: 2018-10-19
 comments: true
-tags: [Databases, Tips]
+tags: [PostgreSQL, SQL, Databases, Tips]
 ---
 
 This post will take a quick look at views, stored procedures, and check constraints. What are they and what are their use cases? This post is specific to PostgreSQL.
