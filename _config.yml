@@ -1,6 +1,4 @@
-
 exclude: [config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, LICENSE.txt]
-
 
 
 # Site setings
@@ -18,7 +16,7 @@ production_url: http://andyatkinson.com
 disqus: 'andyatkinson'
 mailchimp_url: 'https://gmail.us3.list-manage.com/subscribe/post?u=e41bf915471ba36d210444e0d&amp;id=d5e090a16c'
 # Add your GA Tracking Id
-ga_analytics:
+ga_analytics: UA-8656956-2
 
 # Contact form setings
 email: andyatkinson@gmail.com
@@ -54,9 +52,9 @@ navigation:
 # Required Plugins
 plugins_dir:
   - jekyll-paginate
-  - jekyll-tagsgenerator
   - jekyll-seo-tag
   - jekyll-sitemap
+  - jeykyll-prism-plugin
 
 # Pagination
 paginate: 10
@@ -72,3 +70,7 @@ markdown: kramdown
 sass:
   sass_dir: _sass
   style: compressed
+
+# disable Rouge https://mycyberuniverse.com/disable-rouge-syntax-highlighter.html
+# https://jordanknott.com/blog/2017-04-6-better-jekyll-syntax-highlighting-with-prism/
+highlighter: none

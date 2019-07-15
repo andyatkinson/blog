@@ -22,7 +22,7 @@ To build SMS verification into the app we used Twilio. Here are some of the basi
 
 Make a form for the user to post their phone number. Either store it (or log it) or use it directly in the Twilio API call to create a SMS message. We use Heroku and use ENV variables to store our Twilio credentials. Sending a SMS message is as easy as making an API post to Twilio. Check the latest [ruby gem](https://github.com/twilio/twilio-ruby) documentation.
 
-``` ruby
+```ruby
 twilio = Twilio::REST::Client.new(ENV['TWILIO_SID'], ENV['TWILIO_TOKEN'])
 message = twilio.account.messages.create(
   :from => from,
@@ -39,7 +39,7 @@ Create a callback in the web app. For our Ruby on Rails application we put this 
 
 The controller action receives a HTTP post from Twilio and uses the params to determine what to do next. In our case, we look up the phone number and make sure we have it and that it is associated with a customer.
 
-``` ruby
+```ruby
 class FrontEnd::SmsVerificationsController < FrontEnd::BaseController
 
   def receive_message
@@ -81,7 +81,7 @@ To release a number, look up the `SID` and send an HTTP DELETE request via the A
 
 We made a phone number tool we can use to add and release numbers. A simplified version is displayed below. Using this tool, we can check from a periodic job whether we need to buy more numbers, based on how many are currently being used. This way we only have as many as we need for each market.
 
-``` ruby
+```ruby
 class TwilioPhoneNumberTool
   attr_accessor :client, :market_id, :quantity, :sms_endpoint, :voice_endpoint
 

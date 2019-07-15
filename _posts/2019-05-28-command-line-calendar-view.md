@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Command Line Calendar Summary"
+title: "Calendar Events from the Command Line"
 tags: [Tips, CLI]
 featured_image_thumbnail:
 featured_image: /assets/images/pages/andy-atkinson-California-SF-Yosemite-June-2012.jpg
