@@ -16,7 +16,7 @@ A database view is kind of a virtual table, based on a `SELECT` query to an exis
 
 We'll put together a table for storing earnings by hour. Each record belongs to an employee. We'll insert some records with `employee_id` values between 1 and 5. We'll call the employees with IDs of 3 or less "special". [Views are currently read only](https://www.postgresql.org/docs/9.2/static/sql-createview.html).
 
-```
+```sql
 test# insert into earnings (employee_id, hour, total) VALUES (1, date_trunc('hour', now()), 10);
 test# insert into earnings (employee_id, hour, total) VALUES (1, date_trunc('hour', now() + interval '1 hour'), 10);
 ...
@@ -47,7 +47,7 @@ Check constraints are a way to do data validations within the database.
 
 A check constraint might be part of a column definition. The [documentation](https://www.postgresql.org/docs/9.4/static/ddl-constraints.html) has an example for a `price` column  of `numeric` type, where we want to check that the price is greater than zero.
 
-```
+```sql
 CREATE TABLE products (
     price numeric CHECK (price > 0)
 );
@@ -55,7 +55,7 @@ CREATE TABLE products (
 
 Violating this constraint produces a descriptive error message:
 
-```
+```sql
 INSERT INTO PRODUCTS (price) VALUES (-1);
 ERROR:  new row for relation "products" violates check constraint "products_price_check"
 DETAIL:  Failing row contains (-1).

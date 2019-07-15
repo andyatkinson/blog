@@ -12,15 +12,19 @@ hidden: true
 
 ---
 
-I set up [icalBuddy](https://hasseg.org/icalBuddy/) with my personal and work Google calendars (On OS X with Homebrew, run `brew install ical-buddy`), along with an alias `today`, to get a quick view of my calendar events for the day.
+This is quick command line tip to view upcoming calendar events in a compact form on the command line, with a single command.
 
-I've customized the output of certain data and formatting with this alias:
+I set up [icalBuddy](https://hasseg.org/icalBuddy/) with my personal and work Google calendars (On OS X with Homebrew, run `brew install ical-buddy`), along with an alias `today`.
 
-```
+I've customized the output of icalBuddy with data and formatting using this alias:
+
+```bash
 alias today='icalBuddy -f -iep "title,datetime" -po "datetime,title" -df "%RD" eventsToday'`
 ```
 
-```
+Now when I run the `today` alias, I get output like this. Handy!
+
+```bash
 $ today
 
 • Car appointment (wife's personal calendar)

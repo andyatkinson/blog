@@ -12,7 +12,7 @@ If you have a similar directory structure (or don't mind tweaking the script), t
 
 From my own favorite photos from the trip, I concluded that I don't shoot at a lot of focal lengths, so I'd rather have a lens with less range that was optically superior.
 
-``` ruby
+```ruby
     #!/usr/bin/env ruby
     # photo_stats.rb
     # (c) 2009 Andy Atkinson
