@@ -40,8 +40,7 @@ We are able to do a single query for all of the assignments of drivers to a bloc
 
 Now we can look up the number of assignments for any block in constant time from the hash of data, and we aren't querying for the count of assignments every time we're rendering a block of time.
 
-```
-
+```ruby
 all_assignments = [] # 1) chunk of SQL to find all the assignments
 
 # 2) put together the intermediate data structure
@@ -63,7 +62,7 @@ For sanitization, we use a private method, which might make upgrades more diffic
 
 The private method `sanitize_sql` takes the SQL query as a string and then a hash of parameters. We're passing an array of block IDs as the value, to a parameter named `block_ids`.
 
-```
+```ruby
 # Parameterized SQL query. Expects hash with `block_ids` key, and array of block ID values
 # sql = %{SELECT a.id, a.block_id FROM assignments a JOIN drivers d ...
           WHERE a.block_id IN (:block_ids)}
@@ -72,7 +71,7 @@ The private method `sanitize_sql` takes the SQL query as a string and then a has
 # block_ids = [] # relevant block IDs
 ```
 
-```
+```ruby
 Assignment.send(:sanitize_sql, ["sql", {block_ids: block_ids}])
 ```
 
