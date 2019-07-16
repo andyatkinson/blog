@@ -14,11 +14,9 @@ A quick look at two Microservice Frameworks for Java.
 
 > Dropwizard is a Java framework for developing ops-friendly, high-performance, RESTful web services. <cite>dropwizard.io</cite>
 
-I became aware of Dropwizard as an engineer at Groupon, where it is used as the basis of the official way to develop Java microservices, and is in heavy use. I know has been in use at Hubspot in the past as well, and perhaps other startups that may have started with a Rails monolithic app, that was broken up into microservices over time.
+I became aware of Dropwizard as an engineer at Groupon, where it used heavily as the basis for the official method of developing Java microservices. I know from a previous colleague it was used at HubSpot as well. Perhaps at other startups that started as a Rails monolithic app, reached a certain scale, and were broken up into microservices. The Ruby-to-Java history is discussed here [^2] with the Coda Hale and Yammer background. This slide [^3] shows roughly equivalent Rails and Dropwizard functionality for those coming from Rails.
 
-There seems to be a Ruby-to-Java history as well [^2] with the Coda Hale/Yammer background. This slide [^3] shows roughly equivalent Rails and Dropwizard functionality.
-
-I made a [Hello World Dropwizard App](https://github.com/andyatkinson/dropwizard-hello-world) to get a sense for developing with it, and [deployed it to Heroku](https://hello-world-dropwizard.herokuapp.com/hello-world?name=andy). I found Dropwizard to be ok to use, maybe not the "Joy" of Sinatra and Ruby, but relatively lightweight for Java, and with very fast performance.
+I made a [Hello World Dropwizard App](https://github.com/andyatkinson/dropwizard-hello-world) to get a sense for developing with it, and [deployed it to Heroku](https://hello-world-dropwizard.herokuapp.com/hello-world?name=andy). I found Dropwizard to be ok to use, maybe not sparking the "Joy" of Sinatra and Ruby, but relatively lightweight for Java, and with very fast performance.
 
 
 ## Javalin
