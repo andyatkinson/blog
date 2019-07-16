@@ -6,16 +6,16 @@ title: About
 
 #### Bio
 
-Andy is a Senior Software Engineer with Groupon, working remotely, living in Minneapolis, MN. Previously he worked at OrderUp (acquired by Groupon), LivingSocial (before they were acquired by Groupon), and various startups.
+Andy is a Senior Software Engineer with Groupon, working remotely, living in Minneapolis, MN. Primarily he does back-end web application development with services written with Ruby, Java, and JavaScript.
+
+Previously he's worked for OrderUp, LivingSocial, Dell/Compellent, PTC, and various startups and smaller companies.
 
 ![Andy Atkinson Headshot](/assets/images/pages/andy-headshot-big-wide.jpg#wide)
-<small>Photo by [Amber Procaccini Photography](http://www.aprocacciniphoto.com/)</small>
+<small>Photo by [Amber Procaccini Photography](http://www.aprocacciniphoto.com/) 2019</small>
 
-In his software engineering career, he has worked on full-stack web application and mobile development, but has focused recently on back-end development of Ruby and Java services.
+Andy earned Bachelors degrees from the [University of Minnesota](http://umn.edu) in Minneapolis, MN. He completed one semester abroad at the Fundación José Ortega y Gasset in beautiful and historic Toledo, Spain.
 
-Andy earned Bachelors degrees from the [University of Minnesota](http://umn.edu) in Minneapolis, MN.
-
-Outside of technology and spending time with his family, he enjoys running, cycling, travel, and following Timberwolves NBA basketball.
+Outside of technology and spending time with his family and friends, he enjoys running, cycling, travel, and following the perpetually struggling Timberwolves NBA basketball team.
 
 
 #### Recommendations
