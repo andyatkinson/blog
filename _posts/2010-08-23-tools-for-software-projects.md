@@ -10,11 +10,11 @@ In the last couple of years I have worked as an employee and as a freelancer doi
 
 #### Source code management
 
- * [GitHub](https://github.com/): private repository code hosting (plans from $9/month), private wikis, a basic issue tracker.
+[GitHub](https://github.com/): private repository code hosting (plans from $9/month), private wikis, a basic issue tracker.
 
 #### Features and bug reports
 
- * [Pivotal Tracker](http://www.pivotaltracker.com/): agile user story management, updates to the user interface in real-time (Free).
+[Pivotal Tracker](http://www.pivotaltracker.com/): agile user story management, updates to the user interface in real-time (Free).
 
 #### Project tasks and due dates
 
@@ -25,7 +25,7 @@ For project information that doesn't fit into a bug report or feature request, a
 
 #### Sharing files
 
- * [Dropbox](http://www.dropbox.com/): really easy file sharing, works on all platforms (even mobile). Generous free account and affordable paid accounts. Public directory can even be used to serve web pages you don’t want to publicly release. Use this to share mockups.
+[Dropbox](http://www.dropbox.com/): really easy file sharing, works on all platforms (even mobile). Generous free account and affordable paid accounts. Public directory can even be used to serve web pages you don’t want to publicly release. Use this to share mockups.
 
 #### Staying in touch with email and chat
 

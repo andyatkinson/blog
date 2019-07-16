@@ -12,7 +12,7 @@ The fugitive.vim plugin [^plugin] for Vim has a nice feature to open a file in G
 
 From the README:
 
-> Use :Gbrowse to open the current file on GitHub, with optional line range (try it in visual mode!). If your current repository isn't on GitHub, git instaweb will be spun up instead.
+> Use `:Gbrowse` to open the current file on GitHub, with optional line range (try it in visual mode!). If your current repository isn't on GitHub, git instaweb will be spun up instead.
 
 But what if your team uses the GitHub Enterprise version of GitHub or a private git server? We are in luck, the `Gbrowse` feature still works, it just requires a little configuration.
 

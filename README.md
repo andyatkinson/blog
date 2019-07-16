@@ -8,22 +8,19 @@ This is the source for my website, blog, and portfolio at [andyatkinson.com](htt
  * Use `h4` for headings
  * Add tags to the post
  * In Vim `set :wrap`/`set :nowrap` to enable/disable soft wrap
- * In Vim `leader-s` enables spell check mode, check spelling, add words with `zg`[^1]
+ * In Vim `leader-s` enables spell check mode, check spelling, add words with `zg` [Vim Spell Checking](https://thoughtbot.com/blog/vim-spell-checking) by Thoughtbot
  * Use initial caps in post titles
  * Use `<mark/>` to highlight a section
  * Use footnotes when appropriate
  * For blockquotes, add a `<cite/>`
- * On OS X, preview with MacDown[^2]
+ * On OS X, preview with MacDown [MacDown](https://macdown.uranusjr.com/) The open source Markdown editor for macOS.
  * For section headings, use caps
  * For product and company names, mind the CamelCase
  * For dates on posts, use a date and not a time
 
-[^1]: [Vim Spell Checking](https://thoughtbot.com/blog/vim-spell-checking) by Thoughtbot
-[^2]: [MacDown](https://macdown.uranusjr.com/) The open source Markdown editor for macOS.
-
 #### Theme Bugs and Issues
 
-The `include` for the social link icons does not work on Heroku but worked locally. The `icons` folder is nested one layer deeper and it may just be that the relative filepath is not working.
+~~The `include` for the social link icons does not work on Heroku but worked locally. The `icons` folder is nested one layer deeper and it may just be that the relative filepath is not working.~~
 This was worked around for now by inlining the contents of the `include`.
 
 Multi-word tags had a whitespace character after the hyphen. Removed that so URLs worked.
@@ -32,14 +29,12 @@ Multi-word tags had a whitespace character after the hyphen. Removed that so URL
 
 #### More Resources
 
-[Setting up Namecheap DNS with GitHub Pages](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages)
+ * [Setting up Namecheap DNS with GitHub Pages](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages)
+ * [Setting up GitHub Pages Custom Domains](https://github.blog/2018-05-01-github-pages-custom-domains-https/)
 
-[Setting up GitHub Pages Custom Domains](https://github.blog/2018-05-01-github-pages-custom-domains-https/)
 
-
-### Development
+#### Development
 
     bundle exec jekyll serve --incremental
 
 I occasionally `rm -rf _site` to remove the generated site completely. Changing `config.yml` requires restarting the development server.
-

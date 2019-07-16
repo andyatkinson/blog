@@ -63,12 +63,13 @@ For sanitization, we use a private method, which might make upgrades more diffic
 The private method `sanitize_sql` takes the SQL query as a string and then a hash of parameters. We're passing an array of block IDs as the value, to a parameter named `block_ids`.
 
 ```ruby
+
 # Parameterized SQL query. Expects hash with `block_ids` key, and array of block ID values
-# sql = %{SELECT a.id, a.block_id FROM assignments a JOIN drivers d ...
+sql = %{SELECT a.id, a.block_id FROM assignments a JOIN drivers d ...
           WHERE a.block_id IN (:block_ids)}
 
 
-# block_ids = [] # relevant block IDs
+block_ids = [] # relevant block IDs
 ```
 
 ```ruby
