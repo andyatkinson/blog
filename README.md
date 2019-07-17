@@ -33,7 +33,6 @@ Multi-word tags had a whitespace character after the hyphen. Removed that so URL
  * [Setting up GitHub Pages Custom Domains](https://github.blog/2018-05-01-github-pages-custom-domains-https/)
  * [Setting up a Newsletter with Mailchimp](https://mailchimp.com/help/share-your-blog-posts-with-mailchimp/)
 
-
 #### Development
 
     bundle exec jekyll serve --incremental

@@ -2,14 +2,8 @@
 layout: post
 title: "Calendar Events from the Command Line"
 tags: [Tips, CLI]
-featured_image_thumbnail:
-featured_image: /assets/images/pages/andy-atkinson-California-SF-Yosemite-June-2012.jpg
-featured_image_caption: Yosemite National Park. &copy; 2012 <a href="/">Andy Atkinson</a>
 date: 2019-05-28
 comments: true
-featured: true
-hidden: true
-
 ---
 
 This is quick command line tip to view upcoming calendar events in a compact form on the command line, with a single command.

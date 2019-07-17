@@ -1,6 +1,5 @@
 exclude: [config.ru, Gemfile, Gemfile.lock, Procfile, Rakefile, README.md, vendor, LICENSE.txt]
 
-
 # Site setings
 name: 'Andy Atkinson'
 description: 'Software Engineer'
@@ -54,7 +53,6 @@ plugins_dir:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
-  - jeykyll-prism-plugin
 
 # Pagination
 paginate: 10
