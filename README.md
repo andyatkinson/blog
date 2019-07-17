@@ -32,6 +32,7 @@ Multi-word tags had a whitespace character after the hyphen. Removed that so URL
  * [Setting up Namecheap DNS with GitHub Pages](https://www.namecheap.com/support/knowledgebase/article.aspx/9645/2208/how-do-i-link-my-domain-to-github-pages)
  * [Setting up GitHub Pages Custom Domains](https://github.blog/2018-05-01-github-pages-custom-domains-https/)
  * [Setting up a Newsletter with Mailchimp](https://mailchimp.com/help/share-your-blog-posts-with-mailchimp/)
+ * [Jekyll SEO plugin for GitHub Pages](https://help.github.com/en/articles/search-engine-optimization-for-github-pages)
 
 #### Development
 

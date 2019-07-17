@@ -49,7 +49,7 @@ navigation:
     url: /contact
 
 # Required Plugins
-plugins_dir:
+plugins:
   - jekyll-paginate
   - jekyll-seo-tag
   - jekyll-sitemap
