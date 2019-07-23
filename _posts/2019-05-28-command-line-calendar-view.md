@@ -13,7 +13,7 @@ I set up [icalBuddy](https://hasseg.org/icalBuddy/) with my personal and work Go
 I've customized the output of icalBuddy with data and formatting using this alias:
 
 ```bash
-alias today='icalBuddy -f -iep "title,datetime" -po "datetime,title" -df "%RD" eventsToday'`
+alias today='icalBuddy -f -iep "title,datetime" -po "datetime,title" -df "%RD" eventsToday'
 ```
 
 Now when I run the `today` alias, I get output like this. Handy!
