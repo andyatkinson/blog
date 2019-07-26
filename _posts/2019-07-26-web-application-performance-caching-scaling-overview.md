@@ -6,7 +6,7 @@ date: 2019-07-26
 comments: true
 ---
 
-This post describes some strategies to help improve performance problems in web applications. They were written with Ruby on Rails in mind, but are general techniques that could be applied to other language and framework environments. Let's dive in!
+This post describes some strategies to help address performance problems in web applications. They were written with Ruby on Rails in mind, but are general techniques that can be applied to other language and framework environments. Let's dive in!
 
 #### Add Indexes
 
