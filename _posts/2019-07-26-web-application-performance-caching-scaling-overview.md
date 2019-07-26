@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Web Application Performance Problem Solution Techniques"
+title: "Web Application Performance and Scaling Techniques"
 tags: [Tips, Programming, Ruby, Rails, Performance, Open Source, Databases]
 date: 2019-07-26
 comments: true
